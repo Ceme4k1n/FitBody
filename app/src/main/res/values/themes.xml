@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Fitness" parent="Theme.AppCompat.Light.NoActionBar">>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="RoundedButtonText">
+        <item name="android:textColor">#FFFFFF</item> <!-- Цвет текста -->
+        <item name="android:textSize">18sp</item> <!-- Размер текста -->
+    </style>
+
+
+    <style name="Theme.Fitness" parent="Base.Theme.Fitness" />
+</resources>
