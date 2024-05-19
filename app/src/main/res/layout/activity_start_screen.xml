@@ -52,7 +52,7 @@
     <ImageView
         android:id="@+id/imagepurple_start_journey"
         android:layout_width="wrap_content"
-        android:layout_height="180dp"
+        android:layout_height="210dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
         android:id="@+id/imageButton_next_on_man"
         android:layout_width="225dp"
         android:layout_height="60dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="18dp"
         android:scaleType="centerInside"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,12 +79,39 @@
         android:id="@+id/imagewoman_on_board_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#33000000"
         android:scaleType="fitXY"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/woman_on_board_three" />
+
+    <ImageView
+        android:id="@+id/image_find_nutrition_tips"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/image_find_nutrition" />
+
+    <ImageView
+        android:id="@+id/button_next_woman_on_board"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_find_nutrition_tips"
+        app:srcCompat="@drawable/button_next_woman_on_board" />
 
     <TextView
         android:id="@+id/textskip_man_on_board_man_one"
@@ -97,6 +124,7 @@
         android:textColor="#FFEB3B"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
@@ -107,6 +135,7 @@
         android:layout_height="11dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/textskip_man_on_board_man_one"
         app:layout_constraintStart_toEndOf="@+id/textskip_man_on_board_man_one"
         app:layout_constraintTop_toTopOf="@+id/textskip_man_on_board_man_one"
@@ -114,30 +143,38 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/image_find_nutrition_tips"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:id="@+id/imageman_on_board_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494"
-        app:srcCompat="@drawable/image_find_nutrition" />
+        app:srcCompat="@drawable/man_on_board_four" />
 
     <ImageView
-        android:id="@+id/imagenext_woman_on_board_three"
-        android:layout_width="225dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="284dp"
-        android:scaleType="centerInside"
+        android:id="@+id/imagecommunity_for_you"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94
-"
-        app:srcCompat="@drawable/button_next_woman_on_board" />
+        app:srcCompat="@drawable/image_a_community" />
+
+    <ImageView
+        android:id="@+id/imageButton_get_started"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagecommunity_for_you"
+        app:srcCompat="@drawable/button_get_started_on_board" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
