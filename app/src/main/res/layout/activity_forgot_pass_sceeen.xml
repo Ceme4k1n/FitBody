@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".login_singin.forgot_pass_sceeen">
+
+    <ImageView
+        android:id="@+id/imagebutton_back_forgotpassPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="12dp"
+        android:rotationY="-180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textForgott_pass_forgotpassPage"
+        app:srcCompat="@drawable/skip_arrow" />
+
+
+    <TextView
+        android:id="@+id/textForgott_pass_forgotpassPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Forgotten Password"
+        android:textColor="#E2F163"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_vopros_forgot_pass_forgotpassPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForgott_pass_forgotpassPage" />
+
+    <TextView
+        android:id="@+id/textgovno_forgotpassPage"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/league_spartan"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_vopros_forgot_pass_forgotpassPage" />
+
+    <View
+        android:id="@+id/purple_box_forgotpassPage"
+        android:layout_width="460dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="61dp"
+        android:background="#B3A0FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_forgotpassPage" />
+
+    <EditText
+        android:id="@+id/email_text_forgotpassPage"
+        android:layout_width="311dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/rounded_button_on_board"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="example@example.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:paddingTop="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_forgotpassPage" />
+
+    <TextView
+        android:id="@+id/textenter_your_email_forgotpassPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Enter your email address"
+        android:textColor="#232323"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_text_forgotpassPage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_continue_forgotpassPage"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_button_grey"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:paddingTop="3dp"
+
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_forgotpassPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
