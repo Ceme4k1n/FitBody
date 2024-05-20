@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".login_singin.login_screen">
+
+    <ImageView
+        android:id="@+id/imagebutton_back_loginpage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="125dp"
+        android:rotationY="-180"
+        app:layout_constraintEnd_toStartOf="@+id/textLog_In_loginpage"
+        app:layout_constraintTop_toTopOf="@+id/textLog_In_loginpage"
+        app:srcCompat="@drawable/skip_arrow" />
+
+    <TextView
+        android:id="@+id/textLog_In_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Log In"
+        android:textColor="#E2F163"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textWelcome_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLog_In_loginpage" />
+
+    <TextView
+        android:id="@+id/textgovno_loginpage"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/league_spartan"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome_loginpage" />
+
+    <View
+        android:id="@+id/purple_box_loginpage"
+        android:layout_width="460dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="61dp"
+        android:background="#B3A0FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_loginpage" />
+
+    <EditText
+        android:id="@+id/password_text_loginpage"
+        android:layout_width="311dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:hint="* * * * * * * * * * * * *"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/rounded_button_on_board"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_loginpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/email_text_loginpage"
+        android:layout_width="311dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="138dp"
+        android:ems="10"
+        android:hint="example@example.com"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="5dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_button_on_board"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_loginpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textUsername_or_email_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="7dp"
+
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Username or email"
+        android:textColor="#232323"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_text_loginpage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textPassword_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Password"
+        android:textColor="#232323"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/password_text_loginpage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/button_forgot_pass_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:text="Forgot Password?"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#232323"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_text_loginpage" />
+
+    <Button
+        android:id="@+id/button_log_in_loginnpage"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/rounded_button_grey"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_loginpage" />
+
+    <TextView
+        android:id="@+id/textor_sign_up_with_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="or sign up with"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_log_in_loginnpage" />
+
+    <ImageView
+        android:id="@+id/imagebutton_google_loginpage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="-27dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toStartOf="@+id/textor_sign_up_with_loginpage"
+        app:layout_constraintTop_toBottomOf="@+id/textor_sign_up_with_loginpage"
+        app:srcCompat="@drawable/image_google" />
+
+    <ImageView
+        android:id="@+id/imagebutton_face_book_touch_loginpage"
+        android:layout_width="90dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/imagebutton_google_loginpage"
+        app:layout_constraintTop_toBottomOf="@+id/textor_sign_up_with_loginpage"
+        app:srcCompat="@drawable/image_touche_facebook" />
+
+    <TextView
+        android:id="@+id/texthave_an_account_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Don’t have an account?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/imagebutton_google_loginpage"
+        app:layout_constraintTop_toBottomOf="@+id/imagebutton_google_loginpage" />
+
+    <TextView
+        android:id="@+id/button_sing_in_loginpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Sign Up"
+        android:textColor="#E2F163"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/texthave_an_account_loginpage"
+        app:layout_constraintTop_toBottomOf="@+id/imagebutton_google_loginpage" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.fitness.on_boarding
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.login_singin.login_screen
 
 class start_screen : AppCompatActivity() {
 
@@ -89,6 +91,11 @@ class start_screen : AppCompatActivity() {
             man_on_board_four.visibility = View.VISIBLE
             button_get_started.visibility = View.VISIBLE
             a_community_for_you.visibility = View.VISIBLE
+        }
+
+        button_get_started.setOnClickListener {
+            var intent = Intent(this, login_screen::class.java)
+            startActivity(intent)
         }
 
         skip_button_text.setOnClickListener{
