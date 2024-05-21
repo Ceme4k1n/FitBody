@@ -72,34 +72,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/purple_box_genderPage" />
 
-    <ImageButton
-        android:id="@+id/imageButton_male_gender_genderPage"
-        android:layout_width="163dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="46dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage"
-        android:background="@drawable/gender_rad_button"
-        app:srcCompat="@drawable/male_icon_selector"
-        android:scaleType="centerInside"
-        android:clickable="true"
-        android:focusable="true" />
-
-    <ImageButton
-        android:id="@+id/imageButton_female_gender_genderPage"
-        android:layout_width="163dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="264dp"
-        android:background="@drawable/gender_rad_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage"
-        app:srcCompat="@drawable/female_icon_selector"
-        android:scaleType="centerInside"
-        android:clickable="true"
-        android:focusable="true"/>
-
     <TextView
         android:id="@+id/text_male_genderPage"
         android:layout_width="wrap_content"
@@ -111,7 +83,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_male_gender_genderPage" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_male_active_genderPage" />
 
     <TextView
         android:id="@+id/text_female_genderPage"
@@ -124,11 +96,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton_female_gender_genderPage" />
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/imageButton_female_active_genderPage" />
 
 
     <Button
@@ -146,6 +114,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage" />
+
+    <ImageButton
+        android:id="@+id/imageButton_male_active_genderPage"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="46dp"
+        android:background="@color/black"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage"
+        app:srcCompat="@drawable/male_acitve" />
+
+    <ImageButton
+        android:id="@+id/imageButton_male_inactive_genderPage"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="46dp"
+        android:background="@color/black"
+        android:paddingTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage"
+        app:srcCompat="@drawable/male_inactive" />
+
+    <ImageButton
+        android:id="@+id/imageButton_female_active_genderPage"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="264dp"
+        android:background="@color/black"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage"
+        app:srcCompat="@drawable/female_active" />
+
+    <ImageButton
+        android:id="@+id/imageButton_female_inactive_genderPage"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="264dp"
+        android:background="@color/black"
+        android:paddingTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_genderPage"
+        app:srcCompat="@drawable/female_inactive" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
