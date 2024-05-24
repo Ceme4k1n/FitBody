@@ -3,14 +3,17 @@ package com.example.fitness.login_singin
 import android.app.Application
 import android.content.ContentValues
 import android.content.ContentValues.TAG
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
+import com.example.fitness.on_boarding.start_screen
 import com.google.firebase.Firebase
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
@@ -32,8 +35,17 @@ class singin_screen : AppCompatActivity() {
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
         val confirm_password_registry : EditText = findViewById(R.id.password_confirm_text_singinPage)
         var button_next_registry : Button = findViewById(R.id.button_sing_in_singinPage)
+        val button_back :   ImageView = findViewById(R.id.imagebutton_back_singupPage)
+
         val database = Firebase.database
         val ref = database.getReference("users")
+
+        button_back.setOnClickListener {
+            var intent = Intent(this, login_screen::class.java)
+            startActivity(intent)
+        }
+
+
 
         fun regViaEmail(
             email_base: String,

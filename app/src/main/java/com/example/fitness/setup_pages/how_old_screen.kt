@@ -1,8 +1,10 @@
 package com.example.fitness.setup_pages
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
+import android.widget.Button
 import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -18,6 +20,22 @@ class how_old_screen : AppCompatActivity() {
         val linearLayoutNumbers: LinearLayout = findViewById(R.id.linearLayoutNumbers)
         val selectedAgeTextView: TextView = findViewById(R.id.selectedAgeTextView)
         val horizontalScrollView: HorizontalScrollView = findViewById(R.id.horizontalScrollView_howoldPage)
+
+        val button_back : TextView = findViewById(R.id.textback_button_howoldPage)
+        val button_continue : Button = findViewById(R.id.button_continue_howoldPage)
+
+        button_continue.setOnClickListener {
+            var intent = Intent(this, select_weight_screen::class.java)
+            startActivity(intent)
+        }
+
+
+        button_back.setOnClickListener {
+            var intent = Intent(this, select_gender_screen::class.java)
+            startActivity(intent)
+        }
+
+
 
         val typeface = ResourcesCompat.getFont(this, R.font.league_spartan_bold)
 
@@ -74,11 +92,11 @@ class how_old_screen : AppCompatActivity() {
                     if (child == closestChild) {
                         child.setTextColor(Color.BLACK)
                         child.textSize = 60f
-                        child.setPadding(selectedPadding, 0, selectedPadding, 2)
+                        child.setPadding(selectedPadding, -20, selectedPadding, 2)
                     } else {
                         child.setTextColor(Color.WHITE)
                         child.textSize = 40f
-                        child.setPadding(normalPadding, 20, normalPadding, 2)
+                        child.setPadding(normalPadding, -20, normalPadding, 2)
                     }
                     child.layoutParams = params
                 }

@@ -2,6 +2,7 @@ package com.example.fitness.login_singin
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,12 @@ class login_screen : AppCompatActivity() {
         val sing_in_button : TextView = findViewById(R.id.button_sing_in_loginpage)
         val forgott_pass_button : TextView = findViewById(R.id.button_forgot_pass_loginpage)
 
+        val button_back : ImageView = findViewById(R.id.imagebutton_back_loginpage)
+
+        button_back.setOnClickListener {
+            var intent = Intent(this, start_screen::class.java)
+            startActivity(intent)
+        }
 
         sing_in_button.setOnClickListener {
             var intent = Intent(this, singin_screen::class.java)
