@@ -27,8 +27,8 @@ class singin_screen : AppCompatActivity() {
         auth = Firebase.auth
         FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_singup_screen)
-        val email_registry : EditText = findViewById(R.id.email_text_singupPage)
-        val mobile_number_registry : EditText = findViewById(R.id.phone_text_singupPage)
+        val name_reg : EditText = findViewById(R.id.email_text_singupPage)
+        val email_registry : EditText = findViewById(R.id.phone_text_singupPage)
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
         val confirm_password_registry : EditText = findViewById(R.id.password_confirm_text_singinPage)
         var button_next_registry : Button = findViewById(R.id.button_sing_in_singinPage)

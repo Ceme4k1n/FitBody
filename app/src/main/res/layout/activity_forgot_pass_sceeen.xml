@@ -109,13 +109,14 @@
         android:layout_marginTop="56dp"
         android:background="@drawable/rounded_button_grey"
         android:fontFamily="@font/poppins_medium"
+        android:paddingTop="3dp"
         android:text="Continue"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:paddingTop="3dp"
 
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/purple_box_forgotpassPage" />
 
