@@ -1,13 +1,17 @@
 package com.example.fitness.login_singin
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.google.firebase.auth.FirebaseAuth
 
 class forgot_pass_sceeen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,11 +19,23 @@ class forgot_pass_sceeen : AppCompatActivity() {
         setContentView(R.layout.activity_forgot_pass_sceeen)
 
         val continue_button_setup_pass : Button = findViewById(R.id.button_continue_forgotpassPage)
+        val email_vosstanovit : EditText=findViewById(R.id.email_text_forgotpassPage)
 
         continue_button_setup_pass.setOnClickListener {
-            var intent = Intent(this, set_up_pass_screen::class.java)
-            startActivity(intent)
+            passRecovery(email_vosstanovit.text.toString())
         }
 
     }
+}
+
+fun passRecovery(
+    email: String
+){
+    FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+        .addOnSuccessListener {
+            Log.d(TAG, "Pass Recovery Link sent")
+        }
+        .addOnFailureListener{
+            Log.d(TAG, "Error sending pass recovery email")
+        }
 }
