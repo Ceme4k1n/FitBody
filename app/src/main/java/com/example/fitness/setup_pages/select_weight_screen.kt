@@ -36,7 +36,7 @@ class select_weight_screen : AppCompatActivity() {
         }
 
         // Добавляем изображения с разными размерами
-        for (i in 1..99) {
+        for (i in 1..151) {
             val imageView = ImageView(this).apply {
                 setImageDrawable(ContextCompat.getDrawable(this@select_weight_screen, R.drawable.line_big))
                 // Настраиваем размеры для больших и маленьких изображений
@@ -55,14 +55,9 @@ class select_weight_screen : AppCompatActivity() {
             override fun onGlobalLayout() {
                 horizontalScrollView.viewTreeObserver.removeOnGlobalLayoutListener(this)
 
-                val scrollViewWidth = horizontalScrollView.width
-                val symbolWidth = 71 * 2
 
-                // Установка начальных отступов для центровки изображений
-                val initialPadding = (scrollViewWidth / 2) - (symbolWidth / 2)
-                linearLayoutNumbers.setPadding(initialPadding, 0, initialPadding, 0)
+                linearLayoutNumbers.setPadding(570, 0, 570, 0)
 
-                // Начальное значение для selectedWeightTextView
                 selectedWeightTextView.text = "1"
             }
         })
@@ -70,11 +65,8 @@ class select_weight_screen : AppCompatActivity() {
         horizontalScrollView.viewTreeObserver.addOnScrollChangedListener {
             val scrollX = horizontalScrollView.scrollX
 
-            // Ширина одного символа в пикселях
-            val symbolWidth = 71 * 2 // сумма левого и правого отступа (padding)
-
             // Количество символов прокрученных влево
-            val scrolledSymbols = scrollX / symbolWidth
+            val scrolledSymbols = scrollX / 140
 
             // Обновляем TextView с выбранным весом
             selectedWeightTextView.text = (scrolledSymbols ).toString()
