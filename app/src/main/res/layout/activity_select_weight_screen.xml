@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".setup_pages.select_weight_screen">
+
+    <TextView
+        android:id="@+id/textback_button_selectWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Back"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageback_arrow_svg_selectWeight"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageback_arrow_svg_selectWeight"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:rotation="-180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/skip_arrow"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_whats_your_height_selectWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="What Is Your height?"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textgovno_selectWeight"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/league_spartan"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_whats_your_height_selectWeight" />
+
+
+    <TextView
+        android:id="@+id/selectedWeight_selectWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageykazatel_arrow_svg_selectWeight" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView_selectWeight"
+        android:layout_width="490dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="234dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_selectWeight">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPalochki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="460dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView_selectWeight" />
+
+    <ImageView
+        android:id="@+id/imageykazatel_arrow_svg_selectWeight"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/skip_arrow"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/button_continue_selectWeight"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/rounded_button_grey"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="3dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView_selectWeight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

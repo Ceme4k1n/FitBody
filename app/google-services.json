@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "376546341666",
+    "firebase_url": "https://fitnesdatabase-default-rtdb.firebaseio.com",
     "project_id": "fitnesdatabase",
     "storage_bucket": "fitnesdatabase.appspot.com"
   },
@@ -12,7 +13,12 @@
           "package_name": "com.example.fitness"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "376546341666-0hpehfil152nkl8se459hnuu690k0rn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyB65DMD-7GRYb0oNXsbWrTwBVozJBhiLa4"
@@ -20,7 +26,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376546341666-0hpehfil152nkl8se459hnuu690k0rn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
