@@ -26,8 +26,8 @@ class select_weight_screen : AppCompatActivity() {
         val buttonContinue: Button = findViewById(R.id.button_continue_selectWeight)
 
         buttonContinue.setOnClickListener {
-            //var intent = Intent(this, goal_screen::class.java)
-            //startActivity(intent)
+            var intent = Intent(this, goal_screen::class.java)
+            startActivity(intent)
         }
 
         buttonBack.setOnClickListener {
@@ -36,7 +36,7 @@ class select_weight_screen : AppCompatActivity() {
         }
 
         // Добавляем изображения с разными размерами
-        for (i in 1..151) {
+        for (i in 1..150) {
             val imageView = ImageView(this).apply {
                 setImageDrawable(ContextCompat.getDrawable(this@select_weight_screen, R.drawable.line_big))
                 // Настраиваем размеры для больших и маленьких изображений
@@ -55,9 +55,14 @@ class select_weight_screen : AppCompatActivity() {
             override fun onGlobalLayout() {
                 horizontalScrollView.viewTreeObserver.removeOnGlobalLayoutListener(this)
 
+                val scrollViewWidth = horizontalScrollView.width
+                val symbolWidth = 70 * 2
 
-                linearLayoutNumbers.setPadding(570, 0, 570, 0)
+                // Установка начальных отступов для центровки изображений
+                val initialPadding = (scrollViewWidth / 2) - (symbolWidth / 2)
+                linearLayoutNumbers.setPadding(initialPadding, 0, initialPadding, 0)
 
+                // Начальное значение для selectedWeightTextView
                 selectedWeightTextView.text = "1"
             }
         })
@@ -65,8 +70,11 @@ class select_weight_screen : AppCompatActivity() {
         horizontalScrollView.viewTreeObserver.addOnScrollChangedListener {
             val scrollX = horizontalScrollView.scrollX
 
+            // Ширина одного символа в пикселях
+            val symbolWidth = 70 * 2 // сумма левого и правого отступа (padding)
+
             // Количество символов прокрученных влево
-            val scrolledSymbols = scrollX / 140
+            val scrolledSymbols = scrollX / symbolWidth
 
             // Обновляем TextView с выбранным весом
             selectedWeightTextView.text = (scrolledSymbols ).toString()
