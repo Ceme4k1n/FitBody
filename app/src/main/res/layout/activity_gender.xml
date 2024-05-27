@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imagebutton_back_gender"
-        android:layout_width="6dp"
-        android:layout_height="11dp"
+        android:layout_width="8dp"
+        android:layout_height="12dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="38dp"
         android:rotationY="-180"

@@ -258,7 +258,9 @@
         android:layout_width="25dp"
         android:layout_height="29dp"
         android:layout_marginStart="67dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toStartOf="@+id/image_buttmarkButton_homePage"
         app:layout_constraintStart_toEndOf="@+id/image_homeButton_homePage"
         app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
         app:srcCompat="@drawable/zakladka_vidos_button" />
@@ -267,7 +269,7 @@
         android:id="@+id/image_buttmarkButton_homePage"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
         app:layout_constraintEnd_toStartOf="@+id/image_operatorButton_homePage"
         app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
