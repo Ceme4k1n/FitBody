@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".floating_menus.profile_screen">
+
+
+    <View
+        android:id="@+id/purple_box_profile"
+        android:layout_width="460dp"
+        android:layout_height="290dp"
+        android:background="#B3A0FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_my_profyle_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="My Profile"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <ImageView
+        android:id="@+id/strelka_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_my_profyle_profilePage"
+        app:layout_constraintEnd_toStartOf="@+id/text_my_profyle_profilePage"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    <ImageView
+        android:id="@+id/image_profile_profilePage"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_2024_05_27_21_49_51" />
+
+    <TextView
+        android:id="@+id/text_FI_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Madison Smith"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_profile_profilePage" />
+
+    <TextView
+        android:id="@+id/email_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="madisons@example.com"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_FI_profilePage"
+        app:lineHeight="19.5dp"
+        tools:ignore="HardcodedText"
+        tools:layout_constraintHorizontal_weight="300" />
+
+    <TextView
+        android:id="@+id/text_birth_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Birthday: "
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/email_profilePage"
+        app:layout_constraintTop_toBottomOf="@+id/email_profilePage" />
+
+    <TextView
+        android:id="@+id/birrthday_text_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/league_spartan"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/text_birth_profilePage"
+        app:layout_constraintTop_toBottomOf="@+id/email_profilePage"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/purple_box2_profile"
+        android:layout_width="323dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-21dp"
+        android:background="@drawable/rounded_background_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_profile" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="83dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box2_profile"
+        app:layout_constraintEnd_toEndOf="@+id/purple_box2_profile"
+        app:layout_constraintTop_toTopOf="@+id/purple_box2_profile" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="82dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box2_profile"
+        app:layout_constraintStart_toStartOf="@+id/purple_box2_profile"
+        app:layout_constraintTop_toTopOf="@+id/purple_box2_profile" />
+
+
+    <TextView
+        android:id="@+id/text_weight_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Weight"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box2_profile"
+        app:layout_constraintStart_toStartOf="@+id/purple_box2_profile" />
+
+
+    <TextView
+        android:id="@+id/weight_text_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_weight_profilePage"
+        app:layout_constraintEnd_toEndOf="@+id/text_weight_profilePage"
+        app:layout_constraintStart_toStartOf="@+id/text_weight_profilePage"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_how_old_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Years old"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box2_profile"
+        app:layout_constraintEnd_toEndOf="@+id/purple_box2_profile"
+        app:layout_constraintStart_toStartOf="@+id/purple_box2_profile" />
+
+    <TextView
+        android:id="@+id/years_old_text_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_how_old_profilePage"
+        app:layout_constraintEnd_toEndOf="@+id/text_how_old_profilePage"
+        app:layout_constraintStart_toStartOf="@+id/text_how_old_profilePage"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/text_height_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Height"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box2_profile"
+        app:layout_constraintEnd_toEndOf="@+id/purple_box2_profile" />
+
+    <TextView
+        android:id="@+id/height_text_profilePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_height_profilePage"
+        app:layout_constraintEnd_toEndOf="@+id/text_height_profilePage"
+        app:layout_constraintStart_toStartOf="@+id/text_height_profilePage"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/chel_myprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box2_profile"
+        app:srcCompat="@drawable/image_2024_05_27_23_22_17"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/profile_myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Profile"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/chel_myprofile"
+        app:layout_constraintStart_toEndOf="@+id/chel_myprofile"
+        app:layout_constraintTop_toTopOf="@+id/chel_myprofile" />
+
+    <ImageView
+        android:id="@+id/star_myprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chel_myprofile"
+        app:srcCompat="@drawable/image_2024_05_27_23_22_28" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Favorite"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/star_myprofile"
+        app:layout_constraintStart_toEndOf="@+id/star_myprofile"
+        app:layout_constraintTop_toTopOf="@+id/star_myprofile" />
+
+    <ImageView
+        android:id="@+id/zamok_myprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image_2024_05_27_23_22_49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/star_myprofile" />
+
+    <TextView
+        android:id="@+id/privacy_myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Privacy Policy"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/zamok_myprofile"
+        app:layout_constraintStart_toEndOf="@+id/zamok_myprofile"
+        app:layout_constraintTop_toTopOf="@+id/zamok_myprofile" />
+
+    <ImageView
+        android:id="@+id/settingpng_myprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zamok_myprofile"
+        app:srcCompat="@drawable/image_2024_05_27_23_22_58" />
+
+    <TextView
+        android:id="@+id/setting_myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Settings"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/settingpng_myprofile"
+        app:layout_constraintStart_toEndOf="@+id/settingpng_myprofile"
+        app:layout_constraintTop_toTopOf="@+id/settingpng_myprofile" />
+
+    <ImageView
+        android:id="@+id/alechel_myprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_myprofile"
+        app:srcCompat="@drawable/image_2024_05_27_23_23_04"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/help_myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Help"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/alechel_myprofile"
+        app:layout_constraintStart_toEndOf="@+id/alechel_myprofile"
+        app:layout_constraintTop_toTopOf="@+id/alechel_myprofile"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/exitpng_myprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alechel_myprofile"
+        app:srcCompat="@drawable/image_2024_05_27_23_23_10"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/logout_myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Logout"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/exitpng_myprofile"
+        app:layout_constraintStart_toEndOf="@+id/exitpng_myprofile"
+        app:layout_constraintTop_toTopOf="@+id/exitpng_myprofile" />
+
+    <ImageView
+        android:id="@+id/strela1_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_myprofile"
+        app:srcCompat="@drawable/image_2024_05_28_00_03_38" />
+
+    <ImageView
+        android:id="@+id/strela2_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@drawable/image_2024_05_28_00_03_38" />
+
+    <ImageView
+        android:id="@+id/strela3_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/privacy_myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/privacy_myprofile"
+        app:srcCompat="@drawable/image_2024_05_28_00_03_38" />
+
+    <ImageView
+        android:id="@+id/strela4_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/setting_myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/setting_myprofile"
+        app:srcCompat="@drawable/image_2024_05_28_00_03_38" />
+
+    <ImageView
+        android:id="@+id/strela5_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/help_myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/help_myprofile"
+        app:srcCompat="@drawable/image_2024_05_28_00_03_38"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/strela6_profilePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logout_myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logout_myprofile"
+        app:srcCompat="@drawable/image_2024_05_28_00_03_38"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/purple_box_two_profilePage"
+        android:layout_width="460dp"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_profilePage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_profilePage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_profilePage"
+        app:srcCompat="@drawable/zakladka_vidos_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_profilePage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_operatorButton_profilePage"
+        app:srcCompat="@drawable/bookmark_off_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_profilePage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/operator_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,12 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.floating_menus.home_page_screen
-import com.example.fitness.login_singin.login_screen
-import com.example.fitness.on_boarding.start_screen
-import com.example.fitness.setup_pages.goal_screen
-import com.example.fitness.setup_pages.select_gender_screen
-import com.example.fitness.setup_pages.select_weight_screen
-import com.example.fitness.setup_pages.set_up_screen
+import com.example.fitness.floating_menus.profile_screen
 
 class Splash_Screen : AppCompatActivity() {
 
@@ -22,7 +17,7 @@ class Splash_Screen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            var intent = Intent(this, select_gender_screen::class.java)
+            var intent = Intent(this, home_page_screen::class.java)
             startActivity(intent)
             finish()
         }, 3000)

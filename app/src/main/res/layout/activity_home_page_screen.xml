@@ -181,7 +181,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Articles &amp; Tips"
         android:textColor="@color/yellow_kak_mocha"
@@ -193,7 +193,7 @@
         android:id="@+id/image_man_homePage"
         android:layout_width="157dp"
         android:layout_height="134dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/purple_box_homePage"
@@ -204,7 +204,7 @@
         android:layout_width="157dp"
         android:layout_height="134dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="38dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/purple_box_homePage"
         app:srcCompat="@drawable/woman_home_page" />
@@ -304,7 +304,7 @@
         app:srcCompat="@drawable/weekly_challender_image" />
 
     <ImageView
-        android:id="@+id/image_favoriteButton_woman_homePage"
+        android:id="@+id/image_favoriteButton_supplement_homePage"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginTop="5dp"
@@ -314,7 +314,7 @@
         app:srcCompat="@drawable/bookmark_off_button" />
 
     <ImageView
-        android:id="@+id/image_favoriteButton_man_homePage"
+        android:id="@+id/image_favoriteButton_daily_rountines_homePage"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginTop="5dp"
