@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/strelka_help_and_faqs"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="How can we help you?"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_contact_us_help_and_faqs"
+        android:layout_width="135dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/round_button_phys_act"
+        android:text="Contact Us"
+        android:textAllCaps="false"
+        android:textColor="#896CFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toEndOf="@+id/text_loh_help_and_faqs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_2024_05_30_22_03_08" />
+
+    <TextView
+        android:id="@+id/text_loh_help_and_faqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Lorem ipsum dolor sit amet?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_account_help_and_faqs"
+        android:layout_width="92dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/round_button_phys_act"
+        android:text="Account"
+        android:textAllCaps="false"
+        android:textColor="#896CFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_services_help_and_faqs"
+        android:layout_width="92dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/round_button_phys_act"
+        android:text="Services"
+        android:textAllCaps="false"
+        android:textColor="#896CFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="288dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="428dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lorem1_help_and_faqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Lorem ipsum dolor sit amet?"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="344dp"
+        android:fontFamily="@font/league_spartan"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque congue lorem, vel tincidunt tortor placerat a. Proin ac diam quam. Aenean in sagittis magna, ut feugiat diam."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_faq_help_and_faqs"
+        android:layout_width="135dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:text="FAQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="476dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="328dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_general_help_and_faqs"
+        android:layout_width="92dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="188dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:text="General"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/image_2024_05_30_21_42_57"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <Button
+        android:id="@+id/button_back_help_nadfaqs"
+        android:layout_width="87dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="274dp"
+        android:background=""
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Help & FAQs"
+        android:textColor="#896CFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lorem2_help_and_faqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Lorem ipsum dolor sit amet?"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="524dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lorem3_help_and_faqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Lorem ipsum dolor sit amet?"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="535dp" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="568dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lorem4_help_and_faqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Lorem ipsum dolor sit amet?"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="612dp"
+        android:background="@color/yellow"
+        android:textColor="#E2F163"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lorem5_help_and_faqs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Lorem ipsum dolor sit amet?"
+        android:textColor="@color/purple"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <View
+        android:id="@+id/purple_box_two_homePage"
+        android:layout_width="460dp"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_homePage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/home_button" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_homePage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toStartOf="@+id/image_buttmarkButton_homePage"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_homePage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/zakladka_vidos_button" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_homePage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toStartOf="@+id/image_operatorButton_homePage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_homePage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/operator_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
