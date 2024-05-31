@@ -2,9 +2,12 @@ package com.example.fitness
 
 import android.content.Context
 import android.content.Intent
+import android.view.View
 import android.widget.ImageView
 import androidx.core.content.ContextCompat.startActivity
 import com.example.fitness.floating_menus.home_page_screen
+
+
 
 fun navigateToHomePage(context: Context, button: ImageView) {
     button.setOnClickListener {
@@ -37,4 +40,9 @@ fun navigateToSupportPage(context: Context, button: ImageView) {
     }
 }
 
-
+fun <T> navigateOnClick(view: View, context: Context, destinationActivity: Class<T>) {
+    view.setOnClickListener {
+        val intent = Intent(context, destinationActivity)
+        context.startActivity(intent)
+    }
+}

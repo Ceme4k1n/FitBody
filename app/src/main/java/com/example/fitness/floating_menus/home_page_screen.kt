@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.navigateOnClick
 import com.example.fitness.navigateToHomePage
 
 class home_page_screen : AppCompatActivity() {
@@ -24,6 +25,8 @@ class home_page_screen : AppCompatActivity() {
         val fullBodyFavorite_Button : ImageView = findViewById(R.id.image_fullBodyFavorite_homePage)
         val supplementFavorite_Button : ImageView = findViewById(R.id.image_favoriteButton_supplement_homePage)
         val dailyFavorite_Button : ImageView = findViewById(R.id.image_favoriteButton_daily_rountines_homePage)
+
+        val profile_button : ImageView = findViewById(R.id.image_profile_homePage)
 
         squartFavorite_Button.setOnClickListener {
             if(bool_squart == false)
@@ -68,5 +71,7 @@ class home_page_screen : AppCompatActivity() {
             }
         }
 
+
+        navigateOnClick(profile_button, this, profile_screen::class.java)
     }
 }

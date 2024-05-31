@@ -1,7 +1,11 @@
 package com.example.fitness.floating_menus
 
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.ScrollView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +35,11 @@ class profile_screen : AppCompatActivity() {
         val back_button : ImageView = findViewById(R.id.strelka_profilePage)
 
 
+        //Группа кнопок
+        //val buttons_group : RelativeLayout = findViewById(R.id.profile_group_buttons)
+        val scroll_group : ScrollView = findViewById(R.id.scroll_group_profilePage)
+
+
         //Иди нахуй
         //Сообщение Георгию. В date надо вставлять только String
         val email = "georgpidor@gmail.com"// Вставлять сюда, только String
@@ -58,6 +67,8 @@ class profile_screen : AppCompatActivity() {
         updateEmail(email_text, email)
 
         navigateToHomePage(this, home_button)
+
+        setGroupProperties(scroll_group, visibility = View.INVISIBLE, isEnabled = false)
 
     }
 
@@ -92,6 +103,22 @@ class profile_screen : AppCompatActivity() {
         textView.text = birthdayText
     }
 
-
-
+    private fun setGroupProperties(
+        group: ViewGroup,
+        visibility: Int? = null,
+        isEnabled: Boolean? = null
+    ) {
+        for (i in 0 until group.childCount) {
+            val child = group.getChildAt(i)
+            visibility?.let {
+                child.visibility = it
+            }
+            isEnabled?.let {
+                child.isEnabled = it
+            }
+            if (child is RelativeLayout) {
+                setGroupProperties(child, visibility, isEnabled)
+            }
+        }
+    }
 }
