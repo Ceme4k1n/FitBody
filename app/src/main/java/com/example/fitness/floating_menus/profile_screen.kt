@@ -1,5 +1,6 @@
 package com.example.fitness.floating_menus
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -34,9 +35,14 @@ class profile_screen : AppCompatActivity() {
         //Кнопки выхода
         val back_button : ImageView = findViewById(R.id.strelka_profilePage)
 
+        val profile_button : ImageView = findViewById(R.id.strela1_profilePage)
+        val favorite_button : ImageView = findViewById(R.id.strela2_profilePage)
+        val setting_button : ImageView = findViewById(R.id.strela4_profilePage)
+        val help_button : ImageView = findViewById(R.id.strela5_profilePage)
+
 
         //Группа кнопок
-        //val buttons_group : RelativeLayout = findViewById(R.id.profile_group_buttons)
+        val buttons_group : RelativeLayout = findViewById(R.id.profile_group_buttons)
         val scroll_group : ScrollView = findViewById(R.id.scroll_group_profilePage)
 
 
@@ -57,7 +63,7 @@ class profile_screen : AppCompatActivity() {
         val height = 1.95 //Только Double
 
         //Сообщение Георгию. В old надо вставлять только цифру
-        val old = 20 //Только Int
+        val old = 20 //TODO(Только Int)
 
         updateBirthdayText(birthday_text, date)
         updateWeight(weight_Text, weight)
@@ -68,8 +74,22 @@ class profile_screen : AppCompatActivity() {
 
         navigateToHomePage(this, home_button)
 
-        setGroupProperties(scroll_group, visibility = View.INVISIBLE, isEnabled = false)
 
+        profile_button.setOnClickListener {
+            setGroupProperties(buttons_group, visibility = View.INVISIBLE, isEnabled = false)
+            setGroupProperties(scroll_group, visibility = View.VISIBLE, isEnabled = true)
+            scroll_group.visibility = View.VISIBLE
+        }
+
+        favorite_button.setOnClickListener {
+            var intent = Intent(this, favorite_screen::class.java)
+            startActivity(intent)
+        }
+
+        help_button.setOnClickListener {
+            var intent = Intent(this, help_screen::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun updateEmail(textView: TextView, email: String){
