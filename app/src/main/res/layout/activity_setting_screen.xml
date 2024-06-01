@@ -151,6 +151,7 @@
 
 
     <RelativeLayout
+        android:id="@+id/not_setting_group_settingPage"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -270,7 +271,8 @@
             android:layout_alignTop="@+id/text_general_not_notSettingsPage"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="33dp" />
+            android:layout_marginEnd="33dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
         <Switch
             android:id="@+id/switch_sound_notSettingsPage"
@@ -279,7 +281,8 @@
             android:layout_alignTop="@+id/text_sound_notSettingsPage"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="33dp" />
+            android:layout_marginEnd="33dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
         <Switch
             android:id="@+id/switch_disturb_notSettingsPage"
@@ -288,7 +291,8 @@
             android:layout_alignTop="@+id/text_disturb_mode_notSettingsPage"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="33dp" />
+            android:layout_marginEnd="33dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
         <Switch
             android:id="@+id/switch_vibrate_notSettingsPage"
@@ -297,7 +301,8 @@
             android:layout_alignTop="@+id/text_vibrate_notSettingsPage"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="33dp" />
+            android:layout_marginEnd="33dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
         <Switch
             android:id="@+id/switch_lock_screen_notSettingsPage"
@@ -306,7 +311,8 @@
             android:layout_alignTop="@+id/text_lock_screen_notSettingsPage"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="33dp" />
+            android:layout_marginEnd="33dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
         <Switch
             android:id="@+id/switch_reminders_notSettingsPage"
@@ -315,14 +321,221 @@
             android:layout_alignTop="@+id/text_reminders_notSettingsPage"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="2dp"
-            android:layout_marginEnd="33dp" />
+            android:layout_marginEnd="33dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
 
     </RelativeLayout>
 
 
+    <RelativeLayout
+        android:id="@+id/password_settings_group"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
+        <TextView
+            android:id="@+id/text_pass_setting_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Password Settings"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30dp" />
 
+        <ImageView
+            android:id="@+id/strelka_pass_settingsPage"
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_alignTop="@+id/text_pass_setting_settingPage"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toStartOf="@+id/text_pass_setting_settingPage"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+
+        <TextView
+            android:id="@+id/text_curr_pass_setting_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/curr_pass_text_settingPage"
+            android:layout_alignBottom="@+id/curr_pass_text_settingPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Current Password"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30dp" />
+
+
+        <EditText
+            android:id="@+id/curr_pass_text_settingPage"
+            android:layout_width="322dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="118dp"
+            android:textColor="@color/real_black"
+            android:textColorHint="@color/real_black"
+            android:background="@drawable/rounded_button_on_board"
+            android:ems="10"
+            android:fontFamily="@font/league_spartan_bold"
+            android:hint="* * * * * * * * * * * * *"
+            android:inputType="textPassword"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/text_forgot_pass_setting_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curr_pass_text_settingPage"
+            android:layout_alignEnd="@+id/curr_pass_text_settingPage"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Forgot Password?"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30dp" />
+
+        <TextView
+            android:id="@+id/text_new_pass_setting_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/new_pass_text_settingPage"
+            android:layout_alignBottom="@+id/new_pass_text_settingPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="New Password"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30dp" />
+
+        <EditText
+            android:id="@+id/new_pass_text_settingPage"
+            android:layout_width="322dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/curr_pass_text_settingPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="123dp"
+            android:textColor="@color/real_black"
+            android:textColorHint="@color/real_black"
+            android:background="@drawable/rounded_button_on_board"
+            android:ems="10"
+            android:fontFamily="@font/league_spartan_bold"
+            android:hint="* * * * * * * * * * * * *"
+            android:inputType="textPassword"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_conf_new_pass_setting_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/confirm_new_pass_text_settingPage"
+            android:layout_alignBottom="@+id/confirm_new_pass_text_settingPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="55dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Confirm New Password
+"
+            android:textColor="@color/purple"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="30dp" />
+
+        <EditText
+            android:id="@+id/confirm_new_pass_text_settingPage"
+            android:layout_width="322dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/new_pass_text_settingPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="59dp"
+            android:textColor="@color/real_black"
+            android:textColorHint="@color/real_black"
+            android:background="@drawable/rounded_button_on_board"
+            android:ems="10"
+            android:fontFamily="@font/league_spartan_bold"
+            android:hint="* * * * * * * * * * * * *"
+            android:inputType="textPassword"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/show_pass_current_pass_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/curr_pass_text_settingPage"
+            android:layout_alignBottom="@+id/curr_pass_text_settingPage"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/show_pass_off" />
+
+        <ImageView
+            android:id="@+id/show_pass_new_pass_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/new_pass_text_settingPage"
+            android:layout_alignBottom="@+id/new_pass_text_settingPage"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/show_pass_off" />
+
+        <ImageView
+            android:id="@+id/show_pass_conf_new_pass_settingPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/confirm_new_pass_text_settingPage"
+            android:layout_alignBottom="@+id/confirm_new_pass_text_settingPage"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="15dp"
+            app:srcCompat="@drawable/show_pass_off" />
+
+        <TextView
+            android:id="@+id/button_change_pass_settingPage"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/confirm_new_pass_text_settingPage"
+            android:layout_alignStart="@+id/confirm_new_pass_text_settingPage"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/round_button_phys_act_yellow"
+            android:fontFamily="@font/league_spartan_bold"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:text="Change Password"
+            android:textColor="@color/real_black" />
+
+
+    </RelativeLayout>
 
     <View
         android:id="@+id/purple_box_settingPage"

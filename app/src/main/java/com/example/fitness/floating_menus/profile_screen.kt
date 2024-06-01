@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
 import com.example.fitness.navigateToHomePage
+import com.example.fitness.setup_pages.set_up_screen
 
 class profile_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +40,13 @@ class profile_screen : AppCompatActivity() {
         val favorite_button : ImageView = findViewById(R.id.strela2_profilePage)
         val setting_button : ImageView = findViewById(R.id.strela4_profilePage)
         val help_button : ImageView = findViewById(R.id.strela5_profilePage)
+        val logout_button : ImageView = findViewById(R.id.strela6_profilePage)
+
+
+        val logout_box : View = findViewById(R.id.logout_purple_box_profilePage)
+        val logout_text : TextView = findViewById(R.id.text_log_out_profilePage)
+        val logout_cansel_button : TextView = findViewById(R.id.button_cancel_logout_profilePage)
+        val logout_confirm_button : TextView = findViewById(R.id.button_yes_logout_profilePage)
 
 
         //Группа кнопок
@@ -88,6 +96,30 @@ class profile_screen : AppCompatActivity() {
 
         help_button.setOnClickListener {
             var intent = Intent(this, help_screen::class.java)
+            startActivity(intent)
+        }
+
+        setting_button.setOnClickListener {
+            var intent = Intent(this, setting_screen::class.java)
+            startActivity(intent)
+        }
+
+        logout_button.setOnClickListener {
+            logout_box.visibility = View.VISIBLE
+            logout_text.visibility = View.VISIBLE
+            logout_cansel_button.visibility = View.VISIBLE
+            logout_confirm_button.visibility = View.VISIBLE
+        }
+
+        logout_cansel_button.setOnClickListener {
+            logout_box.visibility = View.INVISIBLE
+            logout_text.visibility = View.INVISIBLE
+            logout_cansel_button.visibility = View.INVISIBLE
+            logout_confirm_button.visibility = View.INVISIBLE
+        }
+
+        logout_confirm_button.setOnClickListener {
+            var intent = Intent(this, set_up_screen::class.java)
             startActivity(intent)
         }
     }

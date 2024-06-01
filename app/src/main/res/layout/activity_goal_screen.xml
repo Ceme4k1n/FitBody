@@ -99,7 +99,7 @@
         app:layout_constraintTop_toTopOf="@+id/purple_box_goalPage"
         app:srcCompat="@drawable/image_goal_select" />
 
-    <Button
+    <TextView
         android:id="@+id/button_other_goalPage"
         android:layout_width="34dp"
         android:layout_height="34dp"
@@ -109,7 +109,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
         app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_shape_body_goalPage"
         android:layout_width="34dp"
         android:layout_height="34dp"
@@ -119,7 +119,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
         app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_muscle_mass_gain_goalPage"
         android:layout_width="34dp"
         android:layout_height="34dp"
@@ -129,7 +129,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
         app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_gain_weight_goalPage"
         android:layout_width="34dp"
         android:layout_height="34dp"
@@ -139,7 +139,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
         app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_lose_weight_goalPage"
         android:layout_width="34dp"
         android:layout_height="34dp"

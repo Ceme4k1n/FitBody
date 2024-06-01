@@ -20,11 +20,11 @@ class goal_screen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_goal_screen)
 
-        val button_other : Button = findViewById(R.id.button_other_goalPage)
-        val button_shape_body : Button = findViewById(R.id.button_shape_body_goalPage)
-        val button_muscle_mass_gain : Button = findViewById(R.id.button_muscle_mass_gain_goalPage)
-        val button_gain_weight : Button = findViewById(R.id.button_gain_weight_goalPage)
-        val button_lose_weight : Button = findViewById(R.id.button_lose_weight_goalPage)
+        val button_other : TextView = findViewById(R.id.button_other_goalPage)
+        val button_shape_body : TextView = findViewById(R.id.button_shape_body_goalPage)
+        val button_muscle_mass_gain : TextView = findViewById(R.id.button_muscle_mass_gain_goalPage)
+        val button_gain_weight : TextView = findViewById(R.id.button_gain_weight_goalPage)
+        val button_lose_weight : TextView = findViewById(R.id.button_lose_weight_goalPage)
 
         val button_back : TextView = findViewById(R.id.textback_button_goalPage)
         val button_continue : Button = findViewById(R.id.button_continue_goalPage)

@@ -16,8 +16,13 @@ class setting_screen : AppCompatActivity() {
         setContentView(R.layout.activity_setting_screen)
 
         val default_settings_group : RelativeLayout = findViewById(R.id.default_settings_group)
+        val not_settings_group : RelativeLayout = findViewById(R.id.not_setting_group_settingPage)
+        val pass_setting_group : RelativeLayout = findViewById(R.id.password_settings_group)
 
         setGroupProperties(default_settings_group, visibility = View.INVISIBLE, isEnabled = false)
+        setGroupProperties(not_settings_group, visibility = View.INVISIBLE, isEnabled = false)
+        setGroupProperties(pass_setting_group, visibility = View.VISIBLE, isEnabled = true)
+
     }
 
 
