@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification.search_screen">
+
+    <TextView
+        android:id="@+id/textback_button_searchPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Search"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageback_arrow_svg_searchPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:rotation="-180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/skip_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_profile_searchPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_off" />
+
+    <ImageView
+        android:id="@+id/image_colokol_searchPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_profile_searchPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_off" />
+
+    <TextView
+        android:id="@+id/search_button_searchPage"
+        android:layout_width="321dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan"
+        android:paddingStart="12dp"
+        android:paddingTop="3dp"
+        android:text="Search"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textback_button_searchPage" />
+
+    <TextView
+        android:id="@+id/all_button_seacrhPage"
+        android:layout_width="104dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="All"
+        android:fontFamily="@font/league_spartan_bold"
+        android:textColor="@color/real_black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/search_button_searchPage"
+        app:layout_constraintTop_toBottomOf="@+id/search_button_searchPage" />
+
+    <TextView
+        android:id="@+id/workout_button_seacrhPage"
+        android:layout_width="103dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="Workout"
+        android:textColor="@color/purple"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/all_button_seacrhPage"
+        app:layout_constraintTop_toBottomOf="@+id/search_button_searchPage" />
+
+    <TextView
+        android:id="@+id/nutrition_button_seacrhPage"
+        android:layout_width="104dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="Nutrition"
+        android:textColor="@color/purple"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/search_button_searchPage"
+        app:layout_constraintTop_toBottomOf="@+id/search_button_searchPage" />
+
+    <RelativeLayout
+        android:id="@+id/all_group_seacrhPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workout_button_seacrhPage">
+
+        <ImageView
+            android:id="@+id/image_squart_searchPage"
+            android:layout_width="157dp"
+            android:layout_height="138dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/squat_exercise_homepage">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/image_fullBody_seacthPage"
+            android:layout_width="157dp"
+            android:layout_height="138dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/image_squart_searchPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/full_body_homepage">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/circuit_trainight_seacthPage"
+            android:layout_width="323dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/image_squart_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="21dp"
+            app:srcCompat="@drawable/circuit_train">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/yougurt_trainight_seacthPage"
+            android:layout_width="323dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/circuit_trainight_seacthPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="17dp"
+            app:srcCompat="@drawable/delights_yogurt">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/strength_trainight_seacthPage"
+            android:layout_width="323dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/yougurt_trainight_seacthPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="17dp"
+            app:srcCompat="@drawable/split_strength">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/circuit_star_seacthPage"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_alignEnd="@+id/image_squart_searchPage"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="9dp"
+            app:srcCompat="@drawable/bookmark_off_button">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ful_body_star_seacthPage"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_alignEnd="@+id/image_fullBody_seacthPage"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="9dp"
+            app:srcCompat="@drawable/bookmark_off_button">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/circuit_train_star_seacthPage"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_alignTop="@+id/circuit_trainight_seacthPage"
+            android:layout_alignEnd="@+id/circuit_trainight_seacthPage"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="9dp"
+            app:srcCompat="@drawable/bookmark_off_button">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/yogurt_star_seacthPage"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_alignTop="@+id/yougurt_trainight_seacthPage"
+            android:layout_alignEnd="@+id/yougurt_trainight_seacthPage"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="9dp"
+            app:srcCompat="@drawable/bookmark_off_button">
+            
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/split_srt_star_seacthPage"
+            android:layout_width="16dp"
+            android:layout_height="17dp"
+            android:layout_alignTop="@+id/strength_trainight_seacthPage"
+            android:layout_alignEnd="@+id/strength_trainight_seacthPage"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="9dp"
+            app:srcCompat="@drawable/bookmark_off_button">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/workout_group_searchPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workout_button_seacrhPage" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Top Seacrhes"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/search_circuit_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Circuit"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_circuit_searchPage"
+            android:layout_alignTop="@+id/search_circuit_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_split_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_circuit_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Split"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_split_searchPage"
+            android:layout_alignTop="@+id/search_split_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_challenge_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_split_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Challenge"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_challenge_searchPage"
+            android:layout_alignTop="@+id/search_challenge_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_legs_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_challenge_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Legs"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_legs_searchPage"
+            android:layout_alignTop="@+id/search_legs_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_cardio_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_legs_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Cardio"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_cardio_searchPage"
+            android:layout_alignTop="@+id/search_cardio_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nutrition_group_searchPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workout_button_seacrhPage" >
+
+        <TextView
+            android:id="@+id/text_top_searchPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Top Seacrhes"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/search_breakfast_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/text_top_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Breakfast"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_breakfast_searchPage"
+            android:layout_alignTop="@+id/search_breakfast_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_yogurt_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_breakfast_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Yogurt"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_yogurt_searchPage"
+            android:layout_alignTop="@+id/search_yogurt_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_veg_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_yogurt_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Vegetarian"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_veg_searchPage"
+            android:layout_alignTop="@+id/search_veg_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_smooth_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_veg_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Smoothie"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_smooth_searchPage"
+            android:layout_alignTop="@+id/search_smooth_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+        <TextView
+            android:id="@+id/search_chicken_searchPage"
+            android:layout_width="323dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/search_smooth_searchPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="16dp"
+            android:text="Chicken"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/search_chicken_searchPage"
+            android:layout_alignTop="@+id/search_chicken_searchPage"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            app:srcCompat="@drawable/image_seach" />
+
+
+    </RelativeLayout>
+    
+    
+    <View
+        android:id="@+id/purple_box_searchPage"
+        android:layout_width="460dp"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_searchPage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_searchPage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_searchPage"
+        app:srcCompat="@drawable/zakladka_vidos_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_searchPage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_zakladkaButton_searchPage"
+        app:srcCompat="@drawable/bookmark_off_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_searchPage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_buttmarkButton_searchPage"
+        app:srcCompat="@drawable/operator_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
