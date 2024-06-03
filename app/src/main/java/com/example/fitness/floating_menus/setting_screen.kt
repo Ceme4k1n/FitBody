@@ -3,6 +3,7 @@ package com.example.fitness.floating_menus
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,14 +20,48 @@ class setting_screen : AppCompatActivity() {
         val not_settings_group : RelativeLayout = findViewById(R.id.not_setting_group_settingPage)
         val pass_setting_group : RelativeLayout = findViewById(R.id.password_settings_group)
 
-        setGroupProperties(default_settings_group, visibility = View.INVISIBLE, isEnabled = false)
-        setGroupProperties(not_settings_group, visibility = View.INVISIBLE, isEnabled = false)
-        setGroupProperties(pass_setting_group, visibility = View.VISIBLE, isEnabled = true)
+        val not_button : ImageView = findViewById(R.id.strela1_settingPage)
+        val pass_button : ImageView = findViewById(R.id.strela2_settingPage)
+        val delete_acc_button : ImageView = findViewById(R.id.strela3_settingPage)
+
+        val not_button_back : ImageView = findViewById(R.id.strelka_notification_settingsPage)
+        val pass_button_back : ImageView = findViewById(R.id.strelka_pass_settingsPage)
+
+
+        setGroupProperties(default_settings_group, View.VISIBLE, isEnabled = true)
+        setGroupProperties(not_settings_group, View.INVISIBLE, isEnabled = false)
+        setGroupProperties(pass_setting_group, View.INVISIBLE, isEnabled = false)
+
+        not_button.setOnClickListener {
+            setGroupProperties(not_settings_group, View.VISIBLE, isEnabled = true)
+            setGroupProperties(default_settings_group, View.INVISIBLE, isEnabled = false)
+            setGroupProperties(pass_setting_group, View.INVISIBLE, isEnabled = false)
+        }
+
+        pass_button.setOnClickListener {
+            setGroupProperties(pass_setting_group, View.VISIBLE, isEnabled = true)
+            setGroupProperties(not_settings_group, View.INVISIBLE, isEnabled = false)
+            setGroupProperties(default_settings_group, View.INVISIBLE, isEnabled = false)
+        }
+
+        not_button_back.setOnClickListener {
+            setGroupProperties(default_settings_group, View.VISIBLE, isEnabled = true)
+            setGroupProperties(not_settings_group, View.INVISIBLE, isEnabled = false)
+            setGroupProperties(pass_setting_group, View.INVISIBLE, isEnabled = false)
+        }
+
+        pass_button_back.setOnClickListener {
+            setGroupProperties(default_settings_group, View.VISIBLE, isEnabled = true)
+            setGroupProperties(not_settings_group, View.INVISIBLE, isEnabled = false)
+            setGroupProperties(pass_setting_group, View.INVISIBLE, isEnabled = false)
+        }
+
+
+
+
+
 
     }
-
-
-
 
 
 

@@ -191,7 +191,7 @@
         </ImageView>
 
         <ImageView
-            android:id="@+id/circuit_star_seacthPage"
+            android:id="@+id/squat_star_seacthPage"
             android:layout_width="16dp"
             android:layout_height="17dp"
             android:layout_alignEnd="@+id/image_squart_searchPage"
