@@ -17,7 +17,7 @@ class set_up_screen : AppCompatActivity() {
         val button_continue : Button = findViewById(R.id.button_next_setupPage)
 
         button_continue.setOnClickListener {
-            var intent = Intent(this, select_gender_screen::class.java)
+            var intent = Intent(this, select_weight_screen::class.java)
             startActivity(intent)
         }
 

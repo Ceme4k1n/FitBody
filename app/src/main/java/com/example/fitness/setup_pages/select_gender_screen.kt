@@ -2,24 +2,25 @@ package com.example.fitness.setup_pages
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Debug
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
-import com.example.fitness.on_boarding.start_screen
+import com.example.fitness.login_singin.Users
+
 
 class select_gender_screen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_gender_screen)
+
+        var user = Users()
+
+
+
         var male_but_active : ImageButton = findViewById(R.id.imageButton_male_active_genderPage)
         var male_but_inactive : ImageButton = findViewById(R.id.imageButton_male_inactive_genderPage)
 
@@ -51,6 +52,7 @@ class select_gender_screen : AppCompatActivity() {
                 female_but_active.visibility = View.INVISIBLE
                 female_but_inactive.visibility = View.VISIBLE
                 male_or_female = true
+                user.sex=male_or_female
             }
             male_but_inactive.visibility = View.INVISIBLE
             male_but_active.visibility = View.VISIBLE
@@ -63,6 +65,7 @@ class select_gender_screen : AppCompatActivity() {
                 male_but_active.visibility = View.INVISIBLE
                 male_but_inactive.visibility = View.VISIBLE
                 male_or_female = false
+                user.sex=male_or_female
             }
             female_but_inactive.visibility = View.INVISIBLE
             female_but_active.visibility = View.VISIBLE

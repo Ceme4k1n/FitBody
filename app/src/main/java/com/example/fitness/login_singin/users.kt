@@ -37,6 +37,7 @@ data class Users (
         height=newheight
         weight=newweight
         goal=newgoal
+        sex=newsex
         activity_lvl=newactivity_lvl
     }
 

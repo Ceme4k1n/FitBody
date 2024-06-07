@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.example.fitness.R
 import com.example.fitness.on_boarding.start_screen
 import com.google.firebase.Firebase
@@ -24,12 +25,16 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
 class singin_screen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
         FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_singup_screen)
+        var user=  UserViewModel();
+        user.User.age = 14
+
+
         val name_reg : EditText = findViewById(R.id.email_text_singupPage)
         val email_registry : EditText = findViewById(R.id.phone_text_singupPage)
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
@@ -39,6 +44,7 @@ class singin_screen : AppCompatActivity() {
 
         val database = Firebase.database
         val ref = database.getReference("users")
+
 
         button_back.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
