@@ -42,7 +42,7 @@
 
     <View
         android:id="@+id/purple_box_setupPage"
-        android:layout_width="460dp"
+        android:layout_width="wrap_content"
         android:layout_height="116dp"
         android:layout_marginTop="33dp"
         android:background="#B3A0FF"

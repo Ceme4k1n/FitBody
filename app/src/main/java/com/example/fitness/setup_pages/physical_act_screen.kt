@@ -16,10 +16,10 @@ class physical_act_screen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_physical_act_screen)
 
-        val button_begginer : Button = findViewById(R.id.button_begginer_physAct)
-        val button_intermediate : Button = findViewById(R.id.button_Intermediate_physAct)
-        val button_advance : Button = findViewById(R.id.button_Advance_physAct)
-        val button_continue : Button = findViewById(R.id.button_continue_goalPage)
+        val button_begginer : TextView = findViewById(R.id.button_begginer_physAct)
+        val button_intermediate : TextView = findViewById(R.id.button_Intermediate_physAct)
+        val button_advance : TextView = findViewById(R.id.button_Advance_physAct)
+        val button_continue : TextView = findViewById(R.id.button_continue_goalPage)
         val button_back : TextView = findViewById(R.id.textback_button_physAcrt)
 
         var selecteble = -1 // -1 ничего не нажато 0 - begginer 1 - intermediate 2 - advance

@@ -732,12 +732,9 @@
     </RelativeLayout>
 
 
-
-
-
     <View
         android:id="@+id/purple_box_notPage"
-        android:layout_width="460dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:background="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"

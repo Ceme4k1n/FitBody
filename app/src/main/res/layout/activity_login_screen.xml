@@ -26,7 +26,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Log In"
-        android:textColor="#E2F163"
+        android:textColor="@color/yellow_kak_mocha"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
 
     <View
         android:id="@+id/purple_box_loginpage"
-        android:layout_width="460dp"
+        android:layout_width="wrap_content"
         android:layout_height="235dp"
         android:layout_marginTop="61dp"
         android:background="#B3A0FF"

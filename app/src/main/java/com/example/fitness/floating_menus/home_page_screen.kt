@@ -25,9 +25,13 @@ class home_page_screen : AppCompatActivity() {
         val dailyFavorite_Button : ImageView = findViewById(R.id.image_favoriteButton_daily_rountines_homePage)
 
         val profile_button : ImageView = findViewById(R.id.image_profile_homePage)
+        val search_button : ImageView = findViewById(R.id.image_colokol_homePage)
+        val not_button : ImageView = findViewById(R.id.image_search_homePage)
+
         val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_homePage)
         val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_homePage)
         val supp_button : ImageView = findViewById(R.id.image_operatorButton_homePage)
+
 
         squartFavorite_Button.setOnClickListener {
             if(bool_squart == false)
@@ -73,7 +77,10 @@ class home_page_screen : AppCompatActivity() {
         }
 
 
-        navigateOnClick(profile_button, this, profile_screen::class.java)
+        navigateToProfilePage(this, profile_button)
+        navigateToNotePage(this, not_button)
+        navigateToSearchPage(this, search_button)
+
         navigateToResoursePage(this, zakladka_button)
         navigateToFavoritePage(this, favor_button)
         navigateToSupportPage(this, supp_button)

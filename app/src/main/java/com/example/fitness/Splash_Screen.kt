@@ -14,6 +14,7 @@ import com.example.fitness.notification.notifications_workout
 import com.example.fitness.notification.search_screen
 import com.example.fitness.on_boarding.start_screen
 import com.example.fitness.setup_pages.how_old_screen
+import com.example.fitness.setup_pages.physical_act_screen
 import com.example.fitness.setup_pages.select_gender_screen
 import com.example.fitness.setup_pages.set_up_screen
 
@@ -27,7 +28,7 @@ class Splash_Screen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            var intent = Intent(this, set_up_screen::class.java)
+            var intent = Intent(this, home_page_screen::class.java)
             startActivity(intent)
             finish()
         }, 0)

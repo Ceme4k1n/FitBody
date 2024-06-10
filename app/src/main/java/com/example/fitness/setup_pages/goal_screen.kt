@@ -27,7 +27,7 @@ class goal_screen : AppCompatActivity() {
         val button_lose_weight : TextView = findViewById(R.id.button_lose_weight_goalPage)
 
         val button_back : TextView = findViewById(R.id.textback_button_goalPage)
-        val button_continue : Button = findViewById(R.id.button_continue_goalPage)
+        val button_continue : TextView = findViewById(R.id.button_continue_goalPage)
 
 
         var other_bool = false
