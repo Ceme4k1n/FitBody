@@ -22,7 +22,7 @@ class Splash_Screen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            var intent = Intent(this, setting_screen::class.java)
+            var intent = Intent(this, search_screen::class.java)
             startActivity(intent)
             finish()
         }, 0)

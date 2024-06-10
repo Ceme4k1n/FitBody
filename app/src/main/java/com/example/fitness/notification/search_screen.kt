@@ -12,7 +12,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.fitness.R
+import com.example.fitness.*
+import com.example.fitness.floating_menus.profile_screen
 
 class search_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +33,8 @@ class search_screen : AppCompatActivity() {
         val ful_body_star : ImageView = findViewById(R.id.ful_body_star_seacthPage)
         val circuit_train_star : ImageView = findViewById(R.id.circuit_train_star_seacthPage)
         val split_srt_star : ImageView = findViewById(R.id.split_srt_star_seacthPage)
+
+        val profile_button : ImageView = findViewById(R.id.image_profile_searchPage)
 
         var squat_bool = false
         var yogurt_bool = false
@@ -118,6 +121,8 @@ class search_screen : AppCompatActivity() {
             setGroupProperties(workout_group, View.INVISIBLE, isEnabled = false)
             enabled_or_not(nut_button, all_button, workout_button)
         }
+
+        navigateToProfilePage(this, profile_button)
 
 
     }

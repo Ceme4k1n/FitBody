@@ -6,9 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.fitness.R
-import com.example.fitness.navigateOnClick
-import com.example.fitness.navigateToHomePage
+import com.example.fitness.*
 
 class home_page_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +25,9 @@ class home_page_screen : AppCompatActivity() {
         val dailyFavorite_Button : ImageView = findViewById(R.id.image_favoriteButton_daily_rountines_homePage)
 
         val profile_button : ImageView = findViewById(R.id.image_profile_homePage)
+        val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_homePage)
+        val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_homePage)
+        val supp_button : ImageView = findViewById(R.id.image_operatorButton_homePage)
 
         squartFavorite_Button.setOnClickListener {
             if(bool_squart == false)
@@ -73,5 +74,8 @@ class home_page_screen : AppCompatActivity() {
 
 
         navigateOnClick(profile_button, this, profile_screen::class.java)
+        navigateToResoursePage(this, zakladka_button)
+        navigateToFavoritePage(this, favor_button)
+        navigateToSupportPage(this, supp_button)
     }
 }
