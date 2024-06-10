@@ -30,7 +30,7 @@ class select_gender_screen : AppCompatActivity() {
         var select_anyone = false // Показывает что хоть  одно выбрано
 
         val button_back : TextView = findViewById(R.id.textback_button_genderPage)
-        val button_continue : Button = findViewById(R.id.button_continue_genderPage)
+        val button_continue : TextView = findViewById(R.id.button_continue_genderPage)
 
         button_continue.setOnClickListener {
             if(select_anyone) {

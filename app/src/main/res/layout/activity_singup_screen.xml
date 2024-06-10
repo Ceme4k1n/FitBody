@@ -13,10 +13,10 @@
         android:id="@+id/imagebutton_back_singupPage"
         android:layout_width="6dp"
         android:layout_height="11dp"
-        android:layout_marginStart="67dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="74dp"
         android:rotationY="-180"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textCreate_Acc_singinPage"
         app:layout_constraintTop_toTopOf="@+id/textCreate_Acc_singinPage"
         app:srcCompat="@drawable/skip_arrow" />
 
@@ -71,7 +71,7 @@
         android:inputType="textEmailAddress"
         android:paddingLeft="16dp"
         android:paddingTop="5dp"
-        android:textColor="#000000"
+        android:textColor="@color/real_black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +89,7 @@
         android:inputType="phone"
         android:paddingLeft="16dp"
         android:paddingTop="5dp"
-        android:textColor="#000000"
+        android:textColor="@color/real_black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,6 +105,7 @@
         android:fontFamily="@font/poppins_medium"
         android:hint="* * * * * * * * * * * * *"
         android:inputType="textPassword"
+        android:textColor="@color/real_black"
         android:paddingLeft="25dp"
         android:paddingTop="15dp"
         android:textSize="16sp"
@@ -122,6 +123,7 @@
         android:fontFamily="@font/poppins_medium"
         android:hint="* * * * * * * * * * * * *"
         android:inputType="textPassword"
+        android:textColor="@color/real_black"
         android:paddingLeft="25dp"
         android:paddingTop="15dp"
         android:textSize="16sp"
@@ -134,53 +136,49 @@
         android:id="@+id/textFull_name_singinPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Full name"
         android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/email_text_singupPage"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/email_text_singupPage" />
 
     <TextView
         android:id="@+id/textEmail_or_Mobile_singinPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Email or Mobile Number"
         android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/phone_text_singupPage"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/phone_text_singupPage" />
 
     <TextView
         android:id="@+id/textPassword_singinPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Password"
         android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/password_text_singinPage"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/password_text_singinPage" />
 
     <TextView
         android:id="@+id/textPassword_confirm_singinPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text=" Confirm Password"
         android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/password_confirm_text_singinPage"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/password_confirm_text_singinPage" />
 
 
     <Button
@@ -236,7 +234,7 @@
         android:id="@+id/textalredy_have_acc_singinPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-16dp"
+        android:layout_marginStart="-20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/league_spartan"
         android:text="Already have an account?"

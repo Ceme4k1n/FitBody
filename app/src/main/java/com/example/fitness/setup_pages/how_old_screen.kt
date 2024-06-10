@@ -22,7 +22,7 @@ class how_old_screen : AppCompatActivity() {
         val horizontalScrollView: HorizontalScrollView = findViewById(R.id.horizontalScrollView_howoldPage)
 
         val button_back : TextView = findViewById(R.id.textback_button_howoldPage)
-        val button_continue : Button = findViewById(R.id.button_continue_howoldPage)
+        val button_continue : TextView = findViewById(R.id.button_continue_howoldPage)
 
         button_continue.setOnClickListener {
             var intent = Intent(this, select_weight_screen::class.java)
