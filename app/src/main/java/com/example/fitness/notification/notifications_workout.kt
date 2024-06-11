@@ -3,18 +3,42 @@ package com.example.fitness.notification
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.navigateToFavoritePage
+import com.example.fitness.navigateToHomePage
+import com.example.fitness.navigateToNotePage
+import com.example.fitness.navigateToProfilePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSearchPage
+import com.example.fitness.navigateToSupportPage
 
 class notifications_workout : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notifications_workout)
+
+        val profile_button : ImageView = findViewById(R.id.image_profile_notPage)
+        val search_button : ImageView = findViewById(R.id.image_search_notPage)
+
+
+        val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_notPage)
+        val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_notPage)
+        val supp_button : ImageView = findViewById(R.id.image_operatorButton_notPage)
+        val home_button : ImageView = findViewById(R.id.image_homeButton_notPage)
+
+        navigateToProfilePage(this, profile_button)
+        navigateToSearchPage(this, search_button)
+
+        navigateToResoursePage(this, zakladka_button)
+        navigateToFavoritePage(this, favor_button)
+        navigateToSupportPage(this, supp_button)
+        navigateToHomePage(this, home_button)
+
+
 
         val systen_group : RelativeLayout = findViewById(R.id.system_group_notPage)
         val rem_group : RelativeLayout = findViewById(R.id.reminders_group_notPage)

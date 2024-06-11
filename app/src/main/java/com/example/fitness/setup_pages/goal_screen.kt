@@ -1,15 +1,9 @@
 package com.example.fitness.setup_pages
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
-import android.widget.Button
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
 
 class goal_screen : AppCompatActivity() {
@@ -46,8 +40,8 @@ class goal_screen : AppCompatActivity() {
 
 
         button_back.setOnClickListener {
-            //var intent = Intent(this, goal_screen::class.java)
-            //startActivity(intent)
+            var intent = Intent(this, select_weight_screen::class.java)
+            startActivity(intent)
         }
 
 

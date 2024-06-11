@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.view.View
 import android.widget.ImageView
-import androidx.core.content.ContextCompat.startActivity
 import com.example.fitness.floating_menus.favorite_screen
 import com.example.fitness.floating_menus.help_screen
 import com.example.fitness.floating_menus.home_page_screen

@@ -8,12 +8,15 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.ScrollView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToHomePage
+import com.example.fitness.navigateToNotePage
+import com.example.fitness.navigateToProfilePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSearchPage
+import com.example.fitness.navigateToSupportPage
 import com.example.fitness.setup_pages.set_up_screen
 
 class profile_screen : AppCompatActivity() {
@@ -81,12 +84,21 @@ class profile_screen : AppCompatActivity() {
         updateEmail(email_text, email)
 
         navigateToHomePage(this, home_button)
+        navigateToResoursePage(this, resourse_button)
+        navigateToFavoritePage(this, zvezda_button)
+        navigateToSupportPage(this, suppor_button)
+
 
 
         profile_button.setOnClickListener {
             setGroupProperties(buttons_group, visibility = View.INVISIBLE, isEnabled = false)
             setGroupProperties(scroll_group, visibility = View.VISIBLE, isEnabled = true)
             scroll_group.visibility = View.VISIBLE
+        }
+
+        back_button.setOnClickListener {
+            var intent = Intent(this, home_page_screen::class.java)
+            startActivity(intent)
         }
 
         favorite_button.setOnClickListener {

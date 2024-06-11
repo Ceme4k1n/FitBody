@@ -2,16 +2,11 @@ package com.example.fitness.setup_pages
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
 import com.example.fitness.login_singin.login_screen
-import com.example.fitness.on_boarding.start_screen
 
 class set_up_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

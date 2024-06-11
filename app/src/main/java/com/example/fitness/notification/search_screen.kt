@@ -1,6 +1,5 @@
 package com.example.fitness.notification
 
-import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -8,12 +7,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.fitness.*
-import com.example.fitness.floating_menus.profile_screen
+import com.example.fitness.R
+import com.example.fitness.navigateToFavoritePage
+import com.example.fitness.navigateToHomePage
+import com.example.fitness.navigateToNotePage
+import com.example.fitness.navigateToProfilePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSearchPage
+import com.example.fitness.navigateToSupportPage
 
 class search_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,20 @@ class search_screen : AppCompatActivity() {
         val split_srt_star : ImageView = findViewById(R.id.split_srt_star_seacthPage)
 
         val profile_button : ImageView = findViewById(R.id.image_profile_searchPage)
+        val not_button : ImageView = findViewById(R.id.image_colokol_searchPage)
+
+
+        val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_searchPage)
+        val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_searchPage)
+        val supp_button : ImageView = findViewById(R.id.image_operatorButton_searchPage)
+        val home_button : ImageView = findViewById(R.id.image_homeButton_searchPage)
+
+        navigateToNotePage(this, not_button)
+
+        navigateToResoursePage(this, zakladka_button)
+        navigateToFavoritePage(this, favor_button)
+        navigateToSupportPage(this, supp_button)
+        navigateToHomePage(this, home_button)
 
         var squat_bool = false
         var yogurt_bool = false

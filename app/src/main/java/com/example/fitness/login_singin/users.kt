@@ -2,10 +2,8 @@ package com.example.fitness.login_singin
 
 import android.content.ContentValues.TAG
 import android.util.Log
-import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.firestore
 
 data class Users (
     var name : String="",

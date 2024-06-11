@@ -2,11 +2,14 @@ package com.example.fitness.floating_menus
 
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.fitness.*
+import com.example.fitness.R
+import com.example.fitness.navigateToFavoritePage
+import com.example.fitness.navigateToNotePage
+import com.example.fitness.navigateToProfilePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSearchPage
+import com.example.fitness.navigateToSupportPage
 
 class home_page_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

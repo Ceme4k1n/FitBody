@@ -3,14 +3,12 @@ package com.example.fitness.setup_pages
 import android.content.Intent
 import android.os.Bundle
 import android.view.ViewTreeObserver
-import android.widget.Button
 import android.widget.HorizontalScrollView
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.updateLayoutParams
 import com.example.fitness.R
 
 class select_weight_screen : AppCompatActivity() {

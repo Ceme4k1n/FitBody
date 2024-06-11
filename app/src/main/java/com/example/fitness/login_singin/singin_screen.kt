@@ -1,7 +1,5 @@
 package com.example.fitness.login_singin
 
-import android.app.Application
-import android.content.ContentValues
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
@@ -9,19 +7,15 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
-import com.example.fitness.on_boarding.start_screen
 import com.google.firebase.Firebase
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.database.database
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
+
 class singin_screen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
