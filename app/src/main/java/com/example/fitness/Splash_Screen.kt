@@ -4,10 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.example.fitness.login_singin.login_screen
-import com.example.fitness.login_singin.singin_screen
-import com.example.fitness.on_boarding.start_screen
-import com.example.fitness.setup_pages.select_gender_screen
+import com.example.fitness.floating_menus.home_page_screen
+import com.example.fitness.notification.notifications_workout
 
 class Splash_Screen : AppCompatActivity() {
 
@@ -19,11 +17,10 @@ class Splash_Screen : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-
-            var intent = Intent(this, login_screen::class.java)
+            var intent = Intent(this, notifications_workout::class.java)
             startActivity(intent)
             finish()
-        }, 3000)
+        }, 0)
     }
 
 }

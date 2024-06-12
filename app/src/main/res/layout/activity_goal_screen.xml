@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".setup_pages.goal_screen">
+
+    <TextView
+        android:id="@+id/textback_button_goalPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Back"
+        android:textColor="@color/yellow_kak_mocha"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageback_arrow_svg_goalPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="9dp"
+        android:rotation="-180"
+        app:layout_constraintBottom_toBottomOf="@+id/textback_button_goalPage"
+        app:layout_constraintEnd_toStartOf="@+id/textback_button_goalPage"
+        app:layout_constraintTop_toTopOf="@+id/textback_button_goalPage"
+        app:srcCompat="@drawable/skip_arrow"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_whats_your_goal_goalPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="What Is Your Goal?"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textgovno_goalPage"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/league_spartan"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_whats_your_goal_goalPage" />
+
+    <View
+        android:id="@+id/purple_box_goalPage"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_marginTop="36dp"
+        android:background="#B3A0FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
+
+    <TextView
+        android:id="@+id/button_continue_goalPage"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button_grey"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_goalPage" />
+
+    <ImageView
+        android:id="@+id/imageSelect_goalPage"
+        android:layout_width="323dp"
+        android:layout_height="416dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_goalPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_goalPage"
+        app:srcCompat="@drawable/image_goal_select" />
+
+    <TextView
+        android:id="@+id/button_other_goalPage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_goal_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
+        app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
+
+    <TextView
+        android:id="@+id/button_shape_body_goalPage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/rounded_goal_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
+        app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
+
+    <TextView
+        android:id="@+id/button_muscle_mass_gain_goalPage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/rounded_goal_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
+        app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
+
+    <TextView
+        android:id="@+id/button_gain_weight_goalPage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="266dp"
+        android:background="@drawable/rounded_goal_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
+        app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
+
+    <TextView
+        android:id="@+id/button_lose_weight_goalPage"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="342dp"
+        android:background="@drawable/rounded_goal_button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSelect_goalPage"
+        app:layout_constraintEnd_toEndOf="@+id/imageSelect_goalPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

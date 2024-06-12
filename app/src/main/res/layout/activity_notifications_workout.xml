@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification.notifications_workout">
+
+    <TextView
+        android:id="@+id/textback_button_notPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Notifications"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageback_arrow_svg_notPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:rotation="-180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/skip_arrow"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_colokol_notPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_profile_notPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_off" />
+
+    <ImageView
+        android:id="@+id/image_search_notPage"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_colokol_notPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_off" />
+
+    <ImageView
+        android:id="@+id/image_profile_notPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_off" />
+
+    <TextView
+        android:id="@+id/rem_button_notPage"
+        android:layout_width="151dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="Reminders"
+        android:textColor="@color/real_black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textback_button_notPage">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/system_button_notPage"
+        android:layout_width="151dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="System"
+        android:textColor="@color/purple"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textback_button_notPage">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/system_group_notPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Today"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_new_mess_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="You Have A New Message! "
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_new_mess_notPage"
+            android:layout_alignBottom="@+id/textView_new_mess_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_star_big_on">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_new_mess_notPage"
+            android:layout_alignBottom="@+id/textView_new_mess_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 10 - 10:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp" >
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/textView_scheduled_main_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_new_mess_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="Scheduled Maintenance."
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_scheduled_main_notPage"
+            android:layout_alignBottom="@+id/textView_scheduled_main_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_list_onn">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_scheduled_main_notPage"
+            android:layout_alignBottom="@+id/textView_scheduled_main_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 10 - 8:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_detected_log_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_scheduled_main_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="2dp"
+            android:lines="2"
+            android:text="We've Detected A Login  From \nA New Device"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_detected_log_notPage"
+            android:layout_alignBottom="@+id/textView_detected_log_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_notification">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_detected_log_notPage"
+            android:layout_alignBottom="@+id/textView_detected_log_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 10 - 8:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp" >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_detected_log_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Yesterday"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/textView_update_policy_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_detected_log_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="We've Updated Our Privacy Policy"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_update_policy_notPage"
+            android:layout_alignBottom="@+id/textView_update_policy_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_list">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_update_policy_notPage"
+            android:layout_alignBottom="@+id/textView_update_policy_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 09 - 1:00 PM"
+            android:textColor="@color/purple"
+            android:textSize="12sp" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_message_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_update_policy_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="You Have A New Message!"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_message_notPage"
+            android:layout_alignBottom="@+id/textView_message_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_2024_05_27_23_22_28">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_message_notPage"
+            android:layout_alignBottom="@+id/textView_message_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 09 - 9:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp" >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_message_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="May 29 - 20XX"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_message_two_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_message_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="You Have A New Message!"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_message_two_notPage"
+            android:layout_alignBottom="@+id/textView_message_two_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_2024_05_27_23_22_28">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_message_two_notPage"
+            android:layout_alignBottom="@+id/textView_message_two_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="May 29 - 10:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp" >
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/reminders_group_notPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Today"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_new_workout_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="New workout is Available"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_new_workout_notPage"
+            android:layout_alignBottom="@+id/textView_new_workout_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_2024_05_27_23_22_28">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_new_workout_notPage"
+            android:layout_alignBottom="@+id/textView_new_workout_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 10 - 10:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/textView_dont_forget_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_new_workout_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="Don’t forget to drink water"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_dont_forget_notPage"
+            android:layout_alignBottom="@+id/textView_dont_forget_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_light_on">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_dont_forget_notPage"
+            android:layout_alignBottom="@+id/textView_dont_forget_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 10 - 8:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_dont_forget_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Yesterday"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/textView_body_workout_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_dont_forget_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="Upper Body Workout Completed!"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_body_workout_notPage"
+            android:layout_alignBottom="@+id/textView_body_workout_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_cup_on">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_body_workout_notPage"
+            android:layout_alignBottom="@+id/textView_body_workout_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 09 - 6:00 PM"
+            android:textColor="@color/purple"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_remember_exp_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_body_workout_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="Remember Your Exercise Session"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_remember_exp_notPage"
+            android:layout_alignBottom="@+id/textView_remember_exp_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_light_bulb">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_remember_exp_notPage"
+            android:layout_alignBottom="@+id/textView_remember_exp_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 09 - 3:00 PM"
+            android:textColor="@color/purple"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_new_art_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_remember_exp_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="New Article &amp; Tip Posted!"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_new_art_notPage"
+            android:layout_alignBottom="@+id/textView_new_art_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_list">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_new_art_notPage"
+            android:layout_alignBottom="@+id/textView_new_art_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="June 09 - 11:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_new_art_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="May 29 - 20XX"
+            android:textColor="@color/yellow_kak_mocha"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView_you_start_notPage"
+            android:layout_width="323dp"
+            android:layout_height="65dp"
+            android:layout_below="@+id/textView_new_art_notPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="70dp"
+            android:paddingTop="15dp"
+            android:text="You Started A New Challenge!"
+            android:textColor="@color/real_black"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_you_start_notPage"
+            android:layout_alignBottom="@+id/textView_you_start_notPage"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/image_2024_05_27_23_22_28">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_you_start_notPage"
+            android:layout_alignBottom="@+id/textView_you_start_notPage"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="May 29 - 9:00 AM"
+            android:textColor="@color/purple"
+            android:textSize="12sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/purple_box_notPage"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_notPage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_notPage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_notPage"
+        app:srcCompat="@drawable/zakladka_vidos_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_notPage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_zakladkaButton_notPage"
+        app:srcCompat="@drawable/bookmark_off_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_notPage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_buttmarkButton_notPage"
+        app:srcCompat="@drawable/operator_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

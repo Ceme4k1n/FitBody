@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".floating_menus.help_screen">
+
+
+    <ImageView
+        android:id="@+id/strelka_help_and_faqs"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="How can we help you?"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/button_contact_us_helpPage"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textAllCaps="false"
+        android:textColor="@color/real_black"
+        app:layout_constraintStart_toEndOf="@+id/button_faq_help_and_faqs"
+        app:layout_constraintTop_toTopOf="@+id/button_faq_help_and_faqs" />
+
+
+    <TextView
+        android:id="@+id/button_faq_help_and_faqs"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:text="FAQ"
+        android:textColor="@color/real_black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/buttons_group_helpPage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/contact_us_group_helpPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/image_cust_serv_helpPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="22dp"
+            app:srcCompat="@drawable/image_2024_05_27_23_23_04" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_cust_serv_helpPage"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_cust_serv_helpPage"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Customer service"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_alignTop="@+id/image_cust_serv_helpPage"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_cust_serv_helpPage"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:id="@+id/image_website_helpPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/image_cust_serv_helpPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/website_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_website_helpPage"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_website_helpPage"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Website"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_alignTop="@+id/image_website_helpPage"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_website_helpPage"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:id="@+id/image_whatsapp_helpPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/image_website_helpPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/whatsapp_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_whatsapp_helpPage"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_whatsapp_helpPage"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Whatsapp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_alignTop="@+id/image_whatsapp_helpPage"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_whatsapp_helpPage"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:id="@+id/image_facebook_helpPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/image_whatsapp_helpPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/facebook_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_facebook_helpPage"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_facebook_helpPage"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_alignTop="@+id/image_facebook_helpPage"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_facebook_helpPage"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:id="@+id/image_insta_helpPage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/image_facebook_helpPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/insta_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_insta_helpPage"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image_facebook_helpPage"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_alignTop="@+id/image_insta_helpPage"
+            android:layout_marginStart="271dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_insta_helpPage"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/button_back_help_nadfaqs"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="274dp"
+        android:background="@color/black"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Help &amp; FAQs"
+        android:textColor="#896CFE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/purple_box_two_helpPage"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_helpPage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_helpPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_helpPage"
+        app:srcCompat="@drawable/home_button" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_helpPage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_helpPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_buttmarkButton_helpPage"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_helpPage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_helpPage"
+        app:srcCompat="@drawable/zakladka_vidos_button" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_helpPage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_helpPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_operatorButton_helpPage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_helpPage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_helpPage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_helpPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_helpPage"
+        app:srcCompat="@drawable/operator_button" />
+
+
+    <RelativeLayout
+        android:id="@+id/buttons_group_helpPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/button_general_help_and_faqs"
+            android:layout_width="102dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/search_text_helpPage"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/round_button_phys_act_yellow"
+            android:fontFamily="@font/league_spartan_bold"
+            android:gravity="center"
+            android:text="General"
+            android:textColor="@color/real_black"
+            tools:layout_editor_absoluteX="78dp" />
+
+
+        <TextView
+            android:id="@+id/button_account_help_and_faqs"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/button_general_help_and_faqs"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/button_general_help_and_faqs"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/league_spartan_bold"
+            android:gravity="center"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textColor="@color/real_black"
+            tools:layout_editor_absoluteX="187dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/button_services_help_and_faqs"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/button_account_help_and_faqs"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/button_account_help_and_faqs"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/league_spartan_bold"
+            android:gravity="center"
+            android:text="Services"
+            android:textAllCaps="false"
+            android:textColor="@color/real_black" />
+
+        <TextView
+            android:id="@+id/search_text_helpPage"
+            android:layout_width="322dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/round_button_phys_act"
+            android:fontFamily="@font/league_spartan"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:text="Search"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/palka_1_helpPage"
+            android:layout_width="322dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/search_text_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <View
+            android:id="@+id/palka_2_helpPage"
+            android:layout_width="323dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/palka_1_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <View
+            android:id="@+id/palka_3_helpPage"
+            android:layout_width="323dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/palka_2_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="111dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <View
+            android:id="@+id/palka_4_helpPage"
+            android:layout_width="323dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/palka_3_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="53dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <View
+            android:id="@+id/palka_5_helpPage"
+            android:layout_width="323dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/palka_4_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="53dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <View
+            android:id="@+id/palka_6_helpPage"
+            android:layout_width="323dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/palka_5_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="53dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <View
+            android:id="@+id/palka_7_helpPage"
+            android:layout_width="323dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/palka_6_helpPage"
+            android:layout_alignStart="@+id/search_text_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="53dp"
+            android:background="@color/yellow_kak_mocha" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_1_helpPage"
+            android:layout_alignStart="@+id/palka_1_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Lorem ipsum dolor sit amet?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_2_helpPage"
+            android:layout_alignStart="@+id/palka_2_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/league_spartan"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque congue lorem, vel tincidunt tortor placerat a. Proin ac diam quam. Aenean in sagittis magna, ut feugiat diam."
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_3_helpPage"
+            android:layout_alignStart="@+id/palka_3_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Lorem ipsum dolor sit amet?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_4_helpPage"
+            android:layout_alignStart="@+id/palka_4_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Lorem ipsum dolor sit amet?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_5_helpPage"
+            android:layout_alignStart="@+id/palka_5_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Lorem ipsum dolor sit amet?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_6_helpPage"
+            android:layout_alignStart="@+id/palka_6_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Lorem ipsum dolor sit amet?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/palka_7_helpPage"
+            android:layout_alignStart="@+id/palka_7_helpPage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/league_spartan_bold"
+            android:text="Lorem ipsum dolor sit amet?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/palka_1_helpPage"
+            android:layout_alignEnd="@+id/palka_1_helpPage"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/palka_3_helpPage"
+            android:layout_alignEnd="@+id/palka_3_helpPage"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/palka_4_helpPage"
+            android:layout_alignEnd="@+id/palka_4_helpPage"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/palka_5_helpPage"
+            android:layout_alignEnd="@+id/palka_5_helpPage"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/palka_6_helpPage"
+            android:layout_alignEnd="@+id/palka_6_helpPage"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/palka_7_helpPage"
+            android:layout_alignEnd="@+id/palka_7_helpPage"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:rotation="270"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

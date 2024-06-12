@@ -14,14 +14,65 @@
         android:theme="@style/Theme.Fitness"
         tools:targetApi="31">
         <activity
-            android:name=".setup_pages.select_gender_screen"
+            android:name=".tips_screens.resources_screen"
             android:exported="false" />
+        <activity
+            android:name=".community_menus.comm_screen"
+            android:exported="false" />
+        <activity
+            android:name=".workout_menus.begginer_screen"
+            android:exported="false" />
+        <activity
+            android:name=".notification.search_screen"
+            android:exported="false" />
+        <activity
+            android:name=".notification.notifications_workout"
+            android:exported="false" />
+        <activity
+            android:name=".floating_menus.setting_screen"
+            android:exported="false" />
+        <activity
+            android:name=".floating_menus.help_screen"
+            android:exported="false" />
+        <activity
+            android:name=".floating_menus.favorite_screen"
+            android:exported="false" />
+        <activity
+            android:name=".floating_menus.profile_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".floating_menus.home_page_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setup_pages.select_weight_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setup_pages.set_up_profile_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setup_pages.physical_act_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setup_pages.goal_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setup_pages.how_old_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".setup_pages.select_gender_screen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".setup_pages.set_up_screen"
-            android:exported="false" />
-        <activity
-            android:name=".login_singin.set_up_pass_screen"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".login_singin.forgot_pass_sceeen"
             android:exported="false"

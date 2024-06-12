@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".floating_menus.home_page_screen">
+
+    <TextView
+        android:id="@+id/text_hi_maddison_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#896CFE"
+        android:text="Hi, Madison"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="It's time to challenge your limits."
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_hi_maddison_homePage" />
+
+    <ImageView
+        android:id="@+id/image_colokol_homePage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_profile_homePage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_off" />
+
+    <ImageView
+        android:id="@+id/image_search_homePage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_colokol_homePage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_off" />
+
+    <ImageView
+        android:id="@+id/image_profile_homePage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_off" />
+
+    <ImageView
+        android:id="@+id/image_workout_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="91dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/workout_on" />
+
+    <ImageView
+        android:id="@+id/image_progress_tracking_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="86dp"
+        app:layout_constraintStart_toEndOf="@+id/image_workout_homePage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progress_off" />
+
+    <ImageView
+        android:id="@+id/image_nutrition_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_community_homePage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nutrition_off" />
+
+    <ImageView
+        android:id="@+id/image_community_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/community_off" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="106dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toStartOf="@+id/image_community_homePage"
+        app:layout_constraintStart_toEndOf="@+id/image_nutrition_homePage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="106dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toStartOf="@+id/image_nutrition_homePage"
+        app:layout_constraintStart_toEndOf="@+id/image_progress_tracking_homePage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="106dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toStartOf="@+id/image_progress_tracking_homePage"
+        app:layout_constraintStart_toEndOf="@+id/image_workout_homePage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/purple_box_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="181dp"
+        android:layout_marginTop="354dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Recommendations"
+        android:textColor="@color/yellow_kak_mocha"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_seeAll_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="See all"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageskip_arrow_svg"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/text_seeAll_homePage"
+        app:layout_constraintTop_toTopOf="@+id/text_seeAll_homePage"
+        app:srcCompat="@drawable/skip_arrow"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Articles &amp; Tips"
+        android:textColor="@color/yellow_kak_mocha"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_homePage" />
+
+    <ImageView
+        android:id="@+id/image_man_homePage"
+        android:layout_width="157dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_homePage"
+        app:srcCompat="@drawable/man_home_page" />
+
+    <ImageView
+        android:id="@+id/image_woman_homePage"
+        android:layout_width="157dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_homePage"
+        app:srcCompat="@drawable/woman_home_page" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Supplement Guide..."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/image_woman_homePage"
+        app:layout_constraintTop_toBottomOf="@+id/image_woman_homePage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="15 Quick &amp; Effective \nDaily Routines..."
+        android:lines="2"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/image_man_homePage"
+        app:layout_constraintTop_toBottomOf="@+id/image_man_homePage" />
+
+    <View
+        android:id="@+id/purple_box_two_homePage"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_homePage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/home_button" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_homePage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toStartOf="@+id/image_buttmarkButton_homePage"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_homePage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/zakladka_vidos_button" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_homePage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toStartOf="@+id/image_operatorButton_homePage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_homePage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_homePage"
+        app:srcCompat="@drawable/operator_button" />
+
+    <ImageView
+        android:layout_width="324dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/weekly_challender_image" />
+
+    <ImageView
+        android:layout_width="324dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/weekly_challender_image" />
+
+    <ImageView
+        android:id="@+id/image_favoriteButton_supplement_homePage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_woman_homePage"
+        app:layout_constraintTop_toTopOf="@+id/image_woman_homePage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_favoriteButton_daily_rountines_homePage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_man_homePage"
+        app:layout_constraintTop_toTopOf="@+id/image_man_homePage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_fullBody_homePage"
+        android:layout_width="157dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/full_body_homepage" />
+
+    <ImageView
+        android:id="@+id/image_squart_homePage"
+        android:layout_width="157dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="197dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/squat_exercise_homepage" />
+
+    <ImageView
+        android:id="@+id/image_squatFavorite_homePage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_squart_homePage"
+        app:layout_constraintTop_toTopOf="@+id/image_squart_homePage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_fullBodyFavorite_homePage"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_fullBody_homePage"
+        app:layout_constraintTop_toTopOf="@+id/image_fullBody_homePage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

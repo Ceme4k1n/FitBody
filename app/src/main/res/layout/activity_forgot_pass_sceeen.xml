@@ -12,10 +12,10 @@
         android:id="@+id/imagebutton_back_forgotpassPage"
         android:layout_width="6dp"
         android:layout_height="11dp"
-        android:layout_marginStart="67dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="52dp"
         android:rotationY="-180"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textForgott_pass_forgotpassPage"
         app:layout_constraintTop_toTopOf="@+id/textForgott_pass_forgotpassPage"
         app:srcCompat="@drawable/skip_arrow" />
 
@@ -80,6 +80,7 @@
         android:ems="10"
         android:fontFamily="@font/poppins_medium"
         android:hint="example@example.com"
+        android:textColorHint="@color/real_black"
         android:inputType="textEmailAddress"
         android:paddingLeft="16dp"
         android:paddingTop="5dp"
@@ -93,29 +94,29 @@
         android:id="@+id/textenter_your_email_forgotpassPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
         android:layout_marginBottom="9dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Enter your email address"
         android:textColor="#232323"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/email_text_forgotpassPage"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/email_text_forgotpassPage" />
 
     <Button
         android:id="@+id/button_continue_forgotpassPage"
         android:layout_width="180dp"
         android:layout_height="44dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="46dp"
         android:background="@drawable/rounded_button_grey"
         android:fontFamily="@font/poppins_medium"
+        android:paddingTop="3dp"
         android:text="Continue"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:paddingTop="3dp"
 
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/purple_box_forgotpassPage" />
 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".floating_menus.favorite_screen">
+
+    <TextView
+        android:id="@+id/text_favorite_favoritePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Favorites"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <ImageView
+        android:id="@+id/strelka_favoritePage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_favorite_favoritePage"
+        app:layout_constraintEnd_toStartOf="@+id/text_favorite_favoritePage"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    <ImageView
+        android:id="@+id/image_colokol_favoritePage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_profile_favoritePage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_off" />
+
+    <ImageView
+        android:id="@+id/image_search_favoritePage"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_colokol_favoritePage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_off" />
+
+    <ImageView
+        android:id="@+id/image_profile_favoritePage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_off" />
+
+
+    <TextView
+        android:id="@+id/text_sort_by_favoritePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="71dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sort by"
+        android:textColor="@color/yellow_kak_mocha"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <TextView
+        android:id="@+id/button_all_favoritePage"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="All"
+        android:textSize="10sp"
+        android:textColor="@color/real_black"
+        app:layout_constraintStart_toEndOf="@+id/text_sort_by_favoritePage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/button_article_favoritePage"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:text="Article"
+        android:textColor="@color/purple"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/button_video_favoritePage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/button_video_favoritePage"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:text="Video"
+        android:textColor="@color/purple"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/button_all_favoritePage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/purple_box_favoritePage"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_favoritePage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_favoritePage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_favoritePage"
+        app:srcCompat="@drawable/zakladka_vidos_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_favoritePage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_zakladkaButton_favoritePage"
+        app:srcCompat="@drawable/bookmark_off_button"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_favoritePage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_buttmarkButton_favoritePage"
+        app:srcCompat="@drawable/operator_button"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
