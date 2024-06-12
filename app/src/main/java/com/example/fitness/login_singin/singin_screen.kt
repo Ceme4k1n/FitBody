@@ -8,24 +8,30 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.example.fitness.R
 import com.google.firebase.Firebase
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.database.database
+import com.example.fitness.login_singin.UserViewModel
+import com.example.fitness.setup_pages.set_up_screen
 
 class singin_screen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
         FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_singup_screen)
-        val name_reg : EditText = findViewById(R.id.email_text_singupPage)
-        val email_registry : EditText = findViewById(R.id.phone_text_singupPage)
+        val email_registry : EditText = findViewById(R.id.email_text_singupPage)
+        val phone_user : EditText = findViewById(R.id.phone_text_singupPage)
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
         val confirm_password_registry : EditText = findViewById(R.id.password_confirm_text_singinPage)
         var button_next_registry : Button = findViewById(R.id.button_sing_in_singinPage)
@@ -64,13 +70,17 @@ class singin_screen : AppCompatActivity() {
         }
 
         button_next_registry.setOnClickListener() {
-            if (password_registry==confirm_password_registry){
+//            if (password_registry.text.toString()==confirm_password_registry.text.toString()){
                 regViaEmail(email_registry.text.toString(),password_registry.text.toString())
-                //button_next_registry.setBackgroundColor(color.BLACK)
-                //startActivity() переход сделать
-        }else{
-            print("parol ne parol")
-            }
+            val viewModel: UserViewModel by viewModels()
+            viewModel.updatePhone(
+                newPhone = phone_user.text.toString(),
+            )
+                var intent = Intent(this, set_up_screen::class.java)
+                startActivity(intent)
+//        }else{
+//            print("parol ne parol")
+//            }
         }
 
         }
