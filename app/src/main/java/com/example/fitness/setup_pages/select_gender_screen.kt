@@ -30,10 +30,10 @@ class select_gender_screen : AppCompatActivity() {
 
         button_continue.setOnClickListener {
             if(select_anyone) {
-                UserViewModel().updateSex(
-                    newsex = male_or_female
-                )
-                addUsertodb( UserViewModel().currentUser) //занос данных класса wiew model в бд
+//                UserViewModel().updateSex(
+//                    newsex = male_or_female
+//                )
+//                addUsertodb( UserViewModel().currentUser) //занос данных класса wiew model в бд
                 var intent = Intent(this, how_old_screen::class.java)
                 startActivity(intent)
             }
