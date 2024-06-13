@@ -91,7 +91,7 @@ class UserViewModel : ViewModel() {
     }
     fun updateActivity_lvl(newactivity_lvl: String) {
         currentUser.activity_lvl = newactivity_lvl
-    } }
+    }
 fun addUsertodb(user: Users) {
     val userid = FirebaseAuth.getInstance().currentUser?.uid
     val userref = FirebaseFirestore.getInstance().collection("users").document(userid!!)
@@ -109,4 +109,4 @@ fun addUsertodb(user: Users) {
     ).addOnSuccessListener {
         Log.d(TAG, "Данные добавлены")
     }
-}
+}}
