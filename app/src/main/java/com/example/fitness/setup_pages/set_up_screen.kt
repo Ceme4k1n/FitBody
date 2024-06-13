@@ -26,7 +26,5 @@ class set_up_screen : AppCompatActivity() {
             var intent = Intent(this, select_gender_screen::class.java)
             startActivity(intent)
         }
-
-
     }
 }
