@@ -5,16 +5,26 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.navigateToFavoritePage
+import com.example.fitness.navigateToHomePage
+import com.example.fitness.navigateToNotePage
+import com.example.fitness.navigateToProfilePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSearchPage
+import com.example.fitness.navigateToSupportPage
 
 class setting_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting_screen)
+
+        val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_settingPage)
+        val home_button : ImageView = findViewById(R.id.image_homeButton_settingPage)
+        val supp_button : ImageView = findViewById(R.id.image_operatorButton_settingPage)
+        val fav_button : ImageView = findViewById(R.id.image_buttmarkButton_settingPage)
+
 
         val default_settings_group : RelativeLayout = findViewById(R.id.default_settings_group)
         val not_settings_group : RelativeLayout = findViewById(R.id.not_setting_group_settingPage)
@@ -58,6 +68,10 @@ class setting_screen : AppCompatActivity() {
 
 
 
+        navigateToResoursePage(this, zakladka_button)
+        navigateToHomePage(this, home_button)
+        navigateToSupportPage(this, supp_button)
+        navigateToFavoritePage(this, fav_button)
 
 
 

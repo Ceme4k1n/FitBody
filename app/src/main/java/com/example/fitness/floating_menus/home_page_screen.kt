@@ -2,13 +2,14 @@ package com.example.fitness.floating_menus
 
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
-import com.example.fitness.navigateOnClick
-import com.example.fitness.navigateToHomePage
+import com.example.fitness.navigateToFavoritePage
+import com.example.fitness.navigateToNotePage
+import com.example.fitness.navigateToProfilePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSearchPage
+import com.example.fitness.navigateToSupportPage
 
 class home_page_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,13 @@ class home_page_screen : AppCompatActivity() {
         val dailyFavorite_Button : ImageView = findViewById(R.id.image_favoriteButton_daily_rountines_homePage)
 
         val profile_button : ImageView = findViewById(R.id.image_profile_homePage)
+        val search_button : ImageView = findViewById(R.id.image_colokol_homePage)
+        val not_button : ImageView = findViewById(R.id.image_search_homePage)
+
+        val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_homePage)
+        val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_homePage)
+        val supp_button : ImageView = findViewById(R.id.image_operatorButton_homePage)
+
 
         squartFavorite_Button.setOnClickListener {
             if(bool_squart == false)
@@ -72,6 +80,12 @@ class home_page_screen : AppCompatActivity() {
         }
 
 
-        navigateOnClick(profile_button, this, profile_screen::class.java)
+        navigateToProfilePage(this, profile_button)
+        navigateToNotePage(this, not_button)
+        navigateToSearchPage(this, search_button)
+
+        navigateToResoursePage(this, zakladka_button)
+        navigateToFavoritePage(this, favor_button)
+        navigateToSupportPage(this, supp_button)
     }
 }

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".community_menus.comm_screen">
+
+    <TextView
+        android:id="@+id/text_favorite_commPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Workout"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <ImageView
+        android:id="@+id/strelka_commPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_favorite_commPage"
+        app:layout_constraintEnd_toStartOf="@+id/text_favorite_commPage"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    <ImageView
+        android:id="@+id/image_colokol_commPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_profile_commPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_off" />
+
+    <ImageView
+        android:id="@+id/image_search_commPage"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_colokol_commPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_off" />
+
+    <ImageView
+        android:id="@+id/image_profile_commPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_off" />
+
+    <TextView
+        android:id="@+id/button_begginer_commPage"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="Begginer"
+        android:textColor="@color/real_black"
+        app:layout_constraintStart_toStartOf="@+id/text_favorite_commPage"
+        app:layout_constraintTop_toBottomOf="@+id/text_favorite_commPage" />
+
+    <TextView
+        android:id="@+id/button_intermediate_commPage"
+        android:layout_width="118dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="Intermediate"
+        android:textColor="@color/purple"
+        app:layout_constraintStart_toEndOf="@+id/button_begginer_commPage"
+        app:layout_constraintTop_toBottomOf="@+id/text_favorite_commPage" />
+
+    <TextView
+        android:id="@+id/button_advanced_commPage"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/round_button_phys_act"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="Advanced"
+        android:textColor="@color/purple"
+        app:layout_constraintStart_toEndOf="@+id/button_intermediate_commPage"
+        app:layout_constraintTop_toBottomOf="@+id/text_favorite_commPage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

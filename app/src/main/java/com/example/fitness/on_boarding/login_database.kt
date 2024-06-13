@@ -1,13 +1,10 @@
 package com.example.fitness
 
 import android.app.Application
-import com.google.firebase.FirebaseApp
 import android.content.ContentValues
 import android.util.Log
+import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
-import com.google.firebase.auth.FirebaseAuthInvalidUserException
-
 
 
 class login_database : Application() {
@@ -26,5 +23,6 @@ class login_database : Application() {
         }
 
     }
+
 
 }

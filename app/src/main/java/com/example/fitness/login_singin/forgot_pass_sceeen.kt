@@ -7,12 +7,8 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
-import com.example.fitness.on_boarding.start_screen
 import com.google.firebase.auth.FirebaseAuth
 
 class forgot_pass_sceeen : AppCompatActivity() {

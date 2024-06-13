@@ -1,22 +1,34 @@
 package com.example.fitness.floating_menus
 
-import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.navigateToFavoritePage
+import com.example.fitness.navigateToHomePage
+import com.example.fitness.navigateToResoursePage
+import com.example.fitness.navigateToSupportPage
 
 class help_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_help_screen)
+
+        val zakladka_button : ImageView = findViewById(R.id.image_zakladkaButton_helpPage)
+        val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_helpPage)
+        val supp_button : ImageView = findViewById(R.id.image_operatorButton_helpPage)
+        val home_button : ImageView = findViewById(R.id.image_homeButton_helpPage)
+
+        navigateToResoursePage(this, zakladka_button)
+        navigateToFavoritePage(this, favor_button)
+        navigateToSupportPage(this, supp_button)
+        navigateToHomePage(this, home_button)
+
 
         val faq_button : TextView = findViewById(R.id.button_faq_help_and_faqs)
         val contact_us_button : TextView = findViewById(R.id.button_contact_us_helpPage)

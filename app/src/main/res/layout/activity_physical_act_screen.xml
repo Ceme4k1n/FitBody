@@ -12,14 +12,14 @@
         android:id="@+id/textback_button_physAcrt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Back"
-        android:textColor="#FFEB3B"
+        android:textColor="@color/yellow_kak_mocha"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageback_arrow_svg_physAct"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 
@@ -28,10 +28,13 @@
         android:layout_width="6dp"
         android:layout_height="11dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="9dp"
         android:rotation="-180"
+        app:layout_constraintBottom_toBottomOf="@+id/textback_button_physAcrt"
+        app:layout_constraintEnd_toStartOf="@+id/textback_button_physAcrt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textback_button_physAcrt"
         app:srcCompat="@drawable/skip_arrow"
         tools:ignore="ContentDescription" />
 
@@ -62,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_physical_activity_physAct" />
 
-    <Button
+    <TextView
         android:id="@+id/button_begginer_physAct"
         android:layout_width="323dp"
         android:layout_height="64dp"
@@ -70,6 +73,7 @@
         android:text="Begginer"
         android:textSize="24sp"
         android:textColor="@color/purple"
+        android:gravity="center"
         android:fontFamily="@font/poppins_medium"
         android:paddingTop="6dp"
         android:background="@drawable/round_button_phys_act"
@@ -77,7 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_Intermediate_physAct"
         android:layout_width="323dp"
         android:layout_height="64dp"
@@ -85,6 +89,7 @@
         android:text="Intermediate"
         android:textSize="24sp"
         android:textColor="@color/purple"
+        android:gravity="center"
         android:fontFamily="@font/poppins_medium"
         android:paddingTop="6dp"
         android:background="@drawable/round_button_phys_act"
@@ -92,7 +97,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_Advance_physAct"
         android:layout_width="323dp"
         android:layout_height="64dp"
@@ -100,6 +105,7 @@
         android:text="Advance"
         android:textSize="24sp"
         android:textColor="@color/purple"
+        android:gravity="center"
         android:fontFamily="@font/poppins_medium"
         android:paddingTop="6dp"
         android:background="@drawable/round_button_phys_act"
@@ -107,7 +113,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
 
-    <Button
+    <TextView
         android:id="@+id/button_continue_goalPage"
         android:layout_width="180dp"
         android:layout_height="44dp"
@@ -116,6 +122,7 @@
         android:fontFamily="@font/poppins_medium"
         android:paddingTop="3dp"
         android:text="Continue"
+        android:gravity="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18dp"

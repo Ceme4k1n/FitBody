@@ -131,7 +131,7 @@
 
     <View
         android:id="@+id/purple_box_homePage"
-        android:layout_width="460dp"
+        android:layout_width="wrap_content"
         android:layout_height="181dp"
         android:layout_marginTop="354dp"
         android:background="@color/purple"
@@ -236,7 +236,7 @@
 
     <View
         android:id="@+id/purple_box_two_homePage"
-        android:layout_width="460dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:background="@color/purple"
         app:layout_constraintBottom_toBottomOf="parent"

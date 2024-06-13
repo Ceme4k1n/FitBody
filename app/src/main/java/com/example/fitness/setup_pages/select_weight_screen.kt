@@ -3,14 +3,12 @@ package com.example.fitness.setup_pages
 import android.content.Intent
 import android.os.Bundle
 import android.view.ViewTreeObserver
-import android.widget.Button
 import android.widget.HorizontalScrollView
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.updateLayoutParams
 import com.example.fitness.R
 
 class select_weight_screen : AppCompatActivity() {
@@ -23,7 +21,7 @@ class select_weight_screen : AppCompatActivity() {
         val horizontalScrollView: HorizontalScrollView = findViewById(R.id.horizontalScrollView_selectWeight)
 
         val buttonBack: TextView = findViewById(R.id.textback_button_selectWeight)
-        val buttonContinue: Button = findViewById(R.id.button_continue_selectWeight)
+        val buttonContinue: TextView = findViewById(R.id.button_continue_selectWeight)
 
         buttonContinue.setOnClickListener {
             var intent = Intent(this, goal_screen::class.java)

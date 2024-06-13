@@ -4,7 +4,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
-import android.widget.Button
 import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -24,7 +23,7 @@ class how_old_screen : AppCompatActivity() {
         val horizontalScrollView: HorizontalScrollView = findViewById(R.id.horizontalScrollView_howoldPage)
 
         val button_back : TextView = findViewById(R.id.textback_button_howoldPage)
-        val button_continue : Button = findViewById(R.id.button_continue_howoldPage)
+        val button_continue : TextView = findViewById(R.id.button_continue_howoldPage)
 
         button_continue.setOnClickListener {
             var intent = Intent(this, select_weight_screen::class.java)
