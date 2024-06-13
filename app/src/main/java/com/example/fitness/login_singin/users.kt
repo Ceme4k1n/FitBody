@@ -2,6 +2,7 @@ package com.example.fitness.login_singin
 
 import android.content.ContentValues.TAG
 import android.util.Log
+import androidx.activity.viewModels
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -61,7 +62,6 @@ class UserViewModel : ViewModel() {
             activity_lvl = ""
         )
     }
-
     fun updateName(newName: String) {
         currentUser.name = newName
     }
@@ -101,6 +101,7 @@ fun addUsertodb(user: Users) {
             "surname" to user.surname,
             "phone" to user.phone, // Изменено на user.phone
             "age" to user.age,
+            "sex" to user.sex,
             "height" to user.height,
             "weight" to user.weight,
             "goal" to user.goal,
@@ -109,4 +110,7 @@ fun addUsertodb(user: Users) {
     ).addOnSuccessListener {
         Log.d(TAG, "Данные добавлены")
     }
-}}
+}
+
+
+}
