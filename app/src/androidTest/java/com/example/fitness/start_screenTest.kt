@@ -7,9 +7,8 @@ import androidx.test.espresso.intent.Intents
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.fitness.login_singin.login_screen
 import com.example.fitness.on_boarding.start_screen
-import com.example.fitness.setup_pages.select_gender_screen
-import com.example.fitness.setup_pages.set_up_screen
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -30,35 +29,41 @@ class start_screenTest {
     }
 
     @Test
-    fun testTextViewClickNavigatesToNext_Woman() {
+    fun one_toSkip_toGetStarted() {
         onView(withId(R.id.imagewelcome_to_fitbody)).perform(click())
 
-    }
-
-
-    @Test
-    fun testTextViewClickNavigatesToNext_ManTwo() {
-        onView(withId(R.id.imageButton_get_started)).perform(click())
-    }
-
-
-    @Test
-    fun testTextViewClickNavigatesToNext_Man() {
-        onView(withId(R.id.imageButton_next_on_man)).perform(click())
-    }
-
-    @Test
-    fun testTextViewClickNavigatesToNext_WomanTwo() {
-        onView(withId(R.id.button_next_woman_on_board)).perform(click())
-    }
-
-
-
-    @Test
-    fun testTextViewClickSkip() {
         onView(withId(R.id.textskip_man_on_board_man_one)).perform(click())
+
+        onView(withId(R.id.imageButton_get_started)).perform(click())
+
+        Intents.intended(hasComponent(login_screen::class.java.name))
     }
 
+    @Test
+    fun one_toThree_toSkip_toGetStarted() {
+        onView(withId(R.id.imagewelcome_to_fitbody)).perform(click())
 
+        onView(withId(R.id.imageButton_next_on_man)).perform(click())
 
+        onView(withId(R.id.textskip_man_on_board_man_one)).perform(click())
+
+        onView(withId(R.id.imageButton_get_started)).perform(click())
+
+        Intents.intended(hasComponent(login_screen::class.java.name))
+
+    }
+
+    @Test
+    fun one_toGetStarted() {
+        onView(withId(R.id.imagewelcome_to_fitbody)).perform(click())
+
+        onView(withId(R.id.imageButton_next_on_man)).perform(click())
+
+        onView(withId(R.id.button_next_woman_on_board)).perform(click())
+
+        onView(withId(R.id.imageButton_get_started)).perform(click())
+
+        Intents.intended(hasComponent(login_screen::class.java.name))
+
+    }
 }

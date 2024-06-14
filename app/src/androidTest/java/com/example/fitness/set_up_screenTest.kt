@@ -1,15 +1,12 @@
 package com.example.fitness
 
-import android.content.Context
-import android.provider.Settings
-import androidx.test.core.app.ApplicationProvider
 import androidx.test.core.app.ActivityScenario
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.intent.Intents
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent
 import androidx.test.espresso.matcher.ViewMatchers.withId
+import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.fitness.setup_pages.select_gender_screen
 import com.example.fitness.setup_pages.set_up_screen
 import org.junit.After

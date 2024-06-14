@@ -13,10 +13,19 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="SetGenderScreenTest">
+      <SelectionState runConfigName="how_old_screenTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="start_screenTest">
+      <SelectionState runConfigName="weight_screenTest">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="selectWeight_swipeLeft_toContinue()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="log_in_screenTest">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="back_toOnBoarding()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

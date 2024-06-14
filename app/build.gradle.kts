@@ -40,10 +40,8 @@ android {
 }
 
 dependencies {
-implementation(libs.core.ktx)
     implementation(libs.androidx.junit.ktx)
     implementation(libs.androidx.espresso.intents)
-    //    implementation(libs.androidx.junit.ktx)
     testImplementation ("org.mockito:mockito-core:3.12.4")
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-analytics")
@@ -65,7 +63,6 @@ implementation(libs.core.ktx)
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.firebase.auth.ktx)
-//    implementation(libs.androidx.media3.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
