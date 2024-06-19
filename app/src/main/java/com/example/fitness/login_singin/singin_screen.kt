@@ -18,14 +18,12 @@ import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.database.database
-import com.example.fitness.login_singin.UserViewModel
 import com.example.fitness.setup_pages.set_up_screen
 
 class singin_screen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        val userViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
         FirebaseApp.initializeApp(this)
@@ -72,11 +70,8 @@ class singin_screen : AppCompatActivity() {
         button_next_registry.setOnClickListener() {
 //            if (password_registry.text.toString()==confirm_password_registry.text.toString()){
                 regViaEmail(email_registry.text.toString(),password_registry.text.toString())
-            val viewModel: UserViewModel by viewModels()
-            viewModel.updatePhone(
-                newPhone = phone_user.text.toString(),
-            )
                 var intent = Intent(this, set_up_screen::class.java)
+            intent.putExtra("massage",phone_user.text.toString())
                 startActivity(intent)
 //        }else{
 //            print("parol ne parol")
