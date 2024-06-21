@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:fontFamily="@font/league_spartan_bold"
-        android:text="What Is Your height?"
+        android:text="What Is Your Weight?"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView_selectWeight"
-        android:layout_width="490dp"
+        android:layout_width="450dp"
         android:layout_height="100dp"
         android:layout_marginTop="234dp"
         android:background="@color/purple"

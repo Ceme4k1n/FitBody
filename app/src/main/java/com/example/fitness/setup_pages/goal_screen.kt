@@ -5,12 +5,14 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
+import com.example.fitness.login_singin.Users
 
 class goal_screen : AppCompatActivity() {
 
     private var currentBackgroundResource: Int = R.drawable.rounded_goal_button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        var user = Users()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_goal_screen)
 
@@ -49,6 +51,7 @@ class goal_screen : AppCompatActivity() {
             if(other_bool == false){
                 button_other.setBackgroundResource(R.drawable.rounded_button_green)
                 other_bool = true
+                user.goal=button_other.toString()
             }else{
                 button_other.setBackgroundResource(R.drawable.rounded_goal_button)
                 other_bool = false
@@ -59,6 +62,7 @@ class goal_screen : AppCompatActivity() {
             if(shape_bool == false){
                 button_shape_body.setBackgroundResource(R.drawable.rounded_button_green)
                 shape_bool = true
+                user.goal=button_shape_body.text.toString()
             }else{
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 shape_bool = false
@@ -69,6 +73,7 @@ class goal_screen : AppCompatActivity() {
             if(mass_bool == false){
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_button_green)
                 mass_bool = true
+                user.goal=button_muscle_mass_gain.text.toString()
             }else{
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 mass_bool = false
@@ -79,6 +84,7 @@ class goal_screen : AppCompatActivity() {
             if(gain_bool == false){
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_button_green)
                 gain_bool = true
+                user.goal=button_gain_weight.text.toString()
             }else{
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 gain_bool = false
@@ -89,6 +95,7 @@ class goal_screen : AppCompatActivity() {
             if(lose_bool == false){
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_button_green)
                 lose_bool = true
+                user.goal=button_lose_weight.text.toString()
             }else{
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 lose_bool = false

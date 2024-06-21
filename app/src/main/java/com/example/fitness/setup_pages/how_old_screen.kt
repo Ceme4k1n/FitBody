@@ -10,9 +10,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import com.example.fitness.R
+import com.example.fitness.login_singin.Users
 
 class how_old_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        var user = Users()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_how_old_screen)
 
@@ -79,6 +81,7 @@ class how_old_screen : AppCompatActivity() {
             // Обновляем TextView с выбранным возрастом
             closestChild?.let {
                 selectedAgeTextView.text = it.text.toString()
+                user.age=selectedAgeTextView.text.toString().toInt()
                 // Установка черного цвета и размера 20sp для цифры в середине
                 val normalPadding = 71 // обычные отступы
                 val selectedPadding = 71 // отступы для выбранного элемента

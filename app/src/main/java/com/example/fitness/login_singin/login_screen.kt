@@ -75,6 +75,7 @@ class login_screen : AppCompatActivity() {
                     }
                 }
         }
+
         log_in_button.setOnClickListener {
             loginViaEmail(email_to_auth.text.toString(),password_to_auth.text.toString())
         }

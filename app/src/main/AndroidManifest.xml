@@ -20,9 +20,6 @@
             android:name=".community_menus.comm_screen"
             android:exported="false" />
         <activity
-            android:name=".workout_menus.begginer_screen"
-            android:exported="false" />
-        <activity
             android:name=".notification.search_screen"
             android:exported="false" />
         <activity

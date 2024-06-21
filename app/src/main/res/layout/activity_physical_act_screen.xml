@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textgovno_goalPage"
+        android:id="@+id/textgovno_physAct"
         android:layout_width="303dp"
         android:layout_height="60dp"
         android:layout_marginTop="31dp"
@@ -79,7 +79,7 @@
         android:background="@drawable/round_button_phys_act"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_physAct" />
 
     <TextView
         android:id="@+id/button_Intermediate_physAct"
@@ -95,7 +95,7 @@
         android:background="@drawable/round_button_phys_act"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_physAct" />
 
     <TextView
         android:id="@+id/button_Advance_physAct"
@@ -111,10 +111,10 @@
         android:background="@drawable/round_button_phys_act"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textgovno_goalPage" />
+        app:layout_constraintTop_toBottomOf="@+id/textgovno_physAct" />
 
     <TextView
-        android:id="@+id/button_continue_goalPage"
+        android:id="@+id/button_continue_physAct"
         android:layout_width="180dp"
         android:layout_height="44dp"
         android:layout_marginTop="148dp"
