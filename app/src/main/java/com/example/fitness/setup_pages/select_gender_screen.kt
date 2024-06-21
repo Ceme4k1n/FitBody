@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
-import com.example.fitness.login_singin.Users
 import com.example.fitness.login_singin.addUsertodb
 import com.firebase.ui.auth.data.model.User
+import com.example.fitness.login_singin.Users_dannie
 
 class select_gender_screen : AppCompatActivity() {
 
@@ -26,22 +26,23 @@ class select_gender_screen : AppCompatActivity() {
 
         var male_or_female = false  //  False - женщина True - мужчина
         var select_anyone = false // Показывает что хоть  одно выбрано
-        var getmassage=intent.extras?.getString("message1") ?: "No message found"
+        var getmassage: String
         val button_back : TextView = findViewById(R.id.textback_button_genderPage)
         val button_continue : TextView = findViewById(R.id.button_continue_genderPage)
-
+        getmassage = intent.extras?.getString("message_to_gender") ?: "No message found"
+        println(getmassage)
         button_continue.setOnClickListener {
-            if(select_anyone) {
-                Users().updateSex(
+//            if(select_anyone) {
+            Users_dannie().updateSex(
                     newsex = male_or_female
                 )
-                Users().updatePhone(
+            Users_dannie().updatePhone(
                     newPhone = getmassage
                 )
-                addUsertodb(Users()) //занос данных класса wiew model в бд
+                addUsertodb(Users_dannie())
                 var intent = Intent(this, how_old_screen::class.java)
                 startActivity(intent)
-            }
+//            }
         }
 
         button_back.setOnClickListener {

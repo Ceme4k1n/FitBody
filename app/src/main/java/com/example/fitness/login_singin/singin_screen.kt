@@ -70,9 +70,9 @@ class singin_screen : AppCompatActivity() {
         button_next_registry.setOnClickListener() {
 //            if (password_registry.text.toString()==confirm_password_registry.text.toString()){
                 regViaEmail(email_registry.text.toString(),password_registry.text.toString())
-                var intent = Intent(this, set_up_screen::class.java)
-            intent.putExtra("massage",phone_user.text.toString())
-                startActivity(intent)
+                var intent1 = Intent(this, set_up_screen::class.java)
+            intent1.putExtra("message_to_set_up",phone_user.text.toString())
+                startActivity(intent1)
 //        }else{
 //            print("parol ne parol")
 //            }

@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
-import com.example.fitness.login_singin.Users
+import com.example.fitness.login_singin.Users_dannie
 
 class goal_screen : AppCompatActivity() {
 
     private var currentBackgroundResource: Int = R.drawable.rounded_goal_button
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        var user = Users()
+        var user = Users_dannie()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_goal_screen)
 

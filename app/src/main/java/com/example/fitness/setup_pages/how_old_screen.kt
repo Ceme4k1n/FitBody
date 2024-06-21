@@ -10,11 +10,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import com.example.fitness.R
-import com.example.fitness.login_singin.Users
+import com.example.fitness.login_singin.Users_dannie
 
 class how_old_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        var user = Users()
+        var user = Users_dannie()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_how_old_screen)
 

@@ -15,19 +15,22 @@ class set_up_screen : AppCompatActivity() {
 
         val button_continue : TextView = findViewById(R.id.button_next_setupPage)
         val button_back : ImageView = findViewById(R.id.imagebutton_back_setupPage)
-        var message: String
+        var message5: String
+        var message6: String
         button_back.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
             startActivity(intent)
         }
-        message = intent.extras?.getString("message") ?: "No message found"
+        message5 = intent.extras?.getString("message_to_set_up") ?: "No message found"
+        println(message5)
+        message6=message5
 
 
         button_continue.setOnClickListener {
-            message = intent.extras?.getString("message") ?: "No message found"
-            var intent = Intent(this, select_gender_screen::class.java)
-            intent.putExtra("massage1",message)
-            startActivity(intent)
+            var intent2 = Intent(this, select_gender_screen::class.java)
+            intent2.putExtra("message_to_gender",message6.toString())
+            println(message6)
+            startActivity(intent2)
         }
     }
 }
