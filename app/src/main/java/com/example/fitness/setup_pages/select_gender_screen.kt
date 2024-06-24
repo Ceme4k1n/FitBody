@@ -31,18 +31,13 @@ class select_gender_screen : AppCompatActivity() {
         val button_continue : TextView = findViewById(R.id.button_continue_genderPage)
         getmassage = intent.extras?.getString("message_to_gender") ?: "No message found"
         println(getmassage)
-        val noviy=Users_dannie()
         button_continue.setOnClickListener {
-//            if(select_anyone) {
-            noviy.updateSex(
-                    newsex = male_or_female
-                )
-            noviy.updatePhone(
-                    newPhone = getmassage
-                )
-                addUsertodb(noviy)
-                var intent = Intent(this, how_old_screen::class.java)
-                startActivity(intent)
+//
+
+            var intent1 = Intent(this, how_old_screen::class.java)
+            intent1.putExtra("phone_to_howold",getmassage)
+            intent1.putExtra("sex_to_howold",male_or_female)
+            startActivity(intent1)
 //            }
         }
 

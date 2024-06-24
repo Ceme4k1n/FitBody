@@ -14,7 +14,8 @@ data class Users_dannie (
     var height:Double=0.0,
     var weight:Double=0.0,
     var goal: String="414",
-    var activity_lvl:String="515")
+    var activity_lvl:String="515"
+)
 
 {
     fun updateName(newName: String) {
@@ -53,7 +54,7 @@ fun addUsertodb(user: Users_dannie) {
         val userRef = FirebaseFirestore.getInstance().collection("users").document(userId)
         userRef.set(
             mapOf(
-                "user" to user.name,
+                "name" to user.name,
                 "surname" to user.surname,
                 "phone" to user.phone,
                 "age" to user.age,
@@ -71,6 +72,47 @@ fun addUsertodb(user: Users_dannie) {
                 Log.w(TAG, "Ошибка при добавлении данных", e)
             }
     } ?: Log.w(TAG, "Пользователь не аутентифицирован")
+}
+
+
+fun getUserFromDb(callback: (Users_dannie) -> Unit){
+
+    val userID = FirebaseAuth.getInstance().currentUser?.uid
+
+    FirebaseFirestore.getInstance()
+        .collection("users")
+        .document(userID!!)
+        .get()
+        .addOnSuccessListener { new ->
+            val name = new.getString("name")?: ""
+            val surname = new.getString("surname")?: ""
+            val phone = new.getString("phone")?: ""
+            val age = new.getString("age")?: ""
+            val sex = new.getString("sex")?: ""
+            val height = new.getString("height")?: ""
+            val weight = new.getString("weight")?: ""
+            val goal = new.getString("goal")?: ""
+            val activity_lvl = new.getString("activity_lvl")?: ""
+
+            val getData = Users_dannie(
+                name,
+                surname,
+                phone,
+                age.toInt(),
+                sex.toBoolean(),
+                height.toDouble(),
+                weight.toDouble(),
+                goal,
+                activity_lvl
+                )
+
+            callback(getData)
+            Log.d(TAG, "Успешно получены данные:  \n $getData")
+        }
+        .addOnFailureListener{
+            Log.d(TAG, "Ошибка получения данных")
+        }
+
 }
 
 

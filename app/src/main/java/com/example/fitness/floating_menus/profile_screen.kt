@@ -9,7 +9,10 @@ import android.widget.RelativeLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.runtime.LaunchedEffect
 import com.example.fitness.R
+import com.example.fitness.login_singin.Users_dannie
+import com.example.fitness.login_singin.getUserFromDb
 import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToHomePage
 import com.example.fitness.navigateToNotePage
@@ -23,6 +26,17 @@ class profile_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_screen)
+
+
+        //переменная для класса юзер
+        var user: Users_dannie
+
+        //функция для получения данных из бд
+        getUserFromDb { data ->
+            user = data
+        }
+
+
         val birthday_text : TextView = findViewById(R.id.birrthday_text_profilePage)
         val weight_Text : TextView = findViewById(R.id.weight_text_profilePage)
         val years_old_text : TextView = findViewById(R.id.years_old_text_profilePage)

@@ -25,7 +25,10 @@ class goal_screen : AppCompatActivity() {
         val button_back : TextView = findViewById(R.id.textback_button_goalPage)
         val button_continue : TextView = findViewById(R.id.button_continue_goalPage)
 
-
+        val phone_goal=intent.extras?.getString("phone_to_goal") ?: "No message found"
+        val sex_goal=intent.extras?.getString("sex_to_goal") ?: "No message found"
+        val age_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
+        val weight_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
         var other_bool = false
         var shape_bool = false
         var mass_bool = false
@@ -35,8 +38,13 @@ class goal_screen : AppCompatActivity() {
 
         button_continue.setOnClickListener {
             if(other_bool || shape_bool || mass_bool || gain_bool || lose_bool) {
-                var intent = Intent(this, physical_act_screen::class.java)
-                startActivity(intent)
+                var intent4 = Intent(this, physical_act_screen::class.java)
+                intent4.putExtra("phone_to_act",phone_goal)
+                intent4.putExtra("sex_to_act",sex_goal)
+                intent4.putExtra("phone_to_act",age_goal)
+                intent4.putExtra("weight_to_act",weight_goal) //доделать
+                //intent4.putExtra("goal_to_act",act) доделать
+                startActivity(intent4)
             }
         }
 

@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import com.example.fitness.R
 import com.example.fitness.login_singin.Users_dannie
+import com.example.fitness.login_singin.addUsertodb
 
 class how_old_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,10 +25,14 @@ class how_old_screen : AppCompatActivity() {
 
         val button_back : TextView = findViewById(R.id.textback_button_howoldPage)
         val button_continue : TextView = findViewById(R.id.button_continue_howoldPage)
-
+        val phone_howold = intent.extras?.getString("phone_to_howold") ?: "No message found"
+        val sex_howold  = intent.extras?.getString("sex_to_howold") ?: "No message found"
         button_continue.setOnClickListener {
-            var intent = Intent(this, select_weight_screen::class.java)
-            startActivity(intent)
+            var intent2 = Intent(this, select_weight_screen::class.java)
+            intent2.putExtra("phone_to_weight",phone_howold)
+            intent2.putExtra("sex_to_weight",sex_howold)
+//            intent2.putExtra("age_to_weight",age) //доделать
+            startActivity(intent2)
         }
 
 

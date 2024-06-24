@@ -20,6 +20,10 @@ class physical_act_screen : AppCompatActivity() {
 
         var selecteble = -1 // -1 ничего не нажато 0 - begginer 1 - intermediate 2 - advance
 
+        val phone_physical_act=intent.extras?.getString("phone_to_goal") ?: "No message found"
+        val sex_physical_act=intent.extras?.getString("sex_to_goal") ?: "No message found"
+        val age_physical_act=intent.extras?.getString("age_to_goal") ?: "No message found"
+        val weight_physical_act=intent.extras?.getString("age_to_goal") ?: "No message found"
 
         button_begginer.setOnClickListener {
             if(selecteble != 0){
