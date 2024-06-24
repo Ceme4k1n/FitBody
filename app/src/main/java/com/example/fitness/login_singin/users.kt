@@ -51,7 +51,19 @@ fun addUsertodb(user: Users_dannie) {
     val currentUser = FirebaseAuth.getInstance().currentUser
     currentUser?.uid?.let { userId ->
         val userRef = FirebaseFirestore.getInstance().collection("users").document(userId)
-        userRef.set(user)
+        userRef.set(
+            mapOf(
+                "user" to user.name,
+                "surname" to user.surname,
+                "phone" to user.phone,
+                "age" to user.age,
+                "sex" to user.sex,
+                "height" to user.height,
+                "weight" to user.weight,
+                "goal" to user.goal,
+                "activity_lvl" to user.activity_lvl
+            )
+        )
             .addOnSuccessListener {
                 Log.d(TAG, "Данные добавлены")
             }
