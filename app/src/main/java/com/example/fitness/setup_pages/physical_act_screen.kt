@@ -20,10 +20,10 @@ class physical_act_screen : AppCompatActivity() {
 
         var selecteble = -1 // -1 ничего не нажато 0 - begginer 1 - intermediate 2 - advance //TODO ВОТ ЭТО НАДО ВСТАВИТЬ В PutExtra
 
-        val phone_physical_act=intent.extras?.getString("phone_to_goal") ?: "No message found"
-        val sex_physical_act=intent.extras?.getString("sex_to_goal") ?: "No message found"
-        val age_physical_act=intent.extras?.getString("age_to_goal") ?: "No message found"
-        val weight_physical_act=intent.extras?.getString("age_to_goal") ?: "No message found"
+        val phone_physical_act=intent.extras?.getString("phone_to_act") ?: "No message found"
+        val sex_physical_act=intent.extras?.getString("sex_to_act") ?: "No message found"
+        val age_physical_act=intent.extras?.getString("age_to_act") ?: "No message found"
+        val weight_physical_act=intent.extras?.getString("age_to_act") ?: "No message found"
 
         button_begginer.setOnClickListener {
             if(selecteble != 0){
@@ -64,11 +64,11 @@ class physical_act_screen : AppCompatActivity() {
         button_continue.setOnClickListener {
             if(selecteble != -1) {
                 var intent5 = Intent(this, set_up_profile_screen::class.java)
-                intent5.putExtra("phone_to_act",phone_physical_act)
-                intent5.putExtra("sex_to_act",sex_physical_act)
-                intent5.putExtra("phone_to_act",age_physical_act)
-                intent5.putExtra("weight_to_act",weight_physical_act)
-                intent5.putExtra("goal_to_act",selecteble)
+                intent5.putExtra("phone_to_profile",phone_physical_act)
+                intent5.putExtra("sex_to_profile",sex_physical_act)
+                intent5.putExtra("phone_to_profile",age_physical_act)
+                intent5.putExtra("weight_to_profile",weight_physical_act)
+                intent5.putExtra("goal_to_profile",selecteble)
                 startActivity(intent5)
             }
         }
