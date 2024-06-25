@@ -2,12 +2,12 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="Unnamed">
+      <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-06-24T10:09:36.231639Z">
+        <DropdownSelection timestamp="2024-06-24T14:08:23.629922200Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/timofejsuharev/.android/avd/Pixel_7_Pro_API_UpsideDownCakePrivacySandbox.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\niger\.android\avd\Pixel_Fold_API_35.avd" />
             </handle>
           </Target>
         </DropdownSelection>

@@ -73,7 +73,7 @@
         android:paddingBottom="3dp"
         android:text="Begginer"
         android:textColor="@color/real_black"
-        app:layout_constraintStart_toStartOf="@+id/text_favorite_commPage"
+        app:layout_constraintStart_toStartOf="@+id/strelka_commPage"
         app:layout_constraintTop_toBottomOf="@+id/text_favorite_commPage" />
 
     <TextView

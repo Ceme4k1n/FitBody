@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".workout.first_train_screen">
+
+    <TextView
+        android:id="@+id/text_train_trainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Training"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <ImageView
+        android:id="@+id/strelka_trainPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_train_trainPage"
+        app:layout_constraintEnd_toStartOf="@+id/text_train_trainPage"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+
+    <TextView
+        android:id="@+id/grand_train_name_trainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Мощные КУБИКИ"
+        android:textColor="@color/purple"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/purple_box_trainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="275dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grand_train_name_trainPage" />
+
+    <VideoView
+        android:id="@+id/video_trainPage"
+        android:layout_width="420dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="157dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grand_train_name_trainPage" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_trainPage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grand_train_name_trainPage" />
+
+    <TextView
+        android:id="@+id/timer_trainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_trainPage" />
+
+    <TextView
+        android:id="@+id/play_button_trainPage"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_button_phys_act"
+        android:gravity="center"
+        android:text="Play"
+        android:textColor="@color/purple"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_trainPage" />
+
+    <TextView
+        android:id="@+id/pause_button_trainPage"
+        android:layout_width="115dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_button_phys_act"
+        android:gravity="center"
+        android:text="Stop"
+        android:textColor="@color/purple"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_trainPage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
