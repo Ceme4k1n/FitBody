@@ -18,7 +18,7 @@ class physical_act_screen : AppCompatActivity() {
         val button_continue : TextView = findViewById(R.id.button_continue_physAct)
         val button_back : TextView = findViewById(R.id.textback_button_physAcrt)
 
-        var selecteble = -1 // -1 ничего не нажато 0 - begginer 1 - intermediate 2 - advance
+        var selecteble = -1 // -1 ничего не нажато 0 - begginer 1 - intermediate 2 - advance //TODO ВОТ ЭТО НАДО ВСТАВИТЬ В PutExtra
 
         val phone_physical_act=intent.extras?.getString("phone_to_goal") ?: "No message found"
         val sex_physical_act=intent.extras?.getString("sex_to_goal") ?: "No message found"
@@ -63,8 +63,13 @@ class physical_act_screen : AppCompatActivity() {
 
         button_continue.setOnClickListener {
             if(selecteble != -1) {
-                var intent = Intent(this, set_up_profile_screen::class.java)
-                startActivity(intent)
+                var intent5 = Intent(this, set_up_profile_screen::class.java)
+                intent5.putExtra("phone_to_act",phone_physical_act)
+                intent5.putExtra("sex_to_act",sex_physical_act)
+                intent5.putExtra("phone_to_act",age_physical_act)
+                intent5.putExtra("weight_to_act",weight_physical_act)
+                intent5.putExtra("goal_to_act",selecteble)
+                startActivity(intent5)
             }
         }
 

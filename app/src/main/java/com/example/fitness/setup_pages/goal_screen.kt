@@ -29,21 +29,18 @@ class goal_screen : AppCompatActivity() {
         val sex_goal=intent.extras?.getString("sex_to_goal") ?: "No message found"
         val age_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
         val weight_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
-        var other_bool = false
-        var shape_bool = false
-        var mass_bool = false
-        var gain_bool = false
-        var lose_bool = false
+
+        var selecteble = -2 // -2 ничего не выбрано -1 other_bool 0 - shape_bool 1 - mass_bool 2 - gain_bool 3 - lose_bool
 
 
         button_continue.setOnClickListener {
-            if(other_bool || shape_bool || mass_bool || gain_bool || lose_bool) {
+            if(selecteble != -2) {
                 var intent4 = Intent(this, physical_act_screen::class.java)
                 intent4.putExtra("phone_to_act",phone_goal)
                 intent4.putExtra("sex_to_act",sex_goal)
                 intent4.putExtra("phone_to_act",age_goal)
-                intent4.putExtra("weight_to_act",weight_goal) //доделать
-                //intent4.putExtra("goal_to_act",act) доделать
+                intent4.putExtra("weight_to_act",weight_goal)
+                intent4.putExtra("goal_to_act",selecteble)
                 startActivity(intent4)
             }
         }
@@ -56,57 +53,62 @@ class goal_screen : AppCompatActivity() {
 
 
         button_other.setOnClickListener {
-            if(other_bool == false){
+            if(selecteble != -1){
+                selecteble= -1
                 button_other.setBackgroundResource(R.drawable.rounded_button_green)
-                other_bool = true
-                user.goal=button_other.toString()
-            }else{
-                button_other.setBackgroundResource(R.drawable.rounded_goal_button)
-                other_bool = false
+
+                button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+
             }
         }
 
         button_shape_body.setOnClickListener {
-            if(shape_bool == false){
+            if(selecteble != 0){
+                selecteble = 0
                 button_shape_body.setBackgroundResource(R.drawable.rounded_button_green)
-                shape_bool = true
-                user.goal=button_shape_body.text.toString()
-            }else{
-                button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
-                shape_bool = false
+
+                button_other.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
             }
         }
 
         button_muscle_mass_gain.setOnClickListener {
-            if(mass_bool == false){
+            if(selecteble != 1){
+                selecteble = 1
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_button_green)
-                mass_bool = true
-                user.goal=button_muscle_mass_gain.text.toString()
-            }else{
-                button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
-                mass_bool = false
+
+                button_other.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
             }
         }
 
         button_gain_weight.setOnClickListener {
-            if(gain_bool == false){
+            if(selecteble != 2){
+                selecteble = 2
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_button_green)
-                gain_bool = true
-                user.goal=button_gain_weight.text.toString()
-            }else{
-                button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                gain_bool = false
+
+                button_other.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
             }
         }
 
         button_lose_weight.setOnClickListener {
-            if(lose_bool == false){
+            if(selecteble != 3){
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_button_green)
-                lose_bool = true
-                user.goal=button_lose_weight.text.toString()
-            }else{
-                button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                lose_bool = false
+
+                button_other.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
+                button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
             }
         }
     }

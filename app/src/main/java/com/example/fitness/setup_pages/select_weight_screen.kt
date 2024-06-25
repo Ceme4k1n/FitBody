@@ -30,7 +30,7 @@ class select_weight_screen : AppCompatActivity() {
             intent3.putExtra("phone_to_goal",phone_weight)
             intent3.putExtra("sex_to_goal",sex_weight)
             intent3.putExtra("phone_to_goal",age_weight)
-            intent3.putExtra("weight_to_goal",weight) //доделать
+            intent3.putExtra("weight_to_goal",selectedWeightTextView.toString())
             startActivity(intent3)
         }
 

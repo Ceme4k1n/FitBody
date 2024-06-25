@@ -31,7 +31,7 @@ class how_old_screen : AppCompatActivity() {
             var intent2 = Intent(this, select_weight_screen::class.java)
             intent2.putExtra("phone_to_weight",phone_howold)
             intent2.putExtra("sex_to_weight",sex_howold)
-//            intent2.putExtra("age_to_weight",age) //доделать
+            intent2.putExtra("age_to_weight",selectedAgeTextView.toString())
             startActivity(intent2)
         }
 
