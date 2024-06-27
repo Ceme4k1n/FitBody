@@ -7,7 +7,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 data class Users_dannie (
     var name : String="143",
-    var surname:String="1545",
     var phone: String="12435",
     var age: Int=4,
     var sex:Boolean=true,
@@ -20,10 +19,6 @@ data class Users_dannie (
 {
     fun updateName(newName: String) {
         name = newName
-    }
-
-    fun updateSurname(newSurname: String) {
-        surname = newSurname
     }
 
     fun updatePhone(newPhone: String) {
@@ -55,7 +50,6 @@ fun addUsertodb(user: Users_dannie) {
         userRef.set(
             mapOf(
                 "name" to user.name,
-                "surname" to user.surname,
                 "phone" to user.phone,
                 "age" to user.age,
                 "sex" to user.sex,
@@ -85,7 +79,6 @@ fun getUserFromDb(callback: (Users_dannie) -> Unit){
         .get()
         .addOnSuccessListener { new ->
             val name = new.getString("name")?: ""
-            val surname = new.getString("surname")?: ""
             val phone = new.getString("phone")?: ""
             val age = new.getString("age")?: ""
             val sex = new.getString("sex")?: ""
@@ -96,7 +89,6 @@ fun getUserFromDb(callback: (Users_dannie) -> Unit){
 
             val getData = Users_dannie(
                 name,
-                surname,
                 phone,
                 age.toInt(),
                 sex.toBoolean(),

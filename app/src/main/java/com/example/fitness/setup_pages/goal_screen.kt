@@ -28,7 +28,8 @@ class goal_screen : AppCompatActivity() {
         val phone_goal=intent.extras?.getString("phone_to_goal") ?: "No message found"
         val sex_goal=intent.extras?.getString("sex_to_goal") ?: "No message found"
         val age_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
-        val weight_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
+        val weight_goal=intent.extras?.getString("weight_to_goal") ?: "No message found"
+        val fullname_goal=intent.extras?.getString("fullname_to_goal") ?: "No message found"
 
         var selecteble = -2 // -2 ничего не выбрано -1 other_bool 0 - shape_bool 1 - mass_bool 2 - gain_bool 3 - lose_bool
 
@@ -41,6 +42,7 @@ class goal_screen : AppCompatActivity() {
                 intent4.putExtra("phone_to_act",age_goal)
                 intent4.putExtra("weight_to_act",weight_goal)
                 intent4.putExtra("goal_to_act",selecteble)
+                intent4.putExtra("fullname_to_act",fullname_goal)
                 startActivity(intent4)
             }
         }

@@ -22,14 +22,14 @@ class set_up_screen : AppCompatActivity() {
             startActivity(intent)
         }
         message5 = intent.extras?.getString("message_to_set_up") ?: "No message found"
-        println(message5)
-        message6=message5
+        message6 = intent.extras?.getString("fullname_to_setup") ?: "No message found"
+
 
 
         button_continue.setOnClickListener {
             var intent2 = Intent(this, select_gender_screen::class.java)
-            intent2.putExtra("message_to_gender",message6.toString())
-            println(message6)
+            intent2.putExtra("phone_number_to_gender",message5)
+            intent2.putExtra("fullname_to_gender",message6)
             startActivity(intent2)
         }
     }

@@ -28,10 +28,10 @@ class singin_screen : AppCompatActivity() {
         auth = Firebase.auth
         FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_singup_screen)
-        val email_registry : EditText = findViewById(R.id.email_text_singupPage)
-        val phone_user : EditText = findViewById(R.id.phone_text_singupPage)
+        val fullname_registry : EditText = findViewById(R.id.email_text_singupPage)
+        val email_registry : EditText = findViewById(R.id.phone_text_singupPage)
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
-        val number : EditText = findViewById(R.id.number_confirm_text_singinPage)
+        val phone_user : EditText = findViewById(R.id.number_confirm_text_singinPage)
         var button_next_registry : Button = findViewById(R.id.button_sing_in_singinPage)
         val button_back :   ImageView = findViewById(R.id.imagebutton_back_singupPage)
 
@@ -72,6 +72,7 @@ class singin_screen : AppCompatActivity() {
                 regViaEmail(email_registry.text.toString(),password_registry.text.toString())
                 var intent1 = Intent(this, set_up_screen::class.java)
             intent1.putExtra("message_to_set_up",phone_user.text.toString())
+            intent1.putExtra("fullname_to_setup",fullname_registry.text.toString())
                 startActivity(intent1)
 //        }else{
 //            print("parol ne parol")

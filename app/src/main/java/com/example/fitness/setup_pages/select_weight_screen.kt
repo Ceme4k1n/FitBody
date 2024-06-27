@@ -24,6 +24,7 @@ class select_weight_screen : AppCompatActivity() {
         val phone_weight=intent.extras?.getString("phone_to_weight") ?: "No message found"
         val sex_weight=intent.extras?.getString("sex_to_howold") ?: "No message found"
         val age_weight=intent.extras?.getString("age_to_weight") ?: "No message found"
+        val fullname_weight = intent.extras?.getString("fullname_to_weight") ?: "No message found"
         val weight :Int =0 //доделать
         buttonContinue.setOnClickListener {
             var intent3 = Intent(this, goal_screen::class.java)
@@ -31,6 +32,8 @@ class select_weight_screen : AppCompatActivity() {
             intent3.putExtra("sex_to_goal",sex_weight)
             intent3.putExtra("phone_to_goal",age_weight)
             intent3.putExtra("weight_to_goal",selectedWeightTextView.toString())
+            intent3.putExtra("fullname_to_goal",fullname_weight)
+
             startActivity(intent3)
         }
 

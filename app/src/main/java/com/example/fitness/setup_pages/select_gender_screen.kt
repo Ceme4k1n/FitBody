@@ -26,17 +26,20 @@ class select_gender_screen : AppCompatActivity() {
 
         var male_or_female = false  //  False - женщина True - мужчина
         var select_anyone = false // Показывает что хоть  одно выбрано
-        var getmassage: String
+        var phone_number: String
+        var fullname_gender : String
         val button_back : TextView = findViewById(R.id.textback_button_genderPage)
         val button_continue : TextView = findViewById(R.id.button_continue_genderPage)
-        getmassage = intent.extras?.getString("message_to_gender") ?: "No message found"
-        println(getmassage)
+        phone_number = intent.extras?.getString("phone_number_to_gender") ?: "No message found"
+        fullname_gender= intent.extras?.getString("fullname_to_gender") ?: "No message found"
+
         button_continue.setOnClickListener {
 //
 
             var intent1 = Intent(this, how_old_screen::class.java)
-            intent1.putExtra("phone_to_howold",getmassage)
+            intent1.putExtra("phone_to_howold",phone_number)
             intent1.putExtra("sex_to_howold",male_or_female)
+            intent1.putExtra("fullname_to_howold",fullname_gender)
             startActivity(intent1)
 //            }
         }
