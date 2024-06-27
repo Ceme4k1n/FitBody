@@ -31,7 +31,7 @@ class singin_screen : AppCompatActivity() {
         val email_registry : EditText = findViewById(R.id.email_text_singupPage)
         val phone_user : EditText = findViewById(R.id.phone_text_singupPage)
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
-        val confirm_password_registry : EditText = findViewById(R.id.password_confirm_text_singinPage)
+        val number : EditText = findViewById(R.id.number_confirm_text_singinPage)
         var button_next_registry : Button = findViewById(R.id.button_sing_in_singinPage)
         val button_back :   ImageView = findViewById(R.id.imagebutton_back_singupPage)
 
