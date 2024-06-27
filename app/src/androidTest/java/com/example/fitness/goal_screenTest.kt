@@ -86,7 +86,4 @@ class goal_screenTest {
         Intents.intended(IntentMatchers.hasComponent(physical_act_screen::class.java.name))
 
     }
-
-
-
 }

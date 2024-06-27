@@ -83,13 +83,14 @@
         android:id="@+id/text_birth_profilePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/league_spartan_bold"
         android:text="Birthday: "
         android:textColor="@color/white"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/email_profilePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_profilePage" />
 
     <TextView
@@ -160,8 +161,7 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/text_weight_profilePage"
         app:layout_constraintEnd_toEndOf="@+id/text_weight_profilePage"
-        app:layout_constraintStart_toStartOf="@+id/text_weight_profilePage"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintStart_toStartOf="@+id/text_weight_profilePage" />
 
     <TextView
         android:id="@+id/text_how_old_profilePage"

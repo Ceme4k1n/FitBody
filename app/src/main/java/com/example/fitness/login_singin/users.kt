@@ -7,46 +7,40 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 data class Users_dannie (
     var name : String="143",
-    var surname:String="1545",
     var phone: String="12435",
-    var age: Int=4,
-    var sex:Boolean=true,
-    var height:Double=0.0,
-    var weight:Double=0.0,
+    var age: String="",
+    var sex:String="",
+    var height:String="",
+    var weight:String="",
     var goal: String="414",
-    var activity_lvl:String="515"
+    var activity_lvl:String="515",
+    var email_adress:String="0"
 )
 
 {
-    fun updateName(newName: String) {
+    fun update_class(
+        newName: String,
+        newPhone: String,
+        newage: String,
+        newsex: String,
+        newheight: String,
+        newweight: String,
+        newgoal: String,
+        newactivity_lvl: String,
+        newemail_adress: String
+    )
+    {
         name = newName
-    }
-
-    fun updateSurname(newSurname: String) {
-        surname = newSurname
-    }
-
-    fun updatePhone(newPhone: String) {
         phone = newPhone
-    }
-    fun updateAge(newage: Int) {
         age = newage
-    }
-    fun updateSex(newsex: Boolean) {
         sex = newsex
-    }
-    fun updateHeight(newheight: Double) {
         height = newheight
-    }
-    fun updateweight(newweight: Double) {
         weight = newweight
-    }
-    fun updateGoal(newgoal: String) {
         goal = newgoal
-    }
-    fun updateActivity_lvl(newactivity_lvl: String) {
         activity_lvl = newactivity_lvl
+        email_adress=newemail_adress
     }
+
 }
 fun addUsertodb(user: Users_dannie) {
     val currentUser = FirebaseAuth.getInstance().currentUser
@@ -55,14 +49,14 @@ fun addUsertodb(user: Users_dannie) {
         userRef.set(
             mapOf(
                 "name" to user.name,
-                "surname" to user.surname,
                 "phone" to user.phone,
                 "age" to user.age,
                 "sex" to user.sex,
                 "height" to user.height,
                 "weight" to user.weight,
                 "goal" to user.goal,
-                "activity_lvl" to user.activity_lvl
+                "activity_lvl" to user.activity_lvl,
+                "email_adress" to user.email_adress
             )
         )
             .addOnSuccessListener {
@@ -85,7 +79,6 @@ fun getUserFromDb(callback: (Users_dannie) -> Unit){
         .get()
         .addOnSuccessListener { new ->
             val name = new.getString("name")?: ""
-            val surname = new.getString("surname")?: ""
             val phone = new.getString("phone")?: ""
             val age = new.getString("age")?: ""
             val sex = new.getString("sex")?: ""
@@ -93,17 +86,18 @@ fun getUserFromDb(callback: (Users_dannie) -> Unit){
             val weight = new.getString("weight")?: ""
             val goal = new.getString("goal")?: ""
             val activity_lvl = new.getString("activity_lvl")?: ""
+            val email_adress=new.getString("email_adress")?:""
 
             val getData = Users_dannie(
                 name,
-                surname,
                 phone,
-                age.toInt(),
-                sex.toBoolean(),
-                height.toDouble(),
-                weight.toDouble(),
+                age,
+                sex,
+                height,
+                weight,
                 goal,
-                activity_lvl
+                activity_lvl ,
+                email_adress
                 )
 
             callback(getData)

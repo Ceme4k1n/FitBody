@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
 import com.example.fitness.R
 import com.example.fitness.login_singin.Users_dannie
-import com.example.fitness.login_singin.addUsertodb
 
 class how_old_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,11 +26,15 @@ class how_old_screen : AppCompatActivity() {
         val button_continue : TextView = findViewById(R.id.button_continue_howoldPage)
         val phone_howold = intent.extras?.getString("phone_to_howold") ?: "No message found"
         val sex_howold  = intent.extras?.getString("sex_to_howold") ?: "No message found"
+        val nickname_howold=intent.extras?.getString("nickname_to_howold") ?: "No message found"
+        var user_email= intent.extras?.getString("email_to_howold") ?: "No message found"
         button_continue.setOnClickListener {
             var intent2 = Intent(this, select_weight_screen::class.java)
             intent2.putExtra("phone_to_weight",phone_howold)
             intent2.putExtra("sex_to_weight",sex_howold)
-            intent2.putExtra("age_to_weight",selectedAgeTextView.toString())
+            intent2.putExtra("age_to_weight",selectedAgeTextView.text.toString())
+            intent2.putExtra("nickname_to_weight",nickname_howold)
+            intent2.putExtra("email_to_weight",user_email)
             startActivity(intent2)
         }
 
@@ -86,7 +89,7 @@ class how_old_screen : AppCompatActivity() {
             // Обновляем TextView с выбранным возрастом
             closestChild?.let {
                 selectedAgeTextView.text = it.text.toString()
-                user.age=selectedAgeTextView.text.toString().toInt()
+                user.age=selectedAgeTextView.text.toString()
                 // Установка черного цвета и размера 20sp для цифры в середине
                 val normalPadding = 71 // обычные отступы
                 val selectedPadding = 71 // отступы для выбранного элемента

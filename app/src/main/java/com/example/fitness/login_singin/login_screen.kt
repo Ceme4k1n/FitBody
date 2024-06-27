@@ -9,8 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
+import com.example.fitness.floating_menus.profile_screen
 import com.example.fitness.on_boarding.start_screen
-import com.example.fitness.setup_pages.set_up_screen
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
@@ -52,7 +52,7 @@ class login_screen : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
                     Log.d(ContentValues.TAG,"Succecfully singed in")
-                    var intent = Intent(this, set_up_screen::class.java)
+                    var intent = Intent(this, profile_screen::class.java)
                     startActivity(intent)
                 }
                 .addOnFailureListener { exception ->

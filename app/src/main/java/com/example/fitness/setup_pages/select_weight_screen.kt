@@ -22,15 +22,19 @@ class select_weight_screen : AppCompatActivity() {
         val buttonBack: TextView = findViewById(R.id.textback_button_selectWeight)
         val buttonContinue: TextView = findViewById(R.id.button_continue_selectWeight)
         val phone_weight=intent.extras?.getString("phone_to_weight") ?: "No message found"
-        val sex_weight=intent.extras?.getString("sex_to_howold") ?: "No message found"
+        val sex_weight=intent.extras?.getString("sex_to_weight") ?: "No message found"
         val age_weight=intent.extras?.getString("age_to_weight") ?: "No message found"
+        val nickname_weight=intent.extras?.getString("nickname_to_weight") ?: "No message found"
+        var user_email= intent.extras?.getString("email_to_weight") ?: "No message found"
         val weight :Int =0 //доделать
         buttonContinue.setOnClickListener {
-            var intent3 = Intent(this, goal_screen::class.java)
-            intent3.putExtra("phone_to_goal",phone_weight)
-            intent3.putExtra("sex_to_goal",sex_weight)
-            intent3.putExtra("phone_to_goal",age_weight)
-            intent3.putExtra("weight_to_goal",selectedWeightTextView.toString())
+            var intent3 = Intent(this, select_height::class.java)
+            intent3.putExtra("phone_to_height",phone_weight)
+            intent3.putExtra("sex_to_height",sex_weight)
+            intent3.putExtra("age_to_height",age_weight)
+            intent3.putExtra("weight_to_height",selectedWeightTextView.text.toString())
+            intent3.putExtra("nickname_to_height",nickname_weight)
+            intent3.putExtra("email_to_height",user_email)
             startActivity(intent3)
         }
 
