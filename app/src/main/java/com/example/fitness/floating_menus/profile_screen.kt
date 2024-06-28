@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
 import com.example.fitness.login_singin.Users_dannie
+import com.example.fitness.login_singin.addUsertodb
 import com.example.fitness.login_singin.getUserFromDb
 import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToHomePage
@@ -102,6 +103,7 @@ class profile_screen : AppCompatActivity() {
                     newPhone = mobile_number_profile.text.toString(),
                     newactivity_lvl = ""
                 )
+                addUsertodb(tobd_profile)
                 setGroupProperties(buttons_group, visibility = View.INVISIBLE, isEnabled = false)
                 setGroupProperties(scroll_group, visibility = View.VISIBLE, isEnabled = true)
                 scroll_group.visibility = View.VISIBLE
