@@ -2,6 +2,7 @@
 
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,10 +26,13 @@ import com.example.fitness.navigateToSupportPage
         val button_boobs : ImageView = findViewById(R.id.bool_boobs_nutrPage)
         val button_protein : ImageView = findViewById(R.id.bool_protein_nutrPage)
 
+        val button_cont : TextView = findViewById(R.id.button_see_recipe_nutrPage)
+
         var ches_bool = false
         var caesar_bool = false
         var boobs_bool = false
         var protein_bool = false
+
 
 
         val profile_button : ImageView = findViewById(R.id.image_profile_nutrPage)
@@ -54,6 +58,9 @@ import com.example.fitness.navigateToSupportPage
         button_chees.setOnClickListener{
             if(!ches_bool) {
                 button_chees.setImageResource(R.drawable.fruits_true)
+                button_caesar.setImageResource(R.drawable.fruits_false)
+                button_boobs.setImageResource(R.drawable.fruits_false)
+                button_protein.setImageResource(R.drawable.fruits_false)
                 ches_bool = true
             }else{
                 button_chees.setImageResource(R.drawable.fruits_false)
@@ -64,6 +71,9 @@ import com.example.fitness.navigateToSupportPage
         button_caesar.setOnClickListener {
             if(!caesar_bool) {
                 button_caesar.setImageResource(R.drawable.fruits_true)
+                button_chees.setImageResource(R.drawable.fruits_false)
+                button_boobs.setImageResource(R.drawable.fruits_false)
+                button_protein.setImageResource(R.drawable.fruits_false)
                 caesar_bool = true
             }else{
                 button_caesar.setImageResource(R.drawable.fruits_false)
@@ -74,6 +84,9 @@ import com.example.fitness.navigateToSupportPage
         button_boobs.setOnClickListener {
             if(!boobs_bool) {
                 button_boobs.setImageResource(R.drawable.fruits_true)
+                button_caesar.setImageResource(R.drawable.fruits_false)
+                button_chees.setImageResource(R.drawable.fruits_false)
+                button_protein.setImageResource(R.drawable.fruits_false)
                 boobs_bool = true
             }else{
                 button_boobs.setImageResource(R.drawable.fruits_false)
@@ -84,12 +97,29 @@ import com.example.fitness.navigateToSupportPage
         button_protein.setOnClickListener {
             if(!protein_bool) {
                 button_protein.setImageResource(R.drawable.fruits_true)
+                button_caesar.setImageResource(R.drawable.fruits_false)
+                button_chees.setImageResource(R.drawable.fruits_false)
+                button_boobs.setImageResource(R.drawable.fruits_false)
                 protein_bool = true
             }else{
                 button_protein.setImageResource(R.drawable.fruits_false)
                 protein_bool = false
             }
         }
+
+        button_cont.setOnClickListener {
+            if(ches_bool){
+
+            }else if(caesar_bool){
+
+            }else if(boobs_bool){
+
+            }else if(protein_bool){
+
+            }
+        }
+
+
 
     }
 }
