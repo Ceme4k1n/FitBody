@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Fitness"
         tools:targetApi="31">
         <activity
+            android:name=".workout.protein"
+            android:exported="false" />
+        <activity
+            android:name=".workout.chiken"
+            android:exported="false" />
+        <activity
+            android:name=".workout.caesar_salat"
+            android:exported="false" />
+        <activity
             android:name=".workout.cheeskeks"
             android:exported="false" />
         <activity

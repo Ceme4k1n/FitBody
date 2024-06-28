@@ -69,7 +69,7 @@ class goal_screen : AppCompatActivity() {
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                gooooooool="other_bool"
+                gooooooool="others"
             }
         }
 
@@ -82,7 +82,7 @@ class goal_screen : AppCompatActivity() {
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                gooooooool="shape_bool"
+                gooooooool="shape_body"
             }
         }
 
@@ -95,7 +95,7 @@ class goal_screen : AppCompatActivity() {
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                gooooooool="mass_bool"
+                gooooooool="muscle_mass_gain"
             }
         }
 
@@ -108,19 +108,20 @@ class goal_screen : AppCompatActivity() {
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                gooooooool="gain_bool"
+                gooooooool="gain_weight"
             }
         }
 
         button_lose_weight.setOnClickListener {
             if(selecteble != 3){
-                button_lose_weight.setBackgroundResource(R.drawable.rounded_button_green)
+                selecteble = 3
 
+                button_lose_weight.setBackgroundResource(R.drawable.rounded_button_green)
                 button_other.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-                gooooooool="lose_bool"
+                gooooooool="lose_weight"
             }
         }
     }

@@ -6,10 +6,10 @@
     android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".workout.cheeskeks">
+    tools:context=".workout.caesar_salat">
 
     <TextView
-        android:id="@+id/text_meal_plans_cheesPage"
+        android:id="@+id/text_meal_plans_caesarPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
@@ -23,7 +23,7 @@
         app:lineHeight="30dp" />
 
     <ImageView
-        android:id="@+id/strelka_cheesPage"
+        android:id="@+id/strelka_caesarPage"
         android:layout_width="6dp"
         android:layout_height="11dp"
         android:layout_marginStart="40dp"
@@ -33,13 +33,13 @@
         app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
 
     <TextView
-        android:id="@+id/text_food_plan_cheesPage"
+        android:id="@+id/text_food_plan_caesarPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="77dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Cheesecakes"
+        android:text="Сaesar Salad"
         android:textColor="@color/yellow_kak_mocha"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
 
 
     <TextView
-        android:id="@+id/text_ingr_cheesPage"
+        android:id="@+id/text_ingr_caesarPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -57,10 +57,10 @@
         android:textColor="@color/yellow_kak_mocha"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purple_box_cheesPage" />
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_caesarPage" />
 
     <View
-        android:id="@+id/purple_box_cheesPage"
+        android:id="@+id/purple_box_caesarPage"
         android:layout_width="wrap_content"
         android:layout_height="320dp"
         android:layout_marginTop="130dp"
@@ -69,14 +69,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <VideoView
-        android:id="@+id/video_chees_cheesPage"
+    <ImageView
+        android:id="@+id/video_chees_caesarPage"
         android:layout_width="430dp"
         android:layout_height="280dp"
-        app:layout_constraintBottom_toBottomOf="@+id/purple_box_cheesPage"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_caesarPage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/purple_box_cheesPage" />
+        app:layout_constraintTop_toTopOf="@+id/purple_box_caesarPage"
+        android:src="@drawable/caesar"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -85,14 +86,14 @@
         android:layout_marginStart="40dp"
         android:fontFamily="@font/league_spartan"
         android:lines="4"
-        android:text="●     Творог\n●     Яица\n●     Мука\n●     Сахар"
+        android:text="●     Пармезан\n●     Яица\n●     Багет\n●     Грудка"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_ingr_cheesPage" />
+        app:layout_constraintTop_toBottomOf="@+id/text_ingr_caesarPage" />
 
     <TextView
-        android:id="@+id/text_prep_cheesPage"
+        android:id="@+id/text_prep_caesarPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -102,7 +103,7 @@
         android:textColor="@color/yellow_kak_mocha"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purple_box_cheesPage" />
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_caesarPage" />
 
     <TextView
         android:id="@+id/prep"
@@ -111,17 +112,17 @@
         android:layout_marginStart="40dp"
         android:fontFamily="@font/league_spartan"
         android:lines="4"
-        android:text="Сырники классические можно довести до полной готовности и в духовке.Для этого после обжариванияпереложите их на противень и запекайте 5 минут при 200 °C"
+        android:text="Вкусный и питательный обед"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_prep_cheesPage" />
+        app:layout_constraintTop_toBottomOf="@+id/text_prep_caesarPage" />
 
     <TextView
-        android:id="@+id/button_save_res_cheesPage"
+        android:id="@+id/button_save_res_caesarPage"
         android:layout_width="157dp"
         android:layout_height="37dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="260dp"
         android:background="@drawable/round_button_phys_act_yellow"
         android:fontFamily="@font/league_spartan_bold"
         android:gravity="center"
@@ -130,7 +131,6 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/purple_box_cheesPage" />
-
+        app:layout_constraintTop_toBottomOf="@+id/purple_box_caesarPage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
