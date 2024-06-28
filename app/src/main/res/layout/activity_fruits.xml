@@ -8,6 +8,8 @@
     android:background="@color/black"
     tools:context=".workout.fruits">
 
+
+
     <TextView
         android:id="@+id/text_meal_plans_nutrPage"
         android:layout_width="wrap_content"
@@ -26,10 +28,10 @@
         android:id="@+id/strelka_nutrPage"
         android:layout_width="6dp"
         android:layout_height="11dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toBottomOf="@+id/text_meal_plans_nutrPage"
-        app:layout_constraintEnd_toStartOf="@+id/text_meal_plans_nutrPage"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
 
     <ImageView
@@ -37,8 +39,8 @@
         android:layout_width="15dp"
         android:layout_height="18dp"
         android:layout_marginTop="34dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/image_profile_nutrPage"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_profile_nutrPage"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notification_off" />
 
@@ -47,8 +49,8 @@
         android:layout_width="19dp"
         android:layout_height="18dp"
         android:layout_marginTop="34dp"
-        android:layout_marginEnd="21dp"
-        app:layout_constraintEnd_toStartOf="@+id/image_colokol_nutrPage"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_colokol_nutrPage"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/search_off" />
 
@@ -78,14 +80,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="110dp"
         android:fontFamily="@font/league_spartan"
-        android:textSize="14sp"
-        android:textColor="@color/white"
         android:lines="2"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod."
-        app:layout_constraintStart_toStartOf="@+id/text_food_plan_nutrPage"
-        app:layout_constraintTop_toBottomOf="@+id/text_food_plan_nutrPage" />
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_chees_nutrPage"
@@ -93,7 +96,7 @@
         android:layout_height="110dp"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.72"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cheescakes" />
@@ -104,7 +107,7 @@
         android:layout_height="110dp"
         android:layout_marginTop="350dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.721"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/salat" />
@@ -115,7 +118,7 @@
         android:layout_height="110dp"
         android:layout_marginTop="500dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.721"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/boobs" />
@@ -126,9 +129,116 @@
         android:layout_height="110dp"
         android:layout_marginTop="650dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.721"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/protein" />
+
+    <ImageView
+        android:id="@+id/bool_cheesecakes_nutrPage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_chees_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_chees_nutrPage"
+        app:layout_constraintTop_toTopOf="@+id/image_chees_nutrPage"
+        app:srcCompat="@drawable/fruits_false" />
+
+    <ImageView
+        android:id="@+id/bool_caesar_nutrPage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_salat_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_salat_nutrPage"
+        app:layout_constraintTop_toTopOf="@+id/image_salat_nutrPage"
+        app:srcCompat="@drawable/fruits_false" />
+
+    <ImageView
+        android:id="@+id/bool_boobs_nutrPage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_boobs_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_boobs_nutrPage"
+        app:layout_constraintTop_toTopOf="@+id/image_boobs_nutrPage"
+        app:srcCompat="@drawable/fruits_false" />
+
+    <ImageView
+        android:id="@+id/bool_protein_nutrPage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_protein_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_protein_nutrPage"
+        app:layout_constraintTop_toTopOf="@+id/image_protein_nutrPage"
+        app:srcCompat="@drawable/fruits_false" />
+
+    <TextView
+        android:id="@+id/button_see_recipe_nutrPage"
+        android:layout_width="157dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/round_button_phys_act_yellow"
+        android:fontFamily="@font/league_spartan_bold"
+        android:gravity="center"
+        android:text="See Recipe"
+        android:textColor="@color/real_black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_protein_nutrPage" />
+
+    <View
+        android:id="@+id/purple_box_two_nutrPage"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_homeButton_nutrPage"
+        android:layout_width="25dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_nutrPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_nutrPage"
+        app:srcCompat="@drawable/home_button" />
+
+    <ImageView
+        android:id="@+id/image_zakladkaButton_nutrPage"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_buttmarkButton_nutrPage"
+        app:layout_constraintStart_toEndOf="@+id/image_homeButton_nutrPage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_nutrPage"
+        app:srcCompat="@drawable/zakladka_vidos_button" />
+
+    <ImageView
+        android:id="@+id/image_buttmarkButton_nutrPage"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/image_operatorButton_nutrPage"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_nutrPage"
+        app:srcCompat="@drawable/bookmark_off_button" />
+
+    <ImageView
+        android:id="@+id/image_operatorButton_nutrPage"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/purple_box_two_nutrPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/purple_box_two_nutrPage"
+        app:layout_constraintVertical_bias="0.551"
+        app:srcCompat="@drawable/operator_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
