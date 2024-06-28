@@ -136,8 +136,8 @@
 
     <ImageView
         android:id="@+id/bool_cheesecakes_nutrPage"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/image_chees_nutrPage"
         app:layout_constraintEnd_toStartOf="@+id/image_chees_nutrPage"
@@ -146,8 +146,8 @@
 
     <ImageView
         android:id="@+id/bool_caesar_nutrPage"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/image_salat_nutrPage"
         app:layout_constraintEnd_toStartOf="@+id/image_salat_nutrPage"
@@ -156,8 +156,8 @@
 
     <ImageView
         android:id="@+id/bool_boobs_nutrPage"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/image_boobs_nutrPage"
         app:layout_constraintEnd_toStartOf="@+id/image_boobs_nutrPage"
@@ -166,8 +166,8 @@
 
     <ImageView
         android:id="@+id/bool_protein_nutrPage"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/image_protein_nutrPage"
         app:layout_constraintEnd_toStartOf="@+id/image_protein_nutrPage"

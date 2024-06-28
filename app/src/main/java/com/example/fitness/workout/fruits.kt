@@ -1,5 +1,6 @@
   package com.example.fitness.workout
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -15,6 +16,7 @@ import com.example.fitness.navigateToProfilePage
 import com.example.fitness.navigateToResoursePage
 import com.example.fitness.navigateToSearchPage
 import com.example.fitness.navigateToSupportPage
+import com.example.fitness.on_boarding.start_screen
 
   class fruits : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +29,7 @@ import com.example.fitness.navigateToSupportPage
         val button_protein : ImageView = findViewById(R.id.bool_protein_nutrPage)
 
         val button_cont : TextView = findViewById(R.id.button_see_recipe_nutrPage)
+        val button_back : TextView = findViewById(R.id.text_meal_plans_nutrPage)
 
         var ches_bool = false
         var caesar_bool = false
@@ -109,14 +112,28 @@ import com.example.fitness.navigateToSupportPage
 
         button_cont.setOnClickListener {
             if(ches_bool){
-
+                var intent = Intent(this, start_screen::class.java)
+                startActivity(intent)
+                finish()
             }else if(caesar_bool){
-
+                var intent = Intent(this, start_screen::class.java)
+                startActivity(intent)
+                finish()
             }else if(boobs_bool){
-
+                var intent = Intent(this, start_screen::class.java)
+                startActivity(intent)
+                finish()
             }else if(protein_bool){
-
+                var intent = Intent(this, start_screen::class.java)
+                startActivity(intent)
+                finish()
             }
+        }
+
+        button_back.setOnClickListener {
+            var intent = Intent(this, start_screen::class.java)
+            startActivity(intent)
+            finish()
         }
 
 
