@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.ScrollView
@@ -57,6 +58,18 @@ class profile_screen : AppCompatActivity() {
             val logout_text : TextView = findViewById(R.id.text_log_out_profilePage)
             val logout_cansel_button : TextView = findViewById(R.id.button_cancel_logout_profilePage)
             val logout_confirm_button : TextView = findViewById(R.id.button_yes_logout_profilePage)
+
+            //поля для работы с бд
+            val full_name_profile: EditText=findViewById(R.id.full_name_text_profilePage)
+            full_name_profile.hint=frombd.name
+            val Email_profile: EditText=findViewById(R.id.email_text_profilePage)
+            Email_profile.hint=frombd.email_adress
+            val mobile_number_profile: EditText=findViewById(R.id.phone_text_profilePage)
+            mobile_number_profile.hint=frombd.phone
+            val date_of_breach_profile:EditText=findViewById(R.id.date_text_profilePage)
+            date_of_breach_profile.hint=frombd.age.toInt().toString()
+            val weight_profile:EditText=findViewById(R.id.weight_textView_profilePage)
+            weight_profile.hint=frombd.weight
 
 
             //Группа кнопок
