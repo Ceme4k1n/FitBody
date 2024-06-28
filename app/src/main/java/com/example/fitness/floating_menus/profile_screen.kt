@@ -75,6 +75,7 @@ class profile_screen : AppCompatActivity() {
             weight_profile.hint=frombd.weight
             val height_profile:EditText=findViewById(R.id.height_textView_profilePage)
             height_profile.hint=frombd.height
+            //test
 
 
             //Группа кнопок
@@ -92,16 +93,47 @@ class profile_screen : AppCompatActivity() {
 
             //zanos v bd
             button_to_zanos.setOnClickListener{
+                //proverka na hint
+                val heightValue = if (height_profile.text.toString().isNotBlank()) {
+                    height_profile.text.toString()
+                } else {
+                    height_profile.hint.toString()
+                }
+                val full_name_value = if (full_name_profile.text.toString().isNotBlank()) {
+                    full_name_profile.text.toString()
+                } else {
+                    full_name_profile.hint.toString()
+                }
+                val email_value = if (Email_profile.text.toString().isNotBlank()) {
+                    Email_profile.text.toString()
+                } else {
+                    Email_profile.hint.toString()
+                }
+                val mobile_value = if (mobile_number_profile.text.toString().isNotBlank()) {
+                    mobile_number_profile.text.toString()
+                } else {
+                    mobile_number_profile.hint.toString()
+                }
+                val date_value = if (date_of_breach_profile.text.toString().isNotBlank()) {
+                    date_of_breach_profile.text.toString()
+                } else {
+                    date_of_breach_profile.hint.toString()
+                }
+                val weight_value = if (weight_profile.text.toString().isNotBlank()) {
+                    weight_profile.text.toString()
+                } else {
+                    weight_profile.hint.toString()
+                }
                 tobd_profile.update_class(
-                    newName = full_name_profile.text.toString(),
-                    newemail_adress = Email_profile.text.toString(),
-                    newage = date_of_breach_profile.text.toString(),
-                    newweight = weight_profile.text.toString(),
-                    newheight = height_profile.text.toString(),
+                    newName = full_name_value,
+                    newemail_adress = email_value,
+                    newage = date_value,
+                    newweight = weight_value,
+                    newheight = heightValue,
                     newsex = frombd.sex,
                     newgoal = frombd.goal,
-                    newPhone = mobile_number_profile.text.toString(),
-                    newactivity_lvl = ""
+                    newPhone = mobile_value,
+                    newactivity_lvl = frombd.activity_lvl
                 )
                 addUsertodb(tobd_profile)
                 setGroupProperties(buttons_group, visibility = View.INVISIBLE, isEnabled = false)
