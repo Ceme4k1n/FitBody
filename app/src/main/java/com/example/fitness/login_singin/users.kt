@@ -6,15 +6,15 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 data class Users_dannie (
-    var name : String="143",
-    var phone: String="12435",
+    var name : String="",
+    var phone: String="",
     var age: String="",
     var sex:String="",
     var height:String="",
     var weight:String="",
-    var goal: String="414",
-    var activity_lvl:String="515",
-    var email_adress:String="0"
+    var goal: String="",
+    var activity_lvl:String="",
+    var email_adress:String=""
 )
 
 {

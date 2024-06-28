@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RelativeLayout
@@ -11,6 +12,7 @@ import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
+import com.example.fitness.login_singin.Users_dannie
 import com.example.fitness.login_singin.getUserFromDb
 import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToHomePage
@@ -58,7 +60,7 @@ class profile_screen : AppCompatActivity() {
             val logout_text : TextView = findViewById(R.id.text_log_out_profilePage)
             val logout_cansel_button : TextView = findViewById(R.id.button_cancel_logout_profilePage)
             val logout_confirm_button : TextView = findViewById(R.id.button_yes_logout_profilePage)
-
+            val button_to_zanos:Button=findViewById(R.id.button_Advance_physAct)
             //поля для работы с бд
             val full_name_profile: EditText=findViewById(R.id.full_name_text_profilePage)
             full_name_profile.hint=frombd.name
@@ -70,6 +72,8 @@ class profile_screen : AppCompatActivity() {
             date_of_breach_profile.hint=frombd.age.toInt().toString()
             val weight_profile:EditText=findViewById(R.id.weight_textView_profilePage)
             weight_profile.hint=frombd.weight
+            val height_profile:EditText=findViewById(R.id.height_textView_profilePage)
+            height_profile.hint=frombd.height
 
 
             //Группа кнопок
@@ -77,7 +81,7 @@ class profile_screen : AppCompatActivity() {
             val scroll_group : ScrollView = findViewById(R.id.scroll_group_profilePage)
 
             val age = frombd.age.toInt()
-
+            val tobd_profile=Users_dannie()
             FI_text.text = frombd.name
             heighttext.text = frombd.height
             weight_Text.text = frombd.weight
@@ -85,6 +89,23 @@ class profile_screen : AppCompatActivity() {
             birthday_text.text = (2024-age).toString()
             email_text.text = frombd.email_adress
 
+            //zanos v bd
+            button_to_zanos.setOnClickListener{
+                tobd_profile.update_class(
+                    newName = full_name_profile.text.toString(),
+                    newemail_adress = Email_profile.text.toString(),
+                    newage = date_of_breach_profile.text.toString(),
+                    newweight = weight_profile.text.toString(),
+                    newheight = height_profile.text.toString(),
+                    newsex = "",
+                    newgoal = "",
+                    newPhone = mobile_number_profile.text.toString(),
+                    newactivity_lvl = ""
+                )
+                setGroupProperties(buttons_group, visibility = View.INVISIBLE, isEnabled = false)
+                setGroupProperties(scroll_group, visibility = View.VISIBLE, isEnabled = true)
+                scroll_group.visibility = View.VISIBLE
+            }
 
 
             //updateEmail(email_text, frombd.phone) // предположим, что в поле phone у вас хранится email
