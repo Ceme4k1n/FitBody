@@ -91,6 +91,7 @@ class start_screen : AppCompatActivity() {
         button_get_started.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         skip_button_text.setOnClickListener{

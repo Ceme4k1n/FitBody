@@ -36,6 +36,4 @@ class SetUpScreenTest {
         // Проверьте, что произошел переход на SelectGenderScreenActivity
         Intents.intended(hasComponent(select_gender_screen::class.java.name))
     }
-
-
 }

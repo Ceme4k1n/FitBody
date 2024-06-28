@@ -29,8 +29,10 @@ class goal_screen : AppCompatActivity() {
         val sex_goal=intent.extras?.getString("sex_to_goal") ?: "No message found"
         val age_goal=intent.extras?.getString("age_to_goal") ?: "No message found"
         val weight_goal=intent.extras?.getString("weight_to_goal") ?: "No message found"
-        val fullname_goal=intent.extras?.getString("fullname_to_goal") ?: "No message found"
-
+        val nickname_goal=intent.extras?.getString("nickname_to_goal") ?: "No message found"
+        val height_goal=intent.extras?.getString("height_to_goal") ?: "No message found"
+        var gooooooool:String=""
+        var user_email= intent.extras?.getString("email_to_goal") ?: "No message found"
         var selecteble = -2 // -2 ничего не выбрано -1 other_bool 0 - shape_bool 1 - mass_bool 2 - gain_bool 3 - lose_bool
 
 
@@ -39,11 +41,14 @@ class goal_screen : AppCompatActivity() {
                 var intent4 = Intent(this, physical_act_screen::class.java)
                 intent4.putExtra("phone_to_act",phone_goal)
                 intent4.putExtra("sex_to_act",sex_goal)
-                intent4.putExtra("phone_to_act",age_goal)
+                intent4.putExtra("age_to_act",age_goal)
                 intent4.putExtra("weight_to_act",weight_goal)
-                intent4.putExtra("goal_to_act",selecteble)
-                intent4.putExtra("fullname_to_act",fullname_goal)
+                intent4.putExtra("goal_to_act",gooooooool)
+                intent4.putExtra("nickname_to_act",nickname_goal)
+                intent4.putExtra("height_to_act",height_goal)
+                intent4.putExtra("email_to_act",user_email)
                 startActivity(intent4)
+                finish()
             }
         }
 
@@ -51,6 +56,7 @@ class goal_screen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, select_weight_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 
@@ -63,7 +69,7 @@ class goal_screen : AppCompatActivity() {
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
-
+                gooooooool="other_bool"
             }
         }
 
@@ -76,6 +82,7 @@ class goal_screen : AppCompatActivity() {
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                gooooooool="shape_bool"
             }
         }
 
@@ -88,6 +95,7 @@ class goal_screen : AppCompatActivity() {
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                gooooooool="mass_bool"
             }
         }
 
@@ -100,6 +108,7 @@ class goal_screen : AppCompatActivity() {
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_lose_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                gooooooool="gain_bool"
             }
         }
 
@@ -111,6 +120,7 @@ class goal_screen : AppCompatActivity() {
                 button_shape_body.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_muscle_mass_gain.setBackgroundResource(R.drawable.rounded_goal_button)
                 button_gain_weight.setBackgroundResource(R.drawable.rounded_goal_button)
+                gooooooool="lose_bool"
             }
         }
     }

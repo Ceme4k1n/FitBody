@@ -33,6 +33,7 @@ fun navigateToFavoritePage(context: Context, button: ImageView) {
     button.setOnClickListener {
         val intent = Intent(context, favorite_screen::class.java)
         context.startActivity(intent)
+
     }
 }
 

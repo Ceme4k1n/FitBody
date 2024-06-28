@@ -8,17 +8,14 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.example.fitness.R
+import com.example.fitness.setup_pages.set_up_screen
 import com.google.firebase.Firebase
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 import com.google.firebase.database.database
-import com.example.fitness.setup_pages.set_up_screen
 
 class singin_screen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -28,10 +25,10 @@ class singin_screen : AppCompatActivity() {
         auth = Firebase.auth
         FirebaseApp.initializeApp(this)
         setContentView(R.layout.activity_singup_screen)
-        val fullname_registry : EditText = findViewById(R.id.email_text_singupPage)
-        val email_registry : EditText = findViewById(R.id.phone_text_singupPage)
+        val user_name : EditText = findViewById(R.id.email_text_singupPage)
+        val email_adress : EditText = findViewById(R.id.phone_text_singupPage)
         val password_registry : EditText = findViewById(R.id.password_text_singinPage)
-        val phone_user : EditText = findViewById(R.id.number_confirm_text_singinPage)
+        val phone_number : EditText = findViewById(R.id.number_confirm_text_singinPage)
         var button_next_registry : Button = findViewById(R.id.button_sing_in_singinPage)
         val button_back :   ImageView = findViewById(R.id.imagebutton_back_singupPage)
 
@@ -41,15 +38,16 @@ class singin_screen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 
 
         fun regViaEmail(
-            email_base: String,
+            email_adress: String,
             password_base: String
         ){
-            auth.createUserWithEmailAndPassword(email_base,password_base)
+            auth.createUserWithEmailAndPassword(email_adress,password_base)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
@@ -69,10 +67,11 @@ class singin_screen : AppCompatActivity() {
 
         button_next_registry.setOnClickListener() {
 //            if (password_registry.text.toString()==confirm_password_registry.text.toString()){
-                regViaEmail(email_registry.text.toString(),password_registry.text.toString())
+                regViaEmail(email_adress.text.toString(),password_registry.text.toString())
                 var intent1 = Intent(this, set_up_screen::class.java)
-            intent1.putExtra("message_to_set_up",phone_user.text.toString())
-            intent1.putExtra("fullname_to_setup",fullname_registry.text.toString())
+            intent1.putExtra("mobile_number_to_setup",phone_number.text.toString())
+            intent1.putExtra("email_to_setup",email_adress.text.toString())
+            intent1.putExtra("nickname_to_setup",user_name.text.toString())
                 startActivity(intent1)
 //        }else{
 //            print("parol ne parol")

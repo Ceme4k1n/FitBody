@@ -64,7 +64,4 @@ class SetGenderScreenTest {
         onView(withId(R.id.button_continue_genderPage)).perform(click())
 
     }
-
-
-
 }

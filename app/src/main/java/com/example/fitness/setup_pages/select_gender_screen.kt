@@ -2,16 +2,11 @@ package com.example.fitness.setup_pages
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
-import com.example.fitness.login_singin.addUsertodb
-import com.firebase.ui.auth.data.model.User
-import com.example.fitness.login_singin.Users_dannie
 
 class select_gender_screen : AppCompatActivity() {
 
@@ -26,27 +21,29 @@ class select_gender_screen : AppCompatActivity() {
 
         var male_or_female = false  //  False - женщина True - мужчина
         var select_anyone = false // Показывает что хоть  одно выбрано
-        var phone_number: String
-        var fullname_gender : String
+        var mobile_number_gender: String
         val button_back : TextView = findViewById(R.id.textback_button_genderPage)
         val button_continue : TextView = findViewById(R.id.button_continue_genderPage)
-        phone_number = intent.extras?.getString("phone_number_to_gender") ?: "No message found"
-        fullname_gender= intent.extras?.getString("fullname_to_gender") ?: "No message found"
-
+        val user_name_gender=intent.extras?.getString("nickname_to_gender") ?: "No message found"
+        mobile_number_gender = intent.extras?.getString("mobile_number_to_gender") ?: "No message found"
+        var user_email= intent.extras?.getString("email_to_gender") ?: "No message found"
         button_continue.setOnClickListener {
 //
 
             var intent1 = Intent(this, how_old_screen::class.java)
-            intent1.putExtra("phone_to_howold",phone_number)
-            intent1.putExtra("sex_to_howold",male_or_female)
-            intent1.putExtra("fullname_to_howold",fullname_gender)
+            intent1.putExtra("phone_to_howold",mobile_number_gender)
+            intent1.putExtra("sex_to_howold",male_or_female.toString())
+            intent1.putExtra("nickname_to_howold",user_name_gender)
+            intent1.putExtra("email_to_howold",user_email)
             startActivity(intent1)
+            finish()
 //            }
         }
 
         button_back.setOnClickListener {
             var intent = Intent(this, set_up_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 

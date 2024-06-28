@@ -18,11 +18,13 @@ class set_up_profile_screen : AppCompatActivity() {
         button_start.setOnClickListener {
             var intent = Intent(this, home_page_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         button_back.setOnClickListener {
             var intent = Intent(this, physical_act_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

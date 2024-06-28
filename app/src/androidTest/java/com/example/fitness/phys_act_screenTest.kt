@@ -66,5 +66,4 @@ class phys_act_screenTest {
         Intents.intended(IntentMatchers.hasComponent(set_up_profile_screen::class.java.name))
 
     }
-
 }

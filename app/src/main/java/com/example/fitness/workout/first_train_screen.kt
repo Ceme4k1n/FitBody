@@ -58,6 +58,7 @@ class first_train_screen : AppCompatActivity() {
         back_button.setOnClickListener{
             var intent = Intent(this, home_page_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         progressBar = findViewById(R.id.progressBar_trainPage)
