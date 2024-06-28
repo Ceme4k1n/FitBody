@@ -28,16 +28,17 @@ data class Users_dannie (
         newgoal: String,
         newactivity_lvl: String,
         newemail_adress: String
-    ) {
-        name = newName.takeUnless { it.isBlank() } ?: name
-        phone = newPhone.takeUnless { it.isBlank() } ?: phone
-        age = newage.takeUnless { it.isBlank() } ?: age
-        sex = newsex.takeUnless { it.isBlank() } ?: sex
-        height = newheight.takeUnless { it.isBlank() } ?: height
-        weight = newweight.takeUnless { it.isBlank() } ?: weight
-        goal = newgoal.takeUnless { it.isBlank() } ?: goal
-        activity_lvl = newactivity_lvl.takeUnless { it.isBlank() } ?: activity_lvl
-        email_adress = newemail_adress.takeUnless { it.isBlank() } ?: email_adress
+    )
+    {
+        name = newName
+        phone = newPhone
+        age = newage
+        sex = newsex
+        height = newheight
+        weight = newweight
+        goal = newgoal
+        activity_lvl = newactivity_lvl
+        email_adress=newemail_adress
     }
 }
 fun addUsertodb(user: Users_dannie) {
