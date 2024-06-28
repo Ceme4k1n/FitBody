@@ -12,6 +12,7 @@ import com.example.fitness.navigateToResoursePage
 import com.example.fitness.navigateToSearchPage
 import com.example.fitness.navigateToSupportPage
 import com.example.fitness.workout.first_train_screen
+import com.example.fitness.workout.fruits
 
 class home_page_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,8 +40,16 @@ class home_page_screen : AppCompatActivity() {
         val favor_button : ImageView = findViewById(R.id.image_buttmarkButton_homePage)
         val supp_button : ImageView = findViewById(R.id.image_operatorButton_homePage)
 
+        val nutr_button : ImageView = findViewById(R.id.image_nutrition_homePage)
+
         image_squart_train.setOnClickListener {
             var intent = Intent(this, first_train_screen::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        nutr_button.setOnClickListener {
+            var intent = Intent(this, fruits::class.java)
             startActivity(intent)
             finish()
         }

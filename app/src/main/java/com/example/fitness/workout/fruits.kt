@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fitness.R
+import com.example.fitness.floating_menus.home_page_screen
 import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToHomePage
 import com.example.fitness.navigateToNotePage
@@ -112,26 +113,26 @@ import com.example.fitness.on_boarding.start_screen
 
         button_cont.setOnClickListener {
             if(ches_bool){
-                var intent = Intent(this, start_screen::class.java)
+                var intent = Intent(this, cheeskeks::class.java)
                 startActivity(intent)
                 finish()
             }else if(caesar_bool){
-                var intent = Intent(this, start_screen::class.java)
+                var intent = Intent(this, caesar_salat::class.java)
                 startActivity(intent)
                 finish()
             }else if(boobs_bool){
-                var intent = Intent(this, start_screen::class.java)
+                var intent = Intent(this, chiken::class.java)
                 startActivity(intent)
                 finish()
             }else if(protein_bool){
-                var intent = Intent(this, start_screen::class.java)
+                var intent = Intent(this, protein::class.java)
                 startActivity(intent)
                 finish()
             }
         }
 
         button_back.setOnClickListener {
-            var intent = Intent(this, start_screen::class.java)
+            var intent = Intent(this, home_page_screen::class.java)
             startActivity(intent)
             finish()
         }
