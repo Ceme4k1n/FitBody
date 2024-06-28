@@ -7,6 +7,7 @@ import androidx.test.espresso.intent.Intents
 import androidx.test.espresso.intent.matcher.IntentMatchers
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.fitness.floating_menus.home_page_screen
 import com.example.fitness.setup_pages.goal_screen
 import com.example.fitness.setup_pages.physical_act_screen
 import org.junit.After
@@ -42,7 +43,7 @@ class phys_act_screenTest {
 
         Espresso.onView(ViewMatchers.withId(R.id.button_continue_physAct)).perform(ViewActions.click())
 
-        Intents.intended(IntentMatchers.hasComponent(set_up_profile_screen::class.java.name))
+        Intents.intended(IntentMatchers.hasComponent(home_page_screen::class.java.name))
 
     }
 
@@ -52,7 +53,7 @@ class phys_act_screenTest {
 
         Espresso.onView(ViewMatchers.withId(R.id.button_continue_physAct)).perform(ViewActions.click())
 
-        Intents.intended(IntentMatchers.hasComponent(set_up_profile_screen::class.java.name))
+        Intents.intended(IntentMatchers.hasComponent(home_page_screen::class.java.name))
 
     }
 
@@ -62,7 +63,7 @@ class phys_act_screenTest {
 
         Espresso.onView(ViewMatchers.withId(R.id.button_continue_physAct)).perform(ViewActions.click())
 
-        Intents.intended(IntentMatchers.hasComponent(set_up_profile_screen::class.java.name))
+        Intents.intended(IntentMatchers.hasComponent(home_page_screen::class.java.name))
 
     }
 }
