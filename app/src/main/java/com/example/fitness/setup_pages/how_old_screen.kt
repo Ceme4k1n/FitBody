@@ -36,12 +36,14 @@ class how_old_screen : AppCompatActivity() {
             intent2.putExtra("nickname_to_weight",nickname_howold)
             intent2.putExtra("email_to_weight",user_email)
             startActivity(intent2)
+            finish()
         }
 
 
         button_back.setOnClickListener {
             var intent = Intent(this, select_gender_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 

@@ -94,12 +94,14 @@ class physical_act_screen : AppCompatActivity() {
                 )
                 addUsertodb(tobd)
                 startActivity(intent5)
+                finish()
             }
         }
 
         button_back.setOnClickListener {
             var intent = Intent(this, goal_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

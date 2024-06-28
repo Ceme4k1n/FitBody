@@ -24,6 +24,7 @@ class forgot_pass_sceeen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         continue_button_setup_pass.setOnClickListener {

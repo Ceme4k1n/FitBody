@@ -32,11 +32,13 @@ class select_height : AppCompatActivity() {
             intent99 .putExtra("height_to_goal",select_height.text.toString())
             intent99 .putExtra("email_to_goal",user_email)
             startActivity(intent99)
+            finish()
         }
 
         button_back.setOnClickListener{
             var intent = Intent(this, select_weight_screen::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

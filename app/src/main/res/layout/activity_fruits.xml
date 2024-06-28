@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".workout.fruits">
+
+    <TextView
+        android:id="@+id/text_meal_plans_nutrPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/league_spartan_bold"
+        android:text="Meal Plans"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="30dp" />
+
+    <ImageView
+        android:id="@+id/strelka_nutrPage"
+        android:layout_width="6dp"
+        android:layout_height="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_meal_plans_nutrPage"
+        app:layout_constraintEnd_toStartOf="@+id/text_meal_plans_nutrPage"
+        app:srcCompat="@drawable/image_2024_05_27_21_58_35" />
+
+    <ImageView
+        android:id="@+id/image_colokol_nutrPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_profile_nutrPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notification_off" />
+
+    <ImageView
+        android:id="@+id/image_search_nutrPage"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_colokol_nutrPage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_off" />
+
+    <ImageView
+        android:id="@+id/image_profile_nutrPage"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_off" />
+
+    <TextView
+        android:id="@+id/text_food_plan_nutrPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Food Plan For You"
+        android:textColor="@color/yellow_kak_mocha"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/strelka_nutrPage"
+        app:layout_constraintTop_toBottomOf="@+id/strelka_nutrPage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/league_spartan"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:lines="2"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod."
+        app:layout_constraintStart_toStartOf="@+id/text_food_plan_nutrPage"
+        app:layout_constraintTop_toBottomOf="@+id/text_food_plan_nutrPage" />
+
+    <ImageView
+        android:id="@+id/image_chees_nutrPage"
+        android:layout_width="293dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cheescakes" />
+
+    <ImageView
+        android:id="@+id/image_salat_nutrPage"
+        android:layout_width="293dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salat" />
+
+    <ImageView
+        android:id="@+id/image_boobs_nutrPage"
+        android:layout_width="293dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boobs" />
+
+    <ImageView
+        android:id="@+id/image_protein_nutrPage"
+        android:layout_width="293dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="650dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/protein" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

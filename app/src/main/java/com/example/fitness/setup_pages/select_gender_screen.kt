@@ -36,12 +36,14 @@ class select_gender_screen : AppCompatActivity() {
             intent1.putExtra("nickname_to_howold",user_name_gender)
             intent1.putExtra("email_to_howold",user_email)
             startActivity(intent1)
+            finish()
 //            }
         }
 
         button_back.setOnClickListener {
             var intent = Intent(this, set_up_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 

@@ -90,21 +90,25 @@ class profile_screen : AppCompatActivity() {
             back_button.setOnClickListener {
                 var intent = Intent(this, home_page_screen::class.java)
                 startActivity(intent)
+                finish()
             }
 
             favorite_button.setOnClickListener {
                 var intent = Intent(this, favorite_screen::class.java)
                 startActivity(intent)
+                finish()
             }
 
             help_button.setOnClickListener {
                 var intent = Intent(this, help_screen::class.java)
                 startActivity(intent)
+                finish()
             }
 
             setting_button.setOnClickListener {
                 var intent = Intent(this, setting_screen::class.java)
                 startActivity(intent)
+                finish()
             }
 
             logout_button.setOnClickListener {
@@ -124,6 +128,7 @@ class profile_screen : AppCompatActivity() {
             logout_confirm_button.setOnClickListener {
                 var intent = Intent(this, set_up_screen::class.java)
                 startActivity(intent)
+                finish()
             }
         }
     }

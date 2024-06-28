@@ -38,6 +38,7 @@ class singin_screen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 

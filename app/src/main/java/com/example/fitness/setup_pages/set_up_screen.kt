@@ -20,6 +20,7 @@ class set_up_screen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, login_screen::class.java)
             startActivity(intent)
+            finish()
         }
         mobile_number_set_up = intent.extras?.getString("mobile_number_to_setup") ?: "No message found"
         user_name_setup = intent.extras?.getString("nickname_to_setup") ?: "No message found"
@@ -31,8 +32,8 @@ class set_up_screen : AppCompatActivity() {
             intent2.putExtra("mobile_number_to_gender",mobile_number_set_up)
             intent2.putExtra("nickname_to_gender",user_name_setup)
             intent2.putExtra("email_to_gender",user_email)
-
             startActivity(intent2)
+            finish()
         }
     }
 }

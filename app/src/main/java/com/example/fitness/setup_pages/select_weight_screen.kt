@@ -36,11 +36,13 @@ class select_weight_screen : AppCompatActivity() {
             intent3.putExtra("nickname_to_height",nickname_weight)
             intent3.putExtra("email_to_height",user_email)
             startActivity(intent3)
+            finish()
         }
 
         buttonBack.setOnClickListener {
             val intent = Intent(this, how_old_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         // Добавляем изображения с разными размерами

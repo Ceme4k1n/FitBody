@@ -42,6 +42,7 @@ class home_page_screen : AppCompatActivity() {
         image_squart_train.setOnClickListener {
             var intent = Intent(this, first_train_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 

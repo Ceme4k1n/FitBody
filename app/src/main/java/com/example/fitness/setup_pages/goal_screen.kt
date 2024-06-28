@@ -48,6 +48,7 @@ class goal_screen : AppCompatActivity() {
                 intent4.putExtra("height_to_act",height_goal)
                 intent4.putExtra("email_to_act",user_email)
                 startActivity(intent4)
+                finish()
             }
         }
 
@@ -55,6 +56,7 @@ class goal_screen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, select_weight_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
 

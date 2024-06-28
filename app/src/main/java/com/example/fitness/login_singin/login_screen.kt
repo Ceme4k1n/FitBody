@@ -33,16 +33,19 @@ class login_screen : AppCompatActivity() {
         button_back.setOnClickListener {
             var intent = Intent(this, start_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         sing_in_button.setOnClickListener {
             var intent = Intent(this, singin_screen::class.java)
             startActivity(intent)
+            finish()
         }
 
         forgott_pass_button.setOnClickListener {
             var intent = Intent(this, forgot_pass_sceeen::class.java)
             startActivity(intent)
+            finish()
         }
 
         fun loginViaEmail(
