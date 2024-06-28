@@ -98,8 +98,8 @@ class profile_screen : AppCompatActivity() {
                     newage = date_of_breach_profile.text.toString(),
                     newweight = weight_profile.text.toString(),
                     newheight = height_profile.text.toString(),
-                    newsex = "",
-                    newgoal = "",
+                    newsex = frombd.sex,
+                    newgoal = frombd.goal,
                     newPhone = mobile_number_profile.text.toString(),
                     newactivity_lvl = ""
                 )
