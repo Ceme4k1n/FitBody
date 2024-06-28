@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
+import com.example.fitness.floating_menus.home_page_screen
 import com.example.fitness.login_singin.Users_dannie
 import com.example.fitness.login_singin.addUsertodb
 
@@ -31,6 +32,9 @@ class physical_act_screen : AppCompatActivity() {
         val height_goal=intent.extras?.getString("height_to_act") ?: "No message found"
         var physical_act: String=""
         var user_email= intent.extras?.getString("email_to_act") ?: "No message found"
+
+
+
         button_begginer.setOnClickListener {
             if(selecteble != 0){
                 button_begginer.setBackgroundResource(R.drawable.round_button_phys_act_yellow)
@@ -80,7 +84,7 @@ class physical_act_screen : AppCompatActivity() {
 
         button_continue.setOnClickListener {
             if(selecteble != -1) {
-                var intent5 = Intent(this, set_up_profile_screen::class.java)
+                var intent5 = Intent(this, home_page_screen::class.java)
                 tobd.update_class(
                     newPhone = phone_physical_act,
                     newsex = sex_physical_act,
@@ -94,6 +98,10 @@ class physical_act_screen : AppCompatActivity() {
                 )
                 addUsertodb(tobd)
                 startActivity(intent5)
+                finish()
+
+                var intent = Intent(this, home_page_screen::class.java)
+                startActivity(intent)
                 finish()
             }
         }

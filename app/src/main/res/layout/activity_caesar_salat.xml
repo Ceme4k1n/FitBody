@@ -24,10 +24,10 @@
 
     <ImageView
         android:id="@+id/strelka_caesarPage"
-        android:layout_width="6dp"
-        android:layout_height="11dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="38dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/image_2024_05_27_21_58_35" />

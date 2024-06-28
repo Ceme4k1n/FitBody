@@ -24,8 +24,8 @@
 
     <ImageView
         android:id="@+id/strelka_favoritePage"
-        android:layout_width="6dp"
-        android:layout_height="11dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="7dp"
         app:layout_constraintBottom_toBottomOf="@+id/text_favorite_favoritePage"

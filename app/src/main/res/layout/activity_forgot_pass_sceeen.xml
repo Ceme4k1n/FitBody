@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imagebutton_back_forgotpassPage"
-        android:layout_width="6dp"
-        android:layout_height="11dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="52dp"
         android:rotationY="-180"

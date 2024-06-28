@@ -25,8 +25,8 @@
 
     <ImageView
         android:id="@+id/imageback_arrow_svg_selectHeight"
-        android:layout_width="6dp"
-        android:layout_height="11dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="9dp"
         android:rotation="-180"

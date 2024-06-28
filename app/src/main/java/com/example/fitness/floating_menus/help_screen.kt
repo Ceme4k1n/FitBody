@@ -1,5 +1,6 @@
 package com.example.fitness.floating_menus
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -13,6 +14,7 @@ import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToHomePage
 import com.example.fitness.navigateToResoursePage
 import com.example.fitness.navigateToSupportPage
+import com.example.fitness.on_boarding.start_screen
 
 class help_screen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,13 @@ class help_screen : AppCompatActivity() {
 
         val faq_group : RelativeLayout = findViewById(R.id.buttons_group_helpPage)
         val contact_us_group : RelativeLayout = findViewById(R.id.contact_us_group_helpPage)
+        val back_button : TextView = findViewById(R.id.button_back_help_nadfaqs)
+
+        back_button.setOnClickListener {
+            var intent = Intent(this, home_button::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         setGroupProperties(contact_us_group, View.INVISIBLE, isEnabled = true)
 

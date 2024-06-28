@@ -1,7 +1,9 @@
 package com.example.fitness.floating_menus
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
 import com.example.fitness.navigateToFavoritePage
@@ -26,7 +28,13 @@ class favorite_screen : AppCompatActivity() {
         val supp_button : ImageView = findViewById(R.id.image_operatorButton_favoritePage)
 
 
+        val back_button : TextView = findViewById(R.id.text_favorite_favoritePage)
 
+        back_button.setOnClickListener {
+            var intent = Intent(this, home_button::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         navigateToProfilePage(this, profile_button)
         navigateToNotePage(this, not_button)

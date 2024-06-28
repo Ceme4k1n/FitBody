@@ -9,7 +9,6 @@ import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.fitness.setup_pages.goal_screen
 import com.example.fitness.setup_pages.physical_act_screen
-import com.example.fitness.setup_pages.set_up_profile_screen
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

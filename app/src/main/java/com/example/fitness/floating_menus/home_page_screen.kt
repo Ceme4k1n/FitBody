@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitness.R
+import com.example.fitness.community_menus.comm_screen
 import com.example.fitness.navigateToFavoritePage
 import com.example.fitness.navigateToNotePage
 import com.example.fitness.navigateToProfilePage
@@ -41,6 +42,13 @@ class home_page_screen : AppCompatActivity() {
         val supp_button : ImageView = findViewById(R.id.image_operatorButton_homePage)
 
         val nutr_button : ImageView = findViewById(R.id.image_nutrition_homePage)
+        val progress : ImageView = findViewById(R.id.image_progress_tracking_homePage)
+
+        progress.setOnClickListener {
+            var intent = Intent(this, comm_screen::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         image_squart_train.setOnClickListener {
             var intent = Intent(this, first_train_screen::class.java)

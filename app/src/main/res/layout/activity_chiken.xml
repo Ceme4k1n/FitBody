@@ -24,8 +24,8 @@
 
     <ImageView
         android:id="@+id/strelka_chik"
-        android:layout_width="6dp"
-        android:layout_height="11dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"

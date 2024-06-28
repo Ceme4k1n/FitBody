@@ -34,8 +34,8 @@
 
         <ImageView
             android:id="@+id/strelka_settingsPage"
-            android:layout_width="6dp"
-            android:layout_height="11dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
             android:layout_alignTop="@+id/text_settings_settingPage"
             android:layout_marginStart="13dp"
             android:layout_marginTop="11dp"
@@ -176,8 +176,8 @@
 
         <ImageView
             android:id="@+id/strelka_notification_settingsPage"
-            android:layout_width="6dp"
-            android:layout_height="11dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
             android:layout_alignTop="@+id/text_notifications_setting_settingPage"
             android:layout_marginStart="13dp"
             android:layout_marginTop="10dp"
